@@ -1,0 +1,251 @@
+.header {
+  background-color: #0c2038;
+  width: 100%;
+}
+
+.header-top {
+  background-color: #193c57;
+  position: relative;
+  z-index: 5;
+}
+
+.header-top__inner {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  justify-content: space-between;
+}
+
+.menu {
+  .menu__list {
+    display: flex;
+    gap: 31px;
+  }
+
+  li {
+    position: relative;
+
+    &:hover {
+      .menu-link::before {
+        @include transform(scale(1, -1));
+      }
+
+      .sub-menu {
+        display: block;
+      }
+    }
+  }
+}
+
+.menu-link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: $colorWhite;
+  position: relative;
+  padding-left: 20px;
+  display: block;
+
+  @include before {
+    border-top: solid 5px $colorWhite;
+    border-left: solid 5px transparent;
+    border-right: solid 5px transparent;
+    border-bottom: solid 0px transparent;
+    left: 0;
+    top: 50%;
+    margin-top: -1px;
+  }
+}
+
+.sub-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: $colorWhite;
+  @include text-decoration-hover($colorWhite);
+}
+
+.sub-menu {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #193c57;
+  min-width: 212px;
+  padding: 16px;
+  display: none;
+
+  &:hover {
+    display: block;
+  }
+
+  li {
+    & + li {
+      margin-top: 16px;
+    }
+  }
+}
+
+.header-bottom {
+}
+
+.header-bottom__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.logo-wrapper {
+}
+
+.link-menuCatalog {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $colorWhite;
+}
+
+.search-block {
+  max-width: 300px;
+  position: relative;
+  width: 100%;
+
+  input {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    color: $colorWhite;
+    width: 100%;
+    background: transparent;
+    border: solid 1px #a1d9f8;
+    height: 38px;
+    padding: 0 45px 0 10px;
+  }
+
+  .btn-search {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 38px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a1d9f8;
+
+    path {
+      fill: #102d4d;
+    }
+  }
+}
+
+.favorite-block {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: $colorWhite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  @include invisLink;
+
+  .icon {
+  }
+}
+
+.header-basket {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-left: solid 1px $colorWhite;
+  padding-left: 20px;
+  color: $colorWhite;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  @include invisLink;
+}
+
+.header-basket__text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  .count {
+  }
+}
+
+.header-basket__basket {
+  color: $colorWhite;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    background-color: $colorWhite;
+    @include border-radius(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .count {
+    width: 20px;
+    height: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: $colorWhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ef5553;
+    @include border-radius(50%);
+    position: absolute;
+    top: -10px;
+    right: -10px;
+  }
+}
+
+.burger {
+  width: 12px;
+  height: 8px;
+  flex-direction: column;
+  justify-content: space-between;
+  display: none;
+
+  &.active {
+    .burger__line {
+      &:nth-child(1) {
+        @include transform(rotate(-45deg));
+        top: 5px;
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        @include transform(rotate(45deg));
+        top: -2px;
+      }
+    }
+  }
+
+  &__line {
+    position: relative;
+    pointer-events: none;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $colorWhite;
+    @include transition(all 0.3s);
+  }
+}
+
+.search-link-mobile {
+  display: none;
+}
