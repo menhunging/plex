@@ -16,15 +16,15 @@ $(document).ready(function () {
     }
   }
 
-  if ($("select").length > 0) {
-    $("select").map(function () {
-      $(this).selectric({
-        onOpen: function (element) {},
-        onChange: function (element) {},
-        onClose: function (element) {},
-      });
-    });
-  }
+  // if ($("select").length > 0) {
+  //   $("select").map(function () {
+  //     $(this).selectric({
+  //       onOpen: function (element) {},
+  //       onChange: function (element) {},
+  //       onClose: function (element) {},
+  //     });
+  //   });
+  // }
 
   if ($(".linkFancyBox").length > 0) {
     Fancybox.bind("[data-fancybox]", {
@@ -74,6 +74,98 @@ $(document).ready(function () {
     }
 
     sliders.length && sliderinit();
+  }
+
+  if ($(".selecVolume").length) {
+    $(".selecVolume").selectmenu();
+  }
+
+  $.widget("custom.iconselectmenu", $.ui.selectmenu, {
+    _renderItem: function (ul, item) {
+      let count = item.element.attr("data-count")
+        ? `(из ${item.element.attr("data-count")} шт.)`
+        : "";
+
+      var li = $("<li class='ui-menu-icon'>"),
+        wrapper = $("<div>", { text: item.label });
+
+      // if ( item.disabled ) {
+      //   li.addClass( "ui-state-disabled" );
+      // }
+
+      $("<span>", {
+        class: "ui-icon-count",
+        text: count,
+      }).appendTo(wrapper);
+
+      $("<span>", {
+        style: item.element.attr("data-style"),
+        class: "icon-option " + item.element.attr("data-class"),
+      }).appendTo(wrapper);
+
+      return li.append(wrapper).appendTo(ul);
+    },
+
+    _renderButtonItem: function (item) {
+      let count = item.element.attr("data-count")
+        ? `(из ${item.element.attr("data-count")} шт.)`
+        : "";
+
+      var buttonItem = $("<span>", {
+        class: "ui-selectmenu-text-icon",
+      });
+
+      buttonItem.css("background-color", item.value);
+      var wrapper = $("<div>", { text: item.label });
+
+      if (item.disabled) {
+        buttonItem.addClass("ui-state-disabled");
+      }
+
+      $("<span>", {
+        class: "ui-icon-count",
+        text: count,
+      }).appendTo(wrapper);
+
+      $("<span>", {
+        style: item.element.attr("data-style"),
+        class: "icon-option " + item.element.attr("data-class"),
+      }).appendTo(wrapper);
+      buttonItem.append(wrapper);
+      return buttonItem;
+    },
+  });
+
+  if ($(".selecPack").length) {
+    $(".selecPack").iconselectmenu();
+  }
+
+  if ($(".banner-box").length > 0) {
+    // $(".banner-box").on("click", function (e) {
+    //   e.preventDefault();
+
+    //   let index = $(this).index();
+    //   let box = $(".banner-pictures__box");
+    //   let links = $(".banner-box");
+
+    //   links.removeClass("active");
+    //   box.removeClass("large");
+
+    //   $(this).addClass("active");
+    //   box.eq(index).addClass("large");
+    // });
+
+    $(".banner-box").hover(function () {
+      let index = $(this).index();
+      let box = $(".banner-pictures__box");
+      let links = $(".banner-box");
+
+      links.removeClass("active");
+      box.removeClass("large");
+
+      $(this).addClass("active");
+      box.eq(index).addClass("large");
+    });
   }
 
   // ---------------------------------------

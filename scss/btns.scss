@@ -19,4 +19,31 @@
     background-color: $colorWhite;
     color: #002246;
   }
+
+  &--white {
+    background-color: $colorWhite;
+    border-color: #002246;
+    color: #002246;
+
+    &:hover {
+      background-color: #002246;
+      color: $colorWhite;
+    }
+  }
+}
+
+.btn-favorire {
+  path {
+    stroke: #8b98a1;
+  }
+
+  &:hover {
+    path {
+      stroke: rgba(0, 34, 70, 1);
+    }
+  }
+
+  &.favorite {
+    fill: rgba(0, 34, 70, 1);
+  }
 }
