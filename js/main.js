@@ -89,6 +89,10 @@ $(document).ready(function () {
   }
 
   if ($(".product-settings").length > 0) {
+    if ($(".selecVolume").length) {
+      $(".selecVolume").selectmenu();
+    }
+
     $.widget("custom.iconselectmenu", $.ui.selectmenu, {
       _renderItem: function (ul, item) {
         let count = item.element.attr("data-count")
@@ -141,11 +145,7 @@ $(document).ready(function () {
       },
     });
 
-    if ($(".selecVolume").length) {
-      $(".selecVolume").selectmenu();
-    }
-
-    if ($(".selecPack").length) {
+    if ($(".selecPack").length > 0) {
       $(".selecPack").iconselectmenu();
     }
   }
@@ -183,7 +183,6 @@ $(document).ready(function () {
 });
 
 $(window).on("resize", function () {
-  console.log("resize");
   if ($(".js-mobile-open").length > 0) {
     if ($(window).width() >= 767) {
       destroyFooterAccardeon();

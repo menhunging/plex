@@ -82,9 +82,6 @@ section {
   }
 }
 
-.text-section {
-}
-
 .text-section__inner {
   display: flex;
   flex-wrap: wrap;
@@ -195,9 +192,6 @@ section {
   overflow: hidden;
 }
 
-.about-main__inner {
-}
-
 .about-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -271,9 +265,6 @@ section {
   .article-list {
     margin-top: 40px;
   }
-}
-
-.article-main__inner {
 }
 
 .article-list {
@@ -429,6 +420,7 @@ section {
 .banner-main {
   position: relative;
   overflow: hidden;
+  padding: 0;
 }
 
 .banner-main__top {
@@ -594,9 +586,6 @@ section {
   border-bottom: solid 1px rgba(0, 34, 70, 1);
 }
 
-.product-series {
-}
-
 .product-series__title {
   color: #8b98a1;
   font-size: 10px;
@@ -716,6 +705,10 @@ section {
   display: flex;
   justify-content: center;
   margin-top: 40px;
+  
+  .btn {
+    min-width: 312px;
+  }
 }
 
 .menu-mobile-catalog {
@@ -724,4 +717,43 @@ section {
 
 .burger-mobile__title {
   display: none;
+}
+
+.banner-box__mobile {
+  display: none;
+  cursor: pointer;
+  width: 100%;
+  color: #013956;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  height: 66px;
+  @include transition(all 0.3s);
+  position: relative;
+  z-index: 3;
+  @include transform(skew(28deg));
+  padding: 0 15px;
+
+  @include before {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(203, 212, 219, 1);
+    left: 0;
+    top: 0;
+    @include transform(skew(-28deg));
+    z-index: -1;
+    opacity: 1;
+  }
+
+  &:hover,
+  &.active {
+    color: rgba(65, 192, 235, 1);
+
+    &::before {
+      background-color: rgba(25, 60, 87, 1);
+    }
+  }
 }

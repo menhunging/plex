@@ -6,7 +6,7 @@
   .catalog-list {
     margin-left: 0;
     margin-right: 0;
-    margin-bottom: 12px;
+    margin-bottom: 16px;
   }
 
   .catalog-item {
@@ -40,5 +40,17 @@
 
   .product-item__content {
     padding: 8px 0;
+  }
+
+  .cabinet-block__text {
+    display: none;
+  }
+
+  .header-bottom .logo-wrapper {
+    left: 25px;
+  }
+
+  .header-bottom__inner {
+    gap: 10px;
   }
 }

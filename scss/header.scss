@@ -260,3 +260,47 @@
 .search-link-mobile {
   display: none;
 }
+
+.cabinet-block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  @include invisLink;
+  max-width: 200px;
+
+  &:hover {
+    .cabinet-block__text {
+      text-decoration-color: $colorWhite;
+    }
+  }
+}
+
+.cabinet-block__text {
+  color: $colorWhite;
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  @include transition(text-decoration 0.3s);
+  word-break: break-all;
+  line-height: 16px;
+}
+
+.cabinet-block__icon {
+  background-color: $colorWhite;
+  @include border-radius(50%);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}

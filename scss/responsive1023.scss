@@ -287,4 +287,114 @@
   .product-item__price {
     font-size: 20px;
   }
+
+  .cabinet-block {
+    gap: 10px;
+  }
+
+  .cabinet-block__text {
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .banner-pictures {
+    .invis-text {
+      display: none;
+    }
+  }
+
+  .banner-pictures__slider {
+    padding: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+
+    &.swiper-backface-hidden {
+      .swiper-slide {
+        @include transform(skew(-28deg));
+      }
+    }
+
+    .swiper-slide-active {
+    }
+
+    .swiper-pagination {
+      margin-top: 20px;
+      gap: 10px;
+
+      .swiper-pagination-bullet {
+        background-color: transparent;
+        width: 8px;
+        height: 8px;
+        border: solid 2px $colorWhite;
+        @include border-radius(50%);
+        opacity: 1;
+      }
+
+      .swiper-pagination-bullet-active {
+        border-color: rgba(65, 192, 235, 1);
+      }
+    }
+  }
+
+  .banner-pictures__box {
+    height: 300px;
+    flex-shrink: 0;
+    @include box-shadow(0px 0px 10px 0px rgba(255, 255, 255, 0.33));
+
+    &:hover {
+      &::before {
+        opacity: 0;
+      }
+
+      .banner-box__mobile {
+        color: $colorWhite;
+
+        &::before {
+          background-color: rgba(25, 60, 87, 1);
+        }
+      }
+    }
+  }
+
+  .banner-pictures__box.large {
+    width: 200px;
+  }
+
+  .banner-main {
+    background-color: #193c57;
+    padding: 16px 0 38px;
+    position: relative;
+
+    @include before {
+      left: 0;
+      top: 0;
+      width: 20%;
+      height: 100%;
+      z-index: 5;
+      pointer-events: none;
+      background: linear-gradient(90deg, #193c57 0%, rgba(25, 60, 87, 0) 100%);
+    }
+
+    @include after {
+      right: 0;
+      top: 0;
+      width: 20%;
+      height: 100%;
+      z-index: 5;
+      @include transform(scale(-1, 1));
+      pointer-events: none;
+      background: linear-gradient(90deg, #193c57 0%, rgba(25, 60, 87, 0) 100%);
+    }
+  }
+
+  .banner-box__mobile {
+    margin-top: auto;
+    display: flex;
+  }
+
+  .banner-main__bottom {
+    display: none;
+  }
 }
