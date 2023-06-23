@@ -850,8 +850,8 @@ div::-webkit-scrollbar-thumb {
 }
 .select-wrapper .select-head .error {
   font-weight: 400;
-  font-size: 8px;
-  line-height: 10px;
+  font-size: 10px;
+  line-height: 12px;
   color: #ff0000;
   position: relative;
   top: 1px;
