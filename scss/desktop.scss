@@ -192,6 +192,7 @@ section {
 }
 
 .about-main {
+  overflow: hidden;
 }
 
 .about-main__inner {
@@ -384,16 +385,13 @@ section {
 }
 
 .catalog {
+  padding: 40px 0 60px;
 }
 
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 9px -32px 0;
-  height: 1328px;
-  margin-bottom: 60px;
-  overflow: auto;
-  padding: 32px 24px;
+  margin: 40px -12px -24px;
 }
 
 .catalog-item {
@@ -423,21 +421,31 @@ section {
   }
 
   p {
-    height: 64px;
+    height: 50px;
     overflow: hidden;
   }
 }
 
 .banner-main {
   position: relative;
+  overflow: hidden;
 }
 
 .banner-main__top {
   background-color: #193c57;
+  overflow: hidden;
+
+  .container {
+    overflow: visible;
+  }
 }
 
 .banner-main__bottom {
   background-color: #cad5dc;
+
+  .container {
+    overflow: visible;
+  }
 }
 
 .banner-list {
@@ -486,6 +494,7 @@ section {
   display: flex;
 
   &__box {
+    flex-shrink: inherit;
     position: relative;
     width: 200px;
     height: 260px;
@@ -532,10 +541,10 @@ section {
 
     .picture {
       position: absolute;
-      left: -150px;
-      top: -100px;
-      width: 450px;
-      height: 400px;
+      left: -90px;
+      top: -20px;
+      width: 430px;
+      height: 300px;
       @include transform(skew(28deg));
 
       img {
@@ -608,6 +617,10 @@ section {
     align-items: center;
     gap: 10px;
   }
+
+  li {
+    height: 20px;
+  }
 }
 
 .product-item__content {
@@ -617,6 +630,7 @@ section {
   margin-bottom: 8px;
 
   .picture {
+    @include invisLink;
   }
 
   .btn-favorire {
@@ -694,10 +708,20 @@ section {
 
   .btn {
     width: 50%;
-    padding: 10px;
+    padding: 9px 10px;
   }
 }
 
-.catalog {
-  padding: 40px 0;
+.catalog__controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.menu-mobile-catalog {
+  display: none;
+}
+
+.burger-mobile__title {
+  display: none;
 }

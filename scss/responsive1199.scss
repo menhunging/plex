@@ -253,4 +253,44 @@
     font-size: 12px;
     line-height: 15px;
   }
+
+  .catalog-list {
+    margin-top: 20px;
+  }
+
+  .product-name {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .product-article {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .product-item__content {
+    padding: 15px 0;
+  }
+
+  .product-item__controls {
+    flex-wrap: wrap;
+
+    .btn {
+      width: 100%;
+      padding: 12px 10px;
+    }
+  }
+
+  .catalog__controls {
+    margin-top: 20px;
+  }
+
+  .catalog {
+    padding: 40px 0;
+  }
+
+  .banner-box{
+    font-size: 12px;
+    line-height: 16px;
+  }
 }

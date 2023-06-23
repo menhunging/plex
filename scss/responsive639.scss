@@ -1,0 +1,37 @@
+@media (max-width: 639px) {
+  .catalog-item {
+    width: calc(50% - 12px);
+    margin: 0 6px 12px;
+  }
+
+  .catalog-list {
+    margin-left: -6px;
+    margin-right: -6px;
+    margin-bottom: 12px;
+  }
+
+  .catalog__controls {
+    margin-top: 0;
+  }
+
+  .product-name {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 8px;
+  }
+
+  .product-article {
+    font-size: 10px;
+    line-height: 14px;
+    margin-bottom: 8px;
+  }
+
+  .product-item__info {
+    font-size: 8px;
+    line-height: 12px;
+
+    p {
+      height: 24px;
+    }
+  }
+}

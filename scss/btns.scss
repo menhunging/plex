@@ -44,6 +44,9 @@
   }
 
   &.favorite {
-    fill: rgba(0, 34, 70, 1);
+    path {
+      fill: rgba(0, 34, 70, 1);
+      stroke: rgba(0, 34, 70, 1);
+    }
   }
 }

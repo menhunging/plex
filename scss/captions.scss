@@ -4,6 +4,14 @@
   line-height: 46px;
   display: block;
   color: #002246;
+
+  &.caption--mobile {
+    display: none;
+    color: $colorWhite;
+    font-size: 10px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
 }
 
 .caption-desc {

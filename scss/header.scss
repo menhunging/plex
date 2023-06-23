@@ -25,6 +25,11 @@
   li {
     position: relative;
 
+    &.active {
+      .menu-link::before {
+        @include transform(scale(1, -1));
+      }
+    }
     &:hover {
       .menu-link::before {
         @include transform(scale(1, -1));
@@ -212,12 +217,18 @@
   }
 }
 
+.burder-block {
+  width: 12px;
+  display: none;
+}
+
 .burger {
   width: 12px;
   height: 8px;
   flex-direction: column;
   justify-content: space-between;
   display: none;
+  z-index: 10;
 
   &.active {
     .burger__line {

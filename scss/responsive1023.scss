@@ -275,4 +275,16 @@
     font-size: 12px;
     line-height: 15px;
   }
+
+  .catalog-item {
+    width: calc(100% / 3 - 24px);
+  }
+
+  .catalog {
+    padding: 30px 0;
+  }
+
+  .product-item__price {
+    font-size: 20px;
+  }
 }

@@ -1,1 +1,44 @@
-@media (max-width: 479px) {}
+@media (max-width: 479px) {
+  .catalog {
+    padding: 20px 0;
+  }
+
+  .catalog-list {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+
+  .catalog-item {
+    width: 100%;
+    margin: 0 0 12px;
+  }
+
+  .product-item {
+    padding: 4px 16px 0;
+  }
+
+  .product-adv {
+    ul {
+    }
+
+    li {
+      height: 16px;
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .product-new {
+    font-size: 10px;
+    line-height: 10px;
+    padding: 4px;
+  }
+
+  .product-item__content {
+    padding: 8px 0;
+  }
+}
