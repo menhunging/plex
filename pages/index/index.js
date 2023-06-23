@@ -13,7 +13,7 @@ $(window).on("resize", function () {
     if ($(window).width() < 1024) {
       initBannersSlider();
     } else {
-      initBannersSlider("destroy");
+      // initBannersSlider("destroy");
     }
   }
 });
@@ -38,7 +38,7 @@ function initBannersSlider(props = false) {
   });
 
   if (props) {
-    bannerDestroy(swiper);
+    // bannerDestroy(swiper);
   }
 }
 
