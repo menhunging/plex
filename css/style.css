@@ -3305,17 +3305,17 @@ section {
     margin-top: 0;
   }
   .product-name {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 16px;
     margin-bottom: 8px;
   }
   .product-article {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 14px;
     margin-bottom: 8px;
   }
   .product-item__info {
-    font-size: 8px;
+    font-size: 10px;
     line-height: 12px;
   }
   .product-item__info p {
@@ -3342,8 +3342,8 @@ section {
     height: 16px;
   }
   .product-adv svg {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
   }
   .product-new {
     font-size: 10px;
