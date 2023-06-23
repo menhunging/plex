@@ -318,6 +318,8 @@
 
   .menu-link {
     display: block;
+    font-size: 12px;
+    line-height: 14px;
   }
 
   .menu li:hover .sub-menu {
@@ -345,7 +347,7 @@
   .burger-mobile__title {
     cursor: pointer;
     color: $colorWhite;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     position: relative;

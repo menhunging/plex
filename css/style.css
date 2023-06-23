@@ -3206,6 +3206,8 @@ section {
   }
   .menu-link {
     display: block;
+    font-size: 12px;
+    line-height: 14px;
   }
   .menu li:hover .sub-menu {
     display: none;
@@ -3226,7 +3228,7 @@ section {
   .burger-mobile__title {
     cursor: pointer;
     color: rgb(255, 255, 255);
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     position: relative;
