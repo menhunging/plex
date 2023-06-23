@@ -844,8 +844,8 @@ div::-webkit-scrollbar-thumb {
 }
 .select-wrapper .select-head label {
   font-weight: 600;
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 12px;
+  line-height: 14px;
   color: #3a3b47;
 }
 .select-wrapper .select-head .error {
@@ -853,6 +853,8 @@ div::-webkit-scrollbar-thumb {
   font-size: 8px;
   line-height: 10px;
   color: #ff0000;
+  position: relative;
+  top: 1px;
 }
 .select-wrapper .ui-selectmenu-button {
   width: 100%;
@@ -3361,6 +3363,9 @@ section {
   }
   .header-bottom__inner {
     gap: 10px;
+  }
+  .product-item__info p {
+    height: auto;
   }
 }
 
