@@ -146,7 +146,7 @@
 }
 
 .favorite-block {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 12px;
   line-height: 15px;
   color: $colorWhite;
@@ -279,7 +279,7 @@
 .cabinet-block__text {
   color: $colorWhite;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: underline;
   text-decoration-color: transparent;
   @include transition(text-decoration 0.3s);

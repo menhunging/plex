@@ -22,6 +22,7 @@ function initBannersSlider(props = false) {
   const swiper = new Swiper(".banner-pictures__slider", {
     slidesPerView: 4,
     centeredSlides: true,
+    initialSlide: 2,
     breakpoints: {
       320: {
         slidesPerView: 2,

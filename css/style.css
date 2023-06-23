@@ -1184,7 +1184,7 @@ div::-webkit-scrollbar-thumb {
 }
 
 .favorite-block {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 12px;
   line-height: 15px;
   color: rgb(255, 255, 255);
@@ -1353,7 +1353,7 @@ div::-webkit-scrollbar-thumb {
 .cabinet-block__text {
   color: rgb(255, 255, 255);
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 600;
   text-decoration: underline;
   text-decoration-color: transparent;
   -webkit-transition: text-decoration 0.3s;
@@ -2069,7 +2069,7 @@ section {
   width: 300%;
 }
 .banner-pictures__box.large::before {
-  opacity: 0;
+  opacity: 0.05;
 }
 .banner-pictures__box.large .invis-text {
   opacity: 1;
