@@ -1311,7 +1311,6 @@ div::-webkit-scrollbar-thumb {
 }
 .burger__line {
   position: relative;
-  pointer-events: none;
   display: block;
   width: 100%;
   height: 1px;
@@ -2897,7 +2896,7 @@ section {
     top: 0;
     width: 20%;
     height: 100%;
-    z-index: 5;
+    z-index: 3;
     pointer-events: none;
     background: linear-gradient(90deg, #193c57 0%, rgba(25, 60, 87, 0) 100%);
   }
@@ -2912,7 +2911,7 @@ section {
     top: 0;
     width: 20%;
     height: 100%;
-    z-index: 5;
+    z-index: 3;
     -moz-transform: scale(-1, 1);
     -ms-transform: scale(-1, 1);
     -webkit-transform: scale(-1, 1);
