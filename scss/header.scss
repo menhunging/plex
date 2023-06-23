@@ -223,8 +223,8 @@
 }
 
 .burger {
-  width: 12px;
-  height: 8px;
+  width: 24px;
+  height: 17px;
   flex-direction: column;
   justify-content: space-between;
   display: none;
@@ -234,14 +234,14 @@
     .burger__line {
       &:nth-child(1) {
         @include transform(rotate(-45deg));
-        top: 5px;
+        top: 9px;
       }
       &:nth-child(2) {
         opacity: 0;
       }
       &:nth-child(3) {
         @include transform(rotate(45deg));
-        top: -2px;
+        top: -7px;
       }
     }
   }
