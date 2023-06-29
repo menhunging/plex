@@ -28,13 +28,17 @@
   .search-link-mobile {
     display: block;
     position: relative;
-    top: 1px;
-    margin-left: 16px;
+    order: -1;
+    margin-left: 11px;
 
     svg {
       width: 20px;
       height: 20px;
     }
+  }
+
+  .adress-block {
+    display: none;
   }
 
   .header-basket__text {
@@ -44,9 +48,6 @@
   .header-basket__basket .icon {
     width: 24px;
     height: 24px;
-    svg {
-      width: 16px;
-    }
   }
 
   .favorite-block {
@@ -69,7 +70,7 @@
   }
 
   .header-bottom__inner {
-    padding: 12px 0;
+    padding: 7px 0;
     gap: 18px;
   }
 
@@ -85,13 +86,15 @@
     display: flex;
   }
 
-  .header-basket__basket .count {
-    width: 16px;
-    height: 16px;
-    font-size: 10px;
-    line-height: 12px;
-    top: -8px;
-    right: -6px;
+  .header-basket__basket {
+    .count {
+      width: 12px;
+      height: 12px;
+      font-size: 8px;
+      line-height: 10px;
+      top: -2px;
+      right: -3px;
+    }
   }
 
   .footer__caption {
@@ -377,6 +380,7 @@
 
   .burder-block {
     display: block;
+    order: -1;
   }
 
   .burger {
@@ -394,10 +398,15 @@
 
   .header-links {
     gap: 10px;
+    flex-direction: row-reverse;
   }
 
   .catalog__controls {
     margin-top: 16px;
+  }
+
+  .search-invis {
+    padding: 15px 10px;
   }
 }
 
@@ -417,5 +426,9 @@
 
   .menu li:hover .sub-menu {
     display: block !important;
+  }
+
+  .search-invis {
+    display: none !important;
   }
 }

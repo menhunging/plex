@@ -40,6 +40,7 @@
   .header-basket {
     font-size: 10px;
     line-height: 12px;
+    padding-right: 15px;
   }
 
   .menu {
@@ -49,10 +50,16 @@
   }
 
   .header-bottom__inner {
-    padding: 20px 15px 20px 0;
+    padding: 15px 0 15px 0;
+  }
+
+  .header-links {
+    gap: 15px;
   }
 
   .search-block {
+    max-width: 280px;
+
     input {
       font-size: 10px;
       line-height: 12px;
@@ -289,7 +296,7 @@
     padding: 40px 0;
   }
 
-  .banner-box{
+  .banner-box {
     font-size: 12px;
     line-height: 16px;
   }
@@ -297,5 +304,26 @@
   .cabinet-block__text {
     font-size: 10px;
     line-height: 12px;
+  }
+
+  .header {
+    .logo-wrapper {
+      width: 118px;
+    }
+  }
+
+  .adress-block {
+    width: 130px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .header-basket__basket .count {
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    line-height: 12px;
+    top: -1px;
+    right: -2px;
   }
 }

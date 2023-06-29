@@ -1,7 +1,7 @@
 $(document).ready(function () {
-  if ($(".burger").length > 0) {
-    $(".burger").on("click", function () {
-      $(this).toggleClass("active");
+  if ($(".burder-block__click").length > 0) {
+    $(".burder-block__click").on("click", function () {
+      $(".burger").toggleClass("active");
       $("body").toggleClass("hidden");
       $(".menu").slideToggle();
     });
@@ -15,6 +15,13 @@ $(document).ready(function () {
     if ($(window).width() <= 767) {
       initBurgerLink();
     }
+  }
+
+  if ($(".search-link-mobile").length > 0) {
+    $(".search-link-mobile").on("click", function () {
+      $(this).toggleClass("active");
+      $(".search-invis").slideToggle();
+    });
   }
 
   if ($(".thisYear").length > 0) {
