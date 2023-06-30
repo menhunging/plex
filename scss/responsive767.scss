@@ -378,7 +378,7 @@
     margin-bottom: 18px;
   }
 
-  .burder-block {
+  .burger-block {
     display: block;
     order: -1;
   }
@@ -388,6 +388,7 @@
       position: fixed;
       right: 15px;
       top: 15px;
+      z-index: 10;
     }
   }
 
@@ -407,6 +408,14 @@
 
   .search-invis {
     padding: 15px 10px;
+  }
+
+  .adress-block--mobile {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 12px;
   }
 }
 
