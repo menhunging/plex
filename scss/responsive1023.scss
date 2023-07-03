@@ -497,4 +497,29 @@
       font-size: 12px;
     }
   }
+
+  .breadcrumbs {
+    padding: 13px 0 13px;
+  }
+
+  .category-list {
+    gap: 21px;
+  }
+
+  .category-item {
+    font-size: 12px;
+    line-height: 15px;
+    height: 80px;
+    width: calc(100% / 4 - 16px);
+  }
+
+  .text-simple {
+    font-size: 14px;
+    line-height: 17px;
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  }
 }

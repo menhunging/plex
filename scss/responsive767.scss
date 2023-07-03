@@ -446,6 +446,43 @@
     right: 20px;
     top: 25px;
   }
+
+  .category-item {
+    width: 100%;
+  }
+
+  .category-list {
+    gap: 0;
+    flex-wrap: nowrap;
+  }
+
+  .breadcrumbs {
+    padding: 16px 0 12px;
+
+    ul {
+      display: none;
+    }
+
+    .back-link {
+      display: flex;
+    }
+  }
+
+  .catergory-section {
+    padding: 17px 0;
+
+    .swiper-controls {
+      display: flex;
+    }
+  }
+
+  .text-simple {
+    h2 {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 16px;
+    }
+  }
 }
 
 // min width
