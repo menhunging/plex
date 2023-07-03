@@ -367,6 +367,12 @@
       top: 50%;
       margin-top: -1px;
     }
+
+    &.active {
+      &::before {
+        @include transform(scale(1, -1));
+      }
+    }
   }
 
   .caption.caption--mobile {
@@ -416,6 +422,29 @@
     gap: 10px;
     margin-bottom: 20px;
     font-size: 12px;
+  }
+
+  .menu-catalog {
+    display: none !important;
+  }
+
+  .burger-block__click {
+    display: none !important;
+  }
+
+  #modal-city .modal__inner {
+    max-width: 680px;
+    padding: 20px;
+  }
+
+  .modal__container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .modal__close {
+    right: 20px;
+    top: 25px;
   }
 }
 

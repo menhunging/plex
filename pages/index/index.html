@@ -33,8 +33,7 @@
                     <div class="header-top__inner">
 
                         <nav class="menu">
-
-                            <div class="adress-block adress-block--mobile">
+                            <div class="adress-block adress-block--mobile" data-modal="modal-city">
                                 <a href="#" class="adress-block__click"></a>
                                 <svg class="icon" width="25" height="25" viewBox="0 0 25 25" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -164,7 +163,7 @@
                         </div>
 
                         <div class="adress-block">
-                            <a href="#" class="adress-block__click"></a>
+                            <a href="#" class="adress-block__click" data-modal="modal-city"></a>
                             <svg class="icon" width="25" height="25" viewBox="0 0 25 25" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -1918,6 +1917,122 @@
                 </div>
             </div>
         </footer>
+    </div>
+
+    <div class="micromodal-slide modal" id="modal-city" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.22499 18.825L5.17499 17.775L10.95 12L5.17499 6.225L6.22499 5.175L12 10.95L17.775 5.175L18.825 6.225L13.05 12L18.825 17.775L17.775 18.825L12 13.05L6.22499 18.825Z"
+                                fill="#002246" />
+                        </svg>
+
+                    </button>
+                    <div class="modal__content" autocomplete="off">
+                        <h2 class="caption">Укажите свой город</h2>
+
+                        <div class="input-city">
+                            <button class="btn-search">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.9 20.975L13.325 14.4C12.825 14.8333 12.242 15.1708 11.576 15.4125C10.91 15.6542 10.2014 15.775 9.45 15.775C7.6473 15.775 6.12163 15.15 4.87298 13.9C3.62433 12.65 3 11.1417 3 9.375C3 7.60833 3.625 6.1 4.875 4.85C6.125 3.6 7.6375 2.975 9.4125 2.975C11.1875 2.975 12.6958 3.6 13.9375 4.85C15.1792 6.1 15.8 7.60958 15.8 9.37875C15.8 10.0929 15.6833 10.7833 15.45 11.45C15.2167 12.1167 14.8667 12.7417 14.4 13.325L21 19.875L19.9 20.975ZM9.425 14.275C10.7792 14.275 11.9302 13.7958 12.8781 12.8375C13.826 11.8792 14.3 10.725 14.3 9.375C14.3 8.025 13.826 6.87083 12.8781 5.9125C11.9302 4.95417 10.7792 4.475 9.425 4.475C8.05695 4.475 6.8941 4.95417 5.93645 5.9125C4.97882 6.87083 4.5 8.025 4.5 9.375C4.5 10.725 4.97882 11.8792 5.93645 12.8375C6.8941 13.7958 8.05695 14.275 9.425 14.275Z"
+                                        fill="#002246" fill-opacity="0.8" />
+                                </svg>
+                            </button>
+                            <input type="text" placeholder="Начните вводить название города">
+                        </div>
+                        <div class="city-list__wrapper">
+                            <div class="city-list">
+                                <ul class="city-list__list">
+                                    <li><a href="#">Абаза</a></li>
+                                    <li><a href="#">Абаза</a></li>
+                                    <li><a href="#">Абаза</a></li>
+                                    <li><a href="#">Абакан</a></li>
+                                    <li><a href="#">Абакан</a></li>
+                                    <li><a href="#">Абакан</a></li>
+                                    <li><a href="#">Абдулино</a></li>
+                                    <li><a href="#">Абдулино</a></li>
+                                    <li><a href="#">Абдулино</a></li>
+                                    <li><a href="#">Абинск</a></li>
+                                    <li><a href="#">Абинск</a></li>
+                                    <li><a href="#">Абинск</a></li>
+                                    <li><a href="#">Агидель</a></li>
+                                    <li><a href="#">Агидель</a></li>
+                                    <li><a href="#">Агидель</a></li>
+                                    <li><a href="#">Абаза</a></li>
+                                    <li><a href="#">Абаза</a></li>
+                                    <li><a href="#">Абаза</a></li>
+                                    <li><a href="#">Абакан</a></li>
+                                    <li><a href="#">Абакан</a></li>
+                                    <li><a href="#">Абакан</a></li>
+                                    <li><a href="#">Абдулино</a></li>
+                                    <li><a href="#">Абдулино</a></li>
+                                    <li><a href="#">Абдулино</a></li>
+                                    <li><a href="#">Абинск</a></li>
+                                    <li><a href="#">Абинск</a></li>
+                                    <li><a href="#">Абинск</a></li>
+                                    <li><a href="#">Агидель</a></li>
+                                    <li><a href="#">Агидель</a></li>
+                                    <li><a href="#">Агидель</a></li>
+
+                                    <li><a href="#">Абаза</a></li>
+                                    <li><a href="#">Абаза</a></li>
+                                    <li><a href="#">Абаза</a></li>
+                                    <li><a href="#">Абакан</a></li>
+                                    <li><a href="#">Абакан</a></li>
+                                    <li><a href="#">Абакан</a></li>
+                                    <li><a href="#">Абдулино</a></li>
+                                    <li><a href="#">Абдулино</a></li>
+                                    <li><a href="#">Абдулино</a></li>
+                                    <li><a href="#">Абинск</a></li>
+                                    <li><a href="#">Абинск</a></li>
+                                    <li><a href="#">Абинск</a></li>
+                                    <li><a href="#">Агидель</a></li>
+                                    <li><a href="#">Агидель</a></li>
+                                    <li><a href="#">Агидель</a></li>
+                                    <li><a href="#">Абаза</a></li>
+                                    <li><a href="#">Абаза</a></li>
+                                    <li><a href="#">Абаза</a></li>
+                                    <li><a href="#">Абакан</a></li>
+                                    <li><a href="#">Абакан</a></li>
+                                    <li><a href="#">Абакан</a></li>
+                                    <li><a href="#">Абдулино</a></li>
+                                    <li><a href="#">Абдулино</a></li>
+                                    <li><a href="#">Абдулино</a></li>
+                                    <li><a href="#">Абинск</a></li>
+                                    <li><a href="#">Абинск</a></li>
+                                    <li><a href="#">Абинск</a></li>
+                                    <li><a href="#">Агидель</a></li>
+                                    <li><a href="#">Агидель</a></li>
+                                    <li><a href="#">Агидель</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="micromodal-slide modal" id="modal-your-city" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+                    <div class="modal__content" autocomplete="off">
+                        <h2 class="caption">Ваш город <strong>Москва?</strong></h2>
+                        <div class="your-city__controls">
+                            <button class="btn" data-micromodal-close>да</button>
+                            <button class="btn btn--white" data-modal="modal-city">изменить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="../../libs/jquery/jquery-3.7.0.min.js"></script>

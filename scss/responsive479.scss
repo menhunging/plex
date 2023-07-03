@@ -57,4 +57,34 @@
   .product-item__info p {
     height: auto;
   }
+
+  .city-list li {
+    width: 100%;
+  }
+
+  .city-list {
+    margin-top: 25px;
+  }
+
+  #modal-your-city {
+    .modal__container {
+      padding: 0;
+      @include border-radius(0);
+    }
+
+    .modal__inner {
+      max-width: 100%;
+      width: 100%;
+      @include border-radius(0);
+      padding: 16px;
+    }
+
+    .modal__overlay {
+      align-items: flex-start;
+    }
+  }
+
+  .your-city__controls {
+    margin-top: 16px;
+  }
 }

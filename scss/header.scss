@@ -6,7 +6,7 @@
 .header-top {
   background-color: #193c57;
   position: relative;
-  z-index: 5;
+  z-index: 7;
 }
 
 .header-top__inner {
@@ -242,6 +242,10 @@
   gap: 10px;
   @include invisLink;
   z-index: auto;
+
+  a {
+    z-index: 5;
+  }
 }
 
 .burger {
@@ -412,6 +416,7 @@
   width: 282px;
   z-index: 9;
   display: none;
+  @include box-shadow(0px 4px 24px 0px rgba(218, 224, 232, 0.6));
 
   .menu-catalog__list {
     & > li {
@@ -504,6 +509,7 @@
     color: rgba(0, 34, 70, 0.7);
     padding: 10px 20px;
     display: none;
+    @include box-shadow(0px 4px 24px 0px rgba(218, 224, 232, 0.6));
 
     &:hover {
       display: flex;

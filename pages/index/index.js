@@ -6,6 +6,10 @@ $(document).ready(function () {
       initBannerHover();
     }
   }
+
+  if ($("#modal-your-city").length > 0) {
+    MicroModal.show("modal-your-city");
+  }
 });
 
 $(window).on("resize", function () {

@@ -326,4 +326,30 @@
     top: -1px;
     right: -2px;
   }
+
+  .menu-catalog {
+    left: 110px;
+  }
+
+  #modal-city {
+    .modal__inner {
+      max-width: 680px;
+      padding: 30px;
+    }
+  }
+
+  .modal__inner .caption {
+    font-size: 18px;
+  }
+
+  .modal__close {
+    right: 30px;
+    top: 33px;
+  }
+
+  #modal-your-city {
+    .caption {
+      font-size: 14px;
+    }
+  }
 }
