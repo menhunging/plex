@@ -113,13 +113,7 @@ const burger = {
         $(this).addClass("not-before");
       } else {
         $(this).on("click", function (e) {
-          if (child.hasClass("submenu-catalog--inner")) {
-            e.preventDefault();
-            $(".submenu-catalog--inner").stop().slideUp();
-            $(".menu-catalog a").removeClass("opened");
-            $(this).addClass("opened");
-            child.stop().slideDown();
-          }
+          handleClick(child, e, $(this));
         });
       }
     });
@@ -135,6 +129,22 @@ const burger = {
 
       $(".menu-catalog").stop().slideToggle();
     });
+
+    function handleClick(child, event, link) {
+      if (child.hasClass("submenu-catalog--inner")) {
+        event.preventDefault();
+
+        if (link.hasClass("opened")) {
+          link.removeClass("opened");
+          child.stop().slideUp();
+        } else {
+          $(".submenu-catalog--inner").stop().slideUp();
+          $(".menu-catalog a").removeClass("opened");
+          link.addClass("opened");
+          child.stop().slideDown();
+        }
+      }
+    }
   },
 };
 
@@ -217,10 +227,6 @@ $(document).ready(function () {
   }
 
   if ($(".product-settings").length > 0) {
-    if ($(".selecVolume").length) {
-      $(".selecVolume").selectmenu();
-    }
-
     $.widget("custom.iconselectmenu", $.ui.selectmenu, {
       _renderItem: function (ul, item) {
         let count = item.element.attr("data-count")
@@ -268,10 +274,16 @@ $(document).ready(function () {
           style: item.element.attr("data-style"),
           class: "icon-option " + item.element.attr("data-class"),
         }).appendTo(wrapper);
+
         buttonItem.append(wrapper);
+
         return buttonItem;
       },
     });
+
+    if ($(".selecVolume").length) {
+      $(".selecVolume").selectmenu();
+    }
 
     if ($(".selecPack").length > 0) {
       $(".selecPack").iconselectmenu();
