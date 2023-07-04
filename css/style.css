@@ -3946,6 +3946,7 @@ section {
   }
   .menu li {
     position: relative;
+    padding: 0 5px;
   }
   .menu li:not(.active):hover .menu-link::before {
     -moz-transform: scale(1, 1);
@@ -3959,6 +3960,7 @@ section {
   }
   .menu .menu__list {
     display: none;
+    padding: 0 10px;
   }
   .menu-link {
     display: block;
@@ -3974,6 +3976,10 @@ section {
     top: 0;
     left: 0;
     padding-bottom: 0;
+  }
+  .sub-menu li {
+    padding-left: 0;
+    padding-right: 0;
   }
   .sub-menu li + li {
     margin-top: 18px;
