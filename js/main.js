@@ -311,10 +311,10 @@ const burger = {
   },
 
   initCatalogBurger() {
-    $(".menu-catalog a").map(() => {
+    $(".menu-catalog a").map(function () {
       let child = $(this).next("ul");
 
-      if (!child.length) {
+      if (child.length <= 0) {
         $(this).addClass("not-before");
       }
     });
