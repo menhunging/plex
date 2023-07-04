@@ -50,9 +50,7 @@ function initBannerSlider(props = false) {
     observer = () => {
       if ($(".banner-pictures__slider").hasClass("swiper-backface-hidden")) {
         $(".banner-pictures__slider").removeClass("swiper-backface-hidden");
-        $(".banner-pictures__slider").addClass("testStyle");
       }
-      // $(".banner-pictures__slider").removeClass("swiper-backface-hidden");
       swiperBanner.destroy(true, true);
     };
   }
