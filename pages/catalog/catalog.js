@@ -1,3 +1,8 @@
+let observer = () => {
+  // функция для работы destroy Swiper
+  console.log("observer");
+};
+
 $(document).ready(function () {
   if ($(".category-slider").length > 0) {
     if ($(window).width() <= 767) {
@@ -16,7 +21,7 @@ $(window).on("resize", function () {
 
 function initCategorySlider() {
   if (!$(".category-slider").hasClass("swiper-initialized")) {
-    var swiperCategory = new Swiper(".category-slider", {
+    const swiperCategory = new Swiper(".category-slider", {
       slidesPerView: 4,
       spaceBetween: 16,
       navigation: {
@@ -45,9 +50,13 @@ function initCategorySlider() {
         init: function (swiper) {},
       },
     });
+
+    observer = () => {
+      swiperCategory.destroy(true, true);
+    };
   }
 }
 
 function destroyCategorySlider() {
-  // swiperCategory.destroy(true, true);
+  observer();
 }

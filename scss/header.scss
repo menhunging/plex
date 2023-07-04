@@ -468,10 +468,6 @@
           & + .submenu-catalog {
             display: flex;
           }
-
-          & + .submenu-catalog--inner {
-            display: block;
-          }
         }
 
         &.not-before {
@@ -510,6 +506,7 @@
     padding: 10px 20px;
     display: none;
     @include box-shadow(0px 4px 24px 0px rgba(218, 224, 232, 0.6));
+    overflow: hidden;
 
     &:hover {
       display: flex;
@@ -524,13 +521,14 @@
         & > a {
           color: #002246;
           &::before {
-            @include transform(rotate(-90deg));
+            @include transform(rotate(90deg));
           }
         }
       }
 
       a {
         padding: 10px 0;
+
         &::before {
           right: -30px;
           @include transform(rotate(90deg));
@@ -538,6 +536,12 @@
 
         &:hover {
           color: #002246;
+        }
+
+        &.opened {
+          &::before {
+            @include transform(rotate(-90deg));
+          }
         }
       }
     }

@@ -473,6 +473,8 @@
 
     .swiper-controls {
       display: flex;
+      position: relative;
+      z-index: 1;
     }
   }
 

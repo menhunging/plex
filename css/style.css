@@ -1639,9 +1639,6 @@ div::-webkit-scrollbar-thumb {
 .menu-catalog ul li a:hover + .submenu-catalog {
   display: flex;
 }
-.menu-catalog ul li a:hover + .submenu-catalog--inner {
-  display: block;
-}
 .menu-catalog ul li a.not-before::before {
   display: none;
 }
@@ -1673,6 +1670,7 @@ div::-webkit-scrollbar-thumb {
   -webkit-box-shadow: 0px 4px 24px 0px rgba(218, 224, 232, 0.6);
   -moz-box-shadow: 0px 4px 24px 0px rgba(218, 224, 232, 0.6);
   box-shadow: 0px 4px 24px 0px rgba(218, 224, 232, 0.6);
+  overflow: hidden;
 }
 .menu-catalog .submenu-catalog:hover {
   display: flex;
@@ -1686,11 +1684,11 @@ div::-webkit-scrollbar-thumb {
   color: #002246;
 }
 .menu-catalog .submenu-catalog li:hover > a::before {
-  -moz-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg);
-  -o-transform: rotate(-90deg);
-  transform: rotate(-90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 .menu-catalog .submenu-catalog li a {
   padding: 10px 0;
@@ -1705,6 +1703,13 @@ div::-webkit-scrollbar-thumb {
 }
 .menu-catalog .submenu-catalog li a:hover {
   color: #002246;
+}
+.menu-catalog .submenu-catalog li a.opened::before {
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 .menu-catalog .submenu-catalog--inner {
   display: none;
@@ -4081,6 +4086,8 @@ section {
   }
   .catergory-section .swiper-controls {
     display: flex;
+    position: relative;
+    z-index: 1;
   }
   .text-simple h2 {
     font-size: 18px;

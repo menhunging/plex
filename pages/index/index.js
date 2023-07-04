@@ -1,7 +1,12 @@
+let observer = () => {
+  // функция для работы destroy Swiper
+  console.log("observer");
+};
+
 $(document).ready(function () {
   if ($(".banner-box").length > 0) {
     if ($(window).width() < 1024) {
-      initBannersSlider();
+      initBannerSlider();
     } else {
       initBannerHover();
     }
@@ -15,34 +20,41 @@ $(document).ready(function () {
 $(window).on("resize", function () {
   if ($(".banner-box").length > 0) {
     if ($(window).width() < 1024) {
-      initBannersSlider();
+      initBannerSlider();
     } else {
-      // initBannersSlider("destroy");
+      destroyBannerSlider();
     }
   }
 });
 
-function initBannersSlider(props = false) {
-  const swiper = new Swiper(".banner-pictures__slider", {
-    slidesPerView: 4,
-    centeredSlides: true,
-    initialSlide: 2,
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
+function initBannerSlider(props = false) {
+  if (!$(".banner-pictures__slider").hasClass("swiper-initialized")) {
+    const swiperBanner = new Swiper(".banner-pictures__slider", {
+      slidesPerView: 4,
+      centeredSlides: true,
+      initialSlide: 2,
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+        },
+        640: {
+          slidesPerView: 3,
+        },
       },
-      640: {
-        slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
       },
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
+    });
 
-  if (props) {
-    // bannerDestroy(swiper);
+    observer = () => {
+      if ($(".banner-pictures__slider").hasClass("swiper-backface-hidden")) {
+        $(".banner-pictures__slider").removeClass("swiper-backface-hidden");
+        $(".banner-pictures__slider").addClass("testStyle");
+      }
+      // $(".banner-pictures__slider").removeClass("swiper-backface-hidden");
+      swiperBanner.destroy(true, true);
+    };
   }
 }
 
@@ -60,7 +72,8 @@ function initBannerHover() {
   });
 }
 
-function bannerDestroy(swiper) {
-  // console.log("destroy");
-  swiper.destroy(true, true);
+function destroyBannerSlider() {
+  if ($(".banner-pictures__slider ").hasClass("swiper-initialized")) {
+    observer();
+  }
 }
