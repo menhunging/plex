@@ -500,28 +500,16 @@ div {
   _:-webkit-any-link,
   :root .modal-open {
     padding-right: 17px;
-
-    .header {
-      width: calc(100% - 17px);
-    }
   }
 
   _:-webkit-any-link,
   :root .hidden {
     padding-right: 17px;
-
-    .header {
-      width: calc(100% - 17px);
-    }
   }
 
   _:-webkit-any-link,
   :root body.compensate-for-scrollbar {
     padding-right: 17px;
-
-    .header {
-      width: calc(100% - 17px);
-    }
   }
 }
 

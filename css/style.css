@@ -730,25 +730,13 @@ div::-webkit-scrollbar-thumb {
   :root .modal-open {
     padding-right: 17px;
   }
-  _:-webkit-any-link .header,
-  :root .modal-open .header {
-    width: calc(100% - 17px);
-  }
   _:-webkit-any-link,
   :root .hidden {
     padding-right: 17px;
   }
-  _:-webkit-any-link .header,
-  :root .hidden .header {
-    width: calc(100% - 17px);
-  }
   _:-webkit-any-link,
   :root body.compensate-for-scrollbar {
     padding-right: 17px;
-  }
-  _:-webkit-any-link .header,
-  :root body.compensate-for-scrollbar .header {
-    width: calc(100% - 17px);
   }
 }
 .link-block {
