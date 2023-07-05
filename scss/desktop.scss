@@ -736,7 +736,7 @@ section {
 .product-item__controls {
   margin-top: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   left: -16px;
   position: relative;
   width: calc(100% + 32px);
@@ -933,7 +933,7 @@ section {
   color: $colorWhite;
   text-align: center;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 22px;
   text-transform: uppercase;
   position: relative;
@@ -1212,8 +1212,8 @@ section {
   .caption {
     cursor: pointer;
     color: #002246;
-    font-size: 24px;
-    line-height: 26px;
+    font-size: 18px;
+    line-height: 22px;
     font-weight: 500;
     display: flex;
     align-items: center;

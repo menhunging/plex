@@ -527,6 +527,7 @@ picture {
 .selectric-scroll ul li:hover {
   background: transparent !important;
   text-decoration-color: #002246;
+  color: #002246;
 }
 
 .modal {
@@ -2787,7 +2788,7 @@ section {
 .product-item__controls {
   margin-top: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   left: -16px;
   position: relative;
   width: calc(100% + 32px);
@@ -3002,7 +3003,7 @@ section {
   color: rgb(255, 255, 255);
   text-align: center;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 22px;
   text-transform: uppercase;
   position: relative;
@@ -3249,8 +3250,8 @@ section {
 .filter-block__title .caption {
   cursor: pointer;
   color: #002246;
-  font-size: 24px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 22px;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -3864,6 +3865,8 @@ section {
   }
   .catalog-sort .select-count {
     margin-left: auto;
+    min-width: 30%;
+    justify-content: flex-end;
   }
   .select-sort__icon {
     width: 24px;
@@ -3928,6 +3931,9 @@ section {
   }
   .btn-mobile-close {
     display: block;
+  }
+  .filter-block__title .caption svg {
+    display: none;
   }
 }
 @media (max-width: 1023px) {
@@ -4344,8 +4350,11 @@ section {
     padding: 0;
   }
   .select-sort {
-    width: 155px;
+    width: 100%;
     min-width: inherit;
+  }
+  .select-sort .selectric-wrapper {
+    width: 155px;
   }
   .catalog-tags {
     margin-top: 18px;

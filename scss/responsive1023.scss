@@ -528,8 +528,12 @@
   }
 
   .select-sort {
-    width: 155px;
+    width: 100%;
     min-width: inherit;
+
+    .selectric-wrapper {
+      width: 155px;
+    }
   }
 
   .catalog-tags {

@@ -400,8 +400,11 @@
 
     .select-count {
       margin-left: auto;
+      min-width: 30%;
+      justify-content: flex-end;
     }
   }
+  
 
   .select-sort__icon {
     width: 24px;
@@ -475,5 +478,9 @@
 
   .btn-mobile-close {
     display: block;
+  }
+
+  .filter-block__title .caption svg{
+    display: none;
   }
 }
