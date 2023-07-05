@@ -574,6 +574,18 @@
   .filter-block {
     width: 290px;
   }
+
+  .category-item {
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+
+      .category-item__text {
+        text-decoration-color: transparent;
+      }
+    }
+  }
 }
 
 // min width

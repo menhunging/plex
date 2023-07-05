@@ -4397,9 +4397,6 @@ section {
     font-size: 12px;
     line-height: 15px;
   }
-  .categoryes-sub li + li {
-    margin-top: 8px;
-  }
   .categoryes-sub a {
     font-size: 12px;
   }
@@ -4873,6 +4870,12 @@ section {
   }
   .filter-block {
     width: 290px;
+  }
+  .category-item:hover::before {
+    opacity: 1;
+  }
+  .category-item:hover .category-item__text {
+    text-decoration-color: transparent;
   }
 }
 @media (min-width: 768px) {
