@@ -3175,9 +3175,12 @@ section {
   font-size: 14px;
   line-height: 17px;
   font-weight: 400;
-  padding: 3px 10px;
+  padding: 5px 10px;
   background-color: #193c57;
   border: 1px solid #193c57;
+}
+.catalog-tags .btn-close {
+  height: 24px;
 }
 .catalog-tags path {
   fill: rgb(255, 255, 255);
@@ -4856,7 +4859,7 @@ section {
   }
   .catalog-tags .btn-clear {
     padding: 2px 9px;
-    height: 25px;
+    height: 30px;
   }
   .catalog-tags .btn-clear svg {
     width: 16px;
