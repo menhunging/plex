@@ -542,10 +542,12 @@
     }
 
     li {
-      padding: 2px 9px;
+      padding: 5px 10px;
     }
 
     .btn-close {
+      height: 16px;
+
       svg {
         width: 16px;
         height: 16px;
@@ -553,9 +555,10 @@
     }
 
     .btn-clear {
-      padding: 2px 9px;
-      height: 30px;
 
+      padding: 5px 10px;
+      height: 29px;
+  
       svg {
         width: 16px;
         height: 16px;

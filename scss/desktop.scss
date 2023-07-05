@@ -636,6 +636,14 @@ section {
       font-weight: 500;
     }
 
+    &:nth-child(3){
+      &:after{
+        left:auto;
+        right: -15px;
+        margin-left: 0;
+      }
+    }
+
     &:hover {
       &::after {
         display: block;

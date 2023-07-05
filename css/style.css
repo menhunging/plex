@@ -2667,6 +2667,11 @@ section {
   font-size: 14px;
   font-weight: 500;
 }
+.product-adv li:nth-child(3):after {
+  left: auto;
+  right: -15px;
+  margin-left: 0;
+}
 .product-adv li:hover::after {
   display: block;
 }
@@ -4851,15 +4856,18 @@ section {
     gap: 11px;
   }
   .catalog-tags li {
-    padding: 2px 9px;
+    padding: 5px 10px;
+  }
+  .catalog-tags .btn-close {
+    height: 16px;
   }
   .catalog-tags .btn-close svg {
     width: 16px;
     height: 16px;
   }
   .catalog-tags .btn-clear {
-    padding: 2px 9px;
-    height: 30px;
+    padding: 5px 10px;
+    height: 29px;
   }
   .catalog-tags .btn-clear svg {
     width: 16px;
