@@ -203,7 +203,9 @@ function initCategorySlider() {
 }
 
 function destroyCategorySlider() {
-  observer();
+  if ($(".category-slider").hasClass("swiper-initialized")) {
+    observer();
+  }
 }
 
 function initFilterAccardeon() {
