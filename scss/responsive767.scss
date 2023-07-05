@@ -490,6 +490,90 @@
       margin-bottom: 16px;
     }
   }
+
+  .select-sort {
+    order: 4;
+  }
+
+  .catalog-sort {
+    gap: 8px;
+  }
+
+  .catalog-page .catalog-item {
+    width: calc(50% - 24px);
+  }
+
+  .btn-sort-mobile {
+    font-size: 12px;
+    gap: 6px;
+  }
+
+  .select-count__text {
+    font-size: 12px;
+  }
+
+  .catalog-sort .select-sort .label {
+    padding-left: 28px;
+  }
+
+  .catalog-sort .selectric .label {
+    font-size: 12px;
+  }
+
+  .catalog-page {
+    padding: 18px 0;
+  }
+
+  .selectric-scroll ul li {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .catalog-sort {
+    gap: 2px 8px;
+  }
+
+  .catalog-tags {
+    margin-top: 12px;
+    gap: 11px;
+
+    ul {
+      gap: 11px;
+    }
+
+    li {
+      padding: 2px 9px;
+    }
+
+    .btn-close {
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    .btn-clear {
+      padding: 2px 9px;
+      height: 25px;
+
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  .product-item__price--sale .old {
+    font-size: 14px;
+  }
+
+  .pagination {
+    display: none;
+  }
+
+  .filter-block {
+    width: 290px;
+  }
 }
 
 // min width

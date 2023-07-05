@@ -88,9 +88,18 @@
     margin-top: 16px;
   }
 
-  #modal-city input{
+  #modal-city input {
     font-size: 11px;
     padding-left: 35px;
     padding-right: 5px;
+  }
+
+  .catalog-page .catalog-item {
+    width: 100%;
+  }
+
+  .catalog__controls .btn {
+    min-width: inherit;
+    width: 100%;
   }
 }

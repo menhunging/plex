@@ -196,8 +196,7 @@ picture {
 .selectric {
   border: 0;
   background: transparent;
-  width: 100%;
-  height: 47px;
+  height: 32px;
   width: 100%;
   @include border-radius(0);
 
@@ -221,6 +220,7 @@ picture {
     background-position: center;
     background-repeat: no-repeat;
     @include transition(all 0.3s);
+    top: 2px;
 
     &::after {
       display: none;
@@ -261,35 +261,39 @@ picture {
 .selectric-items {
   background: transparent;
   background-color: $colorWhite;
-  border: 1px solid $colorBlack;
+  border: 0;
   overflow: hidden;
-  @include border-radius(24px);
-  @include box-shadow(none);
+  @include box-shadow(0px 4px 24px 0px rgba(218, 224, 232, 0.6));
   z-index: -1;
 }
 
 .selectric-scroll {
   border: 0;
+
   ul {
     padding-top: 5px;
 
     li {
-      font-weight: 400;
+      color: #002246;
       font-size: 14px;
-      line-height: 18px;
-      color: #7b7b7b;
+      font-weight: 500;
       padding: 10px 10px;
       @include transition(all 0.3s);
+      text-decoration: underline;
+      text-decoration-color: transparent;
+
+      &.disabled {
+        display: none;
+      }
 
       &.highlighted,
       &.selected {
         background: transparent !important;
-        text-decoration: underline;
-        color: $colorBlack;
+        color: #002246;
       }
       &:hover {
         background: transparent !important;
-        color: $colorBlack;
+        text-decoration-color: #002246;
       }
     }
   }
@@ -488,7 +492,7 @@ div {
   }
 
   scrollbar-color: #b1b3b2 transparent;
-  scrollbar-width: unset;
+  scrollbar-width: thin;
 }
 
 @media (min-width: 1200px) {
@@ -736,6 +740,7 @@ div {
   background-image: url("../img/select-active.svg") !important;
   background-position: right center !important;
   background-repeat: no-repeat !important;
+  background-color: transparent !important;
 }
 
 .ui-selectmenu-menu {
@@ -754,7 +759,8 @@ div {
   }
 }
 
-.ui-menu .ui-menu-item-wrapper.ui-state-active {
+.ui-menu .ui,
+.menu-item-wrapper.ui-state-active {
   background-color: transparent;
 }
 
@@ -803,4 +809,64 @@ div {
 
 .ui-selectmenu-button-open .ui-selectmenu-icon {
   transform: rotate(180deg);
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  li {
+    color: #002246;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #002246;
+    @include transition(all 0.3s);
+
+    &.active,
+    &:hover {
+      background-color: #002246;
+      color: $colorWhite;
+    }
+  }
+}
+
+.irs--round {
+  .irs-handle {
+    cursor: pointer;
+    background-color: #002246 !important;
+    border: 0;
+    @include box-shadow(none);
+    width: 20px;
+    height: 20px;
+    top: 0;
+
+    &:hover {
+      background-color: #002246;
+    }
+  }
+
+  .irs-line {
+    background-color: #e6e9ed;
+    @include border-radius(0);
+    top: 8px;
+  }
+
+  .irs-bar {
+    background-color: #002246;
+    @include border-radius(0);
+    top: 8px;
+  }
 }
