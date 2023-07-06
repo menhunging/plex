@@ -859,3 +859,40 @@ div {
     top: 8px;
   }
 }
+
+.tabs {
+  .tabs-links {
+    margin-bottom: 30px;
+    display: flex;
+  }
+
+  .active {
+    .link-rectangle {
+      color: rgba(65, 192, 235, 1);
+
+      @include before {
+        background-color: #193c57;
+      }
+    }
+  }
+}
+
+.link-rectangle {
+  position: relative;
+  padding: 21px;
+  color: #013956;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  display: inline-block;
+
+  @include before {
+    width: calc(100% - 44px);
+    height: 100%;
+    border: solid 1px #193c57;
+    left: 22px;
+    top: 0;
+    z-index: -1;
+    @include transform(skewX(-36deg));
+  }
+}

@@ -35,6 +35,7 @@
 .btn-favorire {
   path {
     stroke: #8b98a1;
+    @include transition(all 0.3s);
   }
 
   &:hover {

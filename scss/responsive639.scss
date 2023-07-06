@@ -62,4 +62,22 @@
   .catalog-page .catalog-item {
     width: calc(50% - 12px);
   }
+
+  .subscribe-block {
+    .caption-desc {
+      margin-bottom: 10px;
+    }
+
+    &__inner {
+      gap: 10px;
+    }
+
+    input {
+    }
+
+    .btn {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
 }

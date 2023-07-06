@@ -102,4 +102,16 @@
     min-width: inherit;
     width: 100%;
   }
+
+  .product-mobile__tabs {
+    @include before {
+      right: -15px;
+      top: -10px;
+      width: 100px;
+      height: 100%;
+      z-index: 3;
+      pointer-events: none;
+      @include shadow-white;
+    }
+  }
 }

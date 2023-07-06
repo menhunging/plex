@@ -232,6 +232,56 @@ $(document).ready(function () {
     sliders.length && sliderinit();
   }
 
+  if ($(".other-product__slider").length > 0) {
+    const otherSliders = document.querySelectorAll(".other-product__slider");
+
+    let mySwipers = [];
+
+    function sliderinit() {
+      otherSliders.forEach((slider, index) => {
+        if (!slider.swiper) {
+          mySwipers[index] = new Swiper(slider, {
+            slidesPerView: 4,
+            spaceBetween: 24,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            breakpoints: {
+              0: {
+                slidesPerView: 1,
+                spaceBetween: 24,
+              },
+              480: {
+                slidesPerView: 2,
+                spaceBetween: 12,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 24,
+              },
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 24,
+              },
+            },
+            on: {
+              init: function (swiper) {},
+            },
+          });
+        } else {
+          return;
+        }
+      });
+    }
+
+    otherSliders.length && sliderinit();
+  }
+
   if ($(".product-settings").length > 0) {
     $.widget("custom.iconselectmenu", $.ui.selectmenu, {
       _renderItem: function (ul, item) {
@@ -332,6 +382,32 @@ $(document).ready(function () {
       mouseevent: "click",
       attribute: "href",
       animation: true,
+    });
+  }
+
+  if ($(".count-block").length > 0) {
+    $(".count-block").map(function () {
+      let plus = $(this).find(".count-plus");
+      let minus = $(this).find(".count-minus");
+      let input = $(this).find(".input-count");
+      let count = $(this).find(".input-count").val();
+
+      plus.on("click", function (e) {
+        e.preventDefault();
+        count++;
+        input.val(count);
+      });
+
+      minus.on("click", function (e) {
+        e.preventDefault();
+        count--;
+
+        if (count < 0) {
+          count = 0;
+        }
+
+        input.val(count);
+      });
     });
   }
 });

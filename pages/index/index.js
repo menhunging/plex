@@ -27,14 +27,14 @@ $(window).on("resize", function () {
   }
 });
 
-function initBannerSlider(props = false) {
+function initBannerSlider() {
   if (!$(".banner-pictures__slider").hasClass("swiper-initialized")) {
     const swiperBanner = new Swiper(".banner-pictures__slider", {
       slidesPerView: 4,
       centeredSlides: true,
       initialSlide: 2,
       breakpoints: {
-        320: {
+        0: {
           slidesPerView: 2,
         },
         640: {
