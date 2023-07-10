@@ -658,4 +658,85 @@
       max-width: 307px;
     }
   }
+
+  .basket__inner .basket-table {
+    width: calc(100% - 320px);
+    max-width: 100%;
+  }
+
+  .basket-order {
+    width: 302px;
+  }
+
+  .basket-table .th {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .basket-table {
+    .picture {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .basket-table__article {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .basket-table__name {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .basket-table .basket-delete {
+    font-size: 12px;
+    line-height: 15px;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .basket__inner .caption {
+    margin-bottom: 12px;
+  }
+
+  .basket-table .basket-clear {
+    white-space: normal;
+  }
+
+  .basket-table .th:first-child,
+  .basket-table .td:first-child {
+    width: 35%;
+  }
+
+  .basket-order__caption {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .basket-order__list {
+    li {
+      font-size: 16px;
+      line-height: 20px;
+
+      &.result {
+        font-size: 16px;
+        padding-top: 16px;
+
+        .basket-order__title {
+          font-size: 16px;
+        }
+
+        .basket-order__price {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .total-weight {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }

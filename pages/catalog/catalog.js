@@ -1,8 +1,3 @@
-let observer = () => {
-  // функция для работы destroy Swiper
-  console.log("observer");
-};
-
 const filter = {
   open(target) {
     destroyFilterAccardeon();

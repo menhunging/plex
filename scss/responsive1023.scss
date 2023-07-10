@@ -764,4 +764,45 @@
       max-width: 290px;
     }
   }
+
+  .basket__inner .basket-table {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .basket-table .basket-clear {
+    white-space: nowrap;
+  }
+
+  .basket__inner .caption {
+    margin-bottom: 9px;
+  }
+
+  .basket-table .basket-delete {
+    flex-direction: row;
+  }
+
+  .basket-table .td {
+    padding: 10px 0;
+  }
+
+  .basket-order {
+    width: 100%;
+    margin-top: 8px;
+    position: relative;
+  }
+
+  .basket-order__controls {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+    .btn {
+      width: calc(100% - 8px);
+
+      & + .btn {
+        margin-top: 0;
+      }
+    }
+  }
 }
