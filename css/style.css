@@ -4739,6 +4739,7 @@ section {
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
+  text-decoration-skip-ink: none;
   text-decoration: underline;
   text-decoration-color: transparent;
   -webkit-transition: text-decoration 0.3s;
