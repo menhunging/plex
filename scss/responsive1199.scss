@@ -338,8 +338,15 @@
     }
   }
 
-  .modal__inner .caption {
-    font-size: 18px;
+  .modal__inner {
+    .caption {
+      font-size: 18px;
+    }
+
+    .modals-caption {
+      font-size: 30px;
+      line-height: 37px;
+    }
   }
 
   .modal__close {
@@ -738,5 +745,193 @@
   .total-weight {
     font-size: 12px;
     line-height: 15px;
+  }
+
+  .checkout-list {
+    width: calc(100% - 320px);
+    max-width: 100%;
+
+    .basket-table {
+      width: 100%;
+    }
+  }
+
+  .checkout-item__head {
+    gap: 13px;
+
+    .number {
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    .title {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    .btn-change {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  .checkout-item {
+    padding: 16px;
+  }
+
+  .checkout-item__body {
+    padding-top: 6px;
+  }
+
+  .input-list label {
+    font-size: 14px;
+    line-height: 17px;
+    padding-top: 16px;
+  }
+
+  .input-list .label {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 15px 10px;
+  }
+
+  .input-list .input-item__form {
+    width: calc(50% - 7px);
+  }
+
+  .checkout-controls .btnCheck-next,
+  .checkout-controls .btnCheck-prev {
+    font-size: 14px;
+  }
+
+  .checkout-controls {
+    margin-top: 15px;
+  }
+
+  .checkout-list .check-list .chek-item label {
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 35px;
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .chek-item + .chek-item {
+    margin-top: 16px;
+  }
+
+  .checkout-list .check-list .chek-item label::after,
+  .checkout-list .check-list .chek-item label::before {
+    left: 0px;
+    top: 4px;
+  }
+
+  .checkout-list .delivery-info {
+    font-size: 12px;
+    padding-left: 36px;
+    padding-top: 9px;
+    gap: 9px;
+  }
+
+  #modal-success-moderations,
+  #modal-success-registation,
+  #modal-success,
+  #modal-login,
+  #modal-authorization,
+  #modal-your-details,
+  #modal-checkout {
+    .modal__inner {
+      max-width: 500px;
+    }
+  }
+
+  .modal-custom {
+    padding: 70px 0 30px;
+  }
+
+  .modal-checkout {
+    max-width: 323px;
+  }
+
+  .modal-checkout__controls {
+    margin: 30px auto 0;
+  }
+
+  .modal-checkout__links {
+    margin-top: 20px;
+  }
+
+  .modal-checkout__links a {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .modal-yourDetails .input-form {
+    max-width: 326px;
+    margin-top: 30px;
+  }
+
+  .modal__content .chek-item {
+    label {
+      font-size: 12px;
+      line-height: 15px;
+
+      &:after,
+      &::before {
+        top: 0;
+      }
+    }
+  }
+
+  .modal__content__text {
+    margin-top: 30px;
+    font-size: 12px;
+    line-height: 15px;
+    max-width: 326px;
+  }
+
+  .modal-registartions {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .modal-registartions {
+    .tabs {
+      margin-top: 30px;
+
+      .tabs-links {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .modal-registartions .tabs-links a {
+    height: 55px;
+  }
+
+  .file-load__doc {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .file-load__text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .tabs-inner__links {
+    gap: 30px;
+
+    li {
+      a {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
   }
 }

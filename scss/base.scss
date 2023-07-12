@@ -8,6 +8,10 @@ body {
   &.hidden {
     overflow: hidden;
   }
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 .container {
@@ -387,6 +391,86 @@ picture {
       @include border-radius(10px);
     }
   }
+
+  .input-form {
+    .label {
+      color: #002246;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      padding: 10px 16px;
+      margin: 0;
+    }
+
+    .selectric-wrapper {
+      width: 100%;
+
+      &.selectric-hover {
+        .selectric {
+          border-color: rgba(204, 216, 222, 0.5);
+        }
+      }
+
+      &.selectric-above {
+        .selectric-items {
+          border: solid 1px rgba(204, 216, 222, 0.5);
+        }
+      }
+    }
+
+    .selectric {
+      @include border-radius(5px);
+      border: 1px solid rgba(204, 216, 222, 0.5);
+      background-color: $colorWhite;
+      height: 47px;
+    }
+
+    .selectric-items {
+      border: solid 1px rgba(204, 216, 222, 0.5);
+      @include border-radius(5px);
+    }
+
+    .selectric-scroll ul {
+      padding-top: 0;
+    }
+
+    .button {
+      background-image: url("../img/arrow-selectic-gray.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      top: 0;
+    }
+
+    .input-item {
+      & + .input-item {
+        margin-top: 20px;
+      }
+
+      & + .btn {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  textarea,
+  input {
+    color: #002246;
+  }
+
+  .chek-item {
+    margin: 20px 0;
+
+    label {
+      display: block;
+      font-size: 14px;
+      line-height: 15px;
+
+      &::after,
+      &::before {
+        top: 0;
+      }
+    }
+  }
 }
 
 .modal__inner {
@@ -404,11 +488,34 @@ picture {
     font-weight: 500;
     line-height: 29px;
   }
+
+  .modals-caption {
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+  }
 }
 
 .micromodal-slide .modal__container,
 .micromodal-slide .modal__overlay {
   will-change: inherit;
+}
+
+.modal__content__text {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #002246;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+
+  & + .input-form {
+    margin-top: 20px !important;
+  }
 }
 
 #modal-city {
@@ -462,6 +569,39 @@ picture {
       font-weight: 600;
     }
   }
+}
+
+#modal-success-moderations,
+#modal-success-registation,
+#modal-success,
+#modal-login,
+#modal-authorization,
+#modal-your-details,
+#modal-checkout {
+  .modal__inner {
+    max-width: 728px;
+  }
+}
+
+#modal-registrations {
+  .modal__inner {
+    max-width: 980px;
+  }
+}
+
+#modal-login {
+  .modal-checkout__links {
+    li {
+      &:first-child {
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.modal-custom {
+  padding: 80px 0 40px;
 }
 
 .your-city__controls {

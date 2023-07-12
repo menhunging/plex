@@ -442,6 +442,13 @@
     padding: 20px;
   }
 
+  .modal__inner {
+    .modals-caption {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
   .modal__container {
     padding-left: 15px;
     padding-right: 15px;
@@ -814,7 +821,7 @@
   }
 
   .basket__inner .caption {
-    margin-bottom: 5px;
+    margin-bottom: 16px;
   }
 
   .basket-table {
@@ -868,6 +875,13 @@
         align-items: center;
       }
 
+      &.td-count {
+        grid-column: 2/2;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
       &:last-child {
         width: 100%;
         grid-column: 2/2;
@@ -879,6 +893,7 @@
     .mobile-title {
       display: block;
       margin-right: auto;
+      font-weight: 500;
     }
 
     .basket-table__box {
@@ -939,7 +954,241 @@
 
     .btn {
       width: 100%;
+      max-width: 100%;
     }
+  }
+
+  .checkout-item__head .number {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .checkout-item__head .title {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .checkout-item__head {
+    gap: 9px;
+  }
+
+  .checkout-list {
+    .basket-table {
+      .tr {
+        padding: 8px 0;
+        grid-template-columns: 89px 1fr;
+      }
+
+      .picture {
+        width: 78px;
+        height: 78px;
+        left: -90px;
+      }
+
+      .price-basket {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .input-list label {
+    width: 100%;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 8px;
+    padding-top: 0;
+  }
+
+  .input-list .input-item__form {
+    width: 100%;
+  }
+
+  .checkout-item__body {
+    padding-top: 16px;
+  }
+
+  .checkout-controls .btnCheck-next,
+  .checkout-controls .btnCheck-prev {
+    font-size: 12px;
+    gap: 10px;
+  }
+
+  .input-list .input-item textarea {
+    height: 75px;
+  }
+
+  .checkout-list .check-list .chek-item label {
+    font-size: 12px;
+    line-height: 15px;
+    padding-left: 29px;
+    gap: 10px;
+  }
+
+  .checkout-list .delivery-info {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  #modal-success-moderations,
+  #modal-success-registation,
+  #modal-success,
+  #modal-login,
+  #modal-authorization,
+  #modal-your-details,
+  #modal-checkout {
+    .modal__inner {
+      max-width: 290px;
+    }
+  }
+
+  #modal-registrations {
+    .modal__inner {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  .modal-custom {
+    padding: 48px 0 16px;
+  }
+
+  .modal-checkout .btn + .btn {
+    margin-top: 16px;
+  }
+
+  .modal-checkout {
+  }
+
+  .modal-checkout__controls {
+    max-width: 258px;
+    margin-top: 16px;
+  }
+
+  .modal-checkout__links {
+    margin-top: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 0;
+  }
+
+  .modal-yourDetails .input-form {
+    max-width: 258px;
+    margin-top: 16px;
+  }
+
+  .modal__content__text {
+    margin-top: 16px;
+    max-width: 258px;
+  }
+
+  .modal-registartions {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .registartion-col {
+    width: 100%;
+
+    & + .registartion-col {
+      margin-top: 16px;
+    }
+  }
+
+  .registartion-row .input-item + .input-item {
+    margin-top: 16px;
+  }
+
+  .modal-registartions {
+    .tabs {
+      position: relative;
+
+      @include before {
+        right: -15px;
+        top: -10px;
+        width: 100px;
+        height: 50px;
+        z-index: 4;
+        pointer-events: none;
+        @include shadow-white;
+      }
+
+      @include after {
+        left: -15px;
+        top: -10px;
+        width: 100px;
+        height: 50px;
+        z-index: 4;
+        pointer-events: none;
+        @include shadow-white;
+        @include transform(scale(-1, 1));
+      }
+
+      .tabs-links {
+        display: block;
+        margin-bottom: 6px;
+        margin-left: 0;
+        margin-right: 0;
+        overflow: auto;
+        white-space: nowrap;
+        padding-bottom: 10px;
+        position: relative;
+
+        &::-webkit-scrollbar {
+          background-color: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          background-color: transparent;
+        }
+
+        scrollbar-color: transparent transparent;
+        scrollbar-width: thin;
+
+        li {
+          display: inline-block;
+          vertical-align: middle;
+          width: 184px;
+        }
+
+        a {
+          white-space: normal;
+        }
+      }
+    }
+  }
+
+  .registartion-controls .rightSide {
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .registartion-controls .leftSide {
+    width: 100%;
+  }
+
+  .registartion-controls .chek-item + .chek-item {
+    margin-top: 16px;
+  }
+
+  .file-load label {
+    gap: 10px;
+  }
+
+  .tabs-inner__links {
+    margin-bottom: 16px;
+    gap: 16px;
+  }
+
+  .modal-registartions .tabs.tabsInner {
+    margin-top: 0;
+  }
+
+  .registartion-col + .caption {
+    padding-top: 16px;
+    margin-top: 16px;
   }
 }
 

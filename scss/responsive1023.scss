@@ -471,8 +471,15 @@
     }
   }
 
-  .modal__inner .caption {
-    font-size: 16px;
+  .modal__inner {
+    .caption {
+      font-size: 16px;
+    }
+
+    .modals-caption {
+      font-size: 24px;
+      line-height: 29px;
+    }
   }
 
   .modal__close {
@@ -765,6 +772,10 @@
     }
   }
 
+  .basket__inner {
+    padding-bottom: 40px;
+  }
+
   .basket__inner .basket-table {
     width: 100%;
     max-width: 100%;
@@ -775,7 +786,7 @@
   }
 
   .basket__inner .caption {
-    margin-bottom: 9px;
+    margin-bottom: 20px;
   }
 
   .basket-table .basket-delete {
@@ -799,9 +810,164 @@
 
     .btn {
       width: calc(100% - 8px);
+      max-width: 345px;
 
       & + .btn {
         margin-top: 0;
+      }
+    }
+  }
+
+  .checkout-list {
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .checkout-item + .checkout-item {
+    margin-top: 10px;
+  }
+
+  .input-list {
+    .selectric {
+      height: 45px;
+    }
+
+    .input-item {
+      input {
+        height: 45px;
+      }
+
+      textarea {
+        padding-top: 13px;
+      }
+    }
+  }
+
+  #modal-success-moderations,
+  #modal-success-registation,
+  #modal-success,
+  #modal-login,
+  #modal-authorization,
+  #modal-your-details,
+  #modal-checkout {
+    .modal__inner {
+      max-width: 400px;
+    }
+  }
+
+  #modal-registrations {
+    .modal__inner {
+      max-width: 738px;
+    }
+  }
+
+  .modal-custom {
+    padding: 60px 0 20px;
+  }
+
+  .modal-checkout .btn + .btn {
+    margin-top: 16px;
+  }
+
+  .modal-checkout {
+  }
+
+  .modal-checkout__controls {
+    max-width: 282px;
+    margin-top: 20px;
+  }
+
+  .modal-checkout__links {
+    margin-top: 16px;
+  }
+
+  .modal-yourDetails .input-form {
+    max-width: 282px;
+    margin-top: 20px;
+  }
+
+  .modal__content {
+    .input-form {
+      .label {
+        font-size: 14px;
+        line-height: 17px;
+        padding: 13px 13px;
+      }
+
+      .input-item {
+        & + .input-item {
+          margin-top: 16px;
+        }
+      }
+    }
+
+    input {
+      font-size: 14px;
+      line-height: 17px;
+      height: 45px;
+    }
+  }
+
+  .modal__content__text {
+    margin-top: 20px;
+
+    & + .input-form {
+      margin-top: 16px !important;
+    }
+  }
+
+  .modal-registartions {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .tabs {
+      margin-top: 20px;
+
+      .tabs-links {
+        max-width: 552px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+
+        a {
+          height: 40px;
+        }
+      }
+    }
+  }
+
+  .registartion-row .caption {
+    margin-bottom: 16px;
+  }
+
+  .registartion-controls {
+    margin-top: 16px;
+  }
+
+  .file-load label {
+    gap: 15px;
+  }
+
+  .file-load__doc {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .file-load__text {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .tabs-inner__links {
+    position: relative;
+    z-index: 5;
+    gap: 20px;
+    margin-bottom: 20px;
+
+    li {
+      a {
+        font-size: 14px;
+        line-height: 17px;
       }
     }
   }

@@ -363,7 +363,9 @@ $(document).ready(function () {
       },
 
       onClose: () => {
-        $("body").removeClass("modal-open");
+        setTimeout(() => {
+          $("body").removeClass("modal-open");
+        }, 300);
       },
     });
 
@@ -507,4 +509,16 @@ function destroyBannerSlider() {
   if ($(".banner-pictures__slider ").hasClass("swiper-initialized")) {
     observer();
   }
+}
+
+function openModal(modal) {
+  MicroModal.show(modal);
+  $("body").addClass("modal-open");
+}
+
+function closeModal(modal) {
+  MicroModal.hida(modal);
+  setTimeout(() => {
+    $("body").removeClass("modal-open");
+  }, 300);
 }
