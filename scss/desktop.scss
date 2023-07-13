@@ -2442,15 +2442,38 @@ section {
   background-color: $colorWhite;
   @include box-shadow(0px 4px 24px 0px rgba(218, 224, 232, 0.6));
   padding: 20px;
+  overflow: hidden;
 
   &:first-child {
     .checkout-item__body {
       display: block;
     }
+
+    .btnCheck-prev {
+      display: none;
+      pointer-events: none;
+      opacity: 0;
+    }
+  }
+
+  &:last-child {
+    .btnCheck-next {
+      display: none;
+      pointer-events: none;
+      opacity: 0;
+    }
   }
 
   & + .checkout-item {
     margin-top: 20px;
+  }
+
+  &.opened {
+    .btn-change {
+      opacity: 0;
+      pointer-events: none;
+      @include transform(translateX(250px));
+    }
   }
 }
 
@@ -2476,6 +2499,7 @@ section {
     font-weight: 500;
     line-height: 24px;
   }
+
   .title {
     color: #002246;
     font-size: 18px;
@@ -2491,8 +2515,10 @@ section {
     font-weight: 500;
     line-height: 20px;
     text-decoration: underline;
-    @include transition(text-decoration 0.3s);
+    $trans: text-decoration 0.3s, transform 0.3s, opacity 0.3s;
+    @include transition($trans);
     margin-left: auto;
+    @include transform(translateX(0));
 
     &:hover {
       text-decoration-color: transparent;
@@ -2797,8 +2823,10 @@ section {
 
 .tabsInner {
 }
+
 .tabs {
 }
+
 .tabs-inner__links {
   display: flex;
   flex-wrap: wrap;
@@ -2828,6 +2856,7 @@ section {
     }
   }
 }
+
 .tabs-inner__body {
 }
 
