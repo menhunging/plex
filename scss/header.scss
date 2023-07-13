@@ -63,6 +63,12 @@
     top: 50%;
     margin-top: -1px;
   }
+
+  &.not-arrow {
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .sub-link {

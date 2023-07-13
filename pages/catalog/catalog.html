@@ -1023,7 +1023,8 @@
                                             </div>
                                             <div class="product-item__controls">
                                                 <a href="#" class="btn">Купить</a>
-                                                <a href="#" class="btn btn--white">в корзину</a>
+                                                <a href="#" class="btn btn--white" data-modal="modal-addBasket">в
+                                                    корзину</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1154,7 +1155,8 @@
                                             </div>
                                             <div class="product-item__controls">
                                                 <a href="#" class="btn">Купить</a>
-                                                <a href="#" class="btn btn--white">в корзину</a>
+                                                <a href="#" class="btn btn--white" data-modal="modal-addBasket">в
+                                                    корзину</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1285,7 +1287,8 @@
                                             </div>
                                             <div class="product-item__controls">
                                                 <a href="#" class="btn">Купить</a>
-                                                <a href="#" class="btn btn--white">в корзину</a>
+                                                <a href="#" class="btn btn--white" data-modal="modal-addBasket">в
+                                                    корзину</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1416,7 +1419,8 @@
                                             </div>
                                             <div class="product-item__controls">
                                                 <a href="#" class="btn">Купить</a>
-                                                <a href="#" class="btn btn--white">в корзину</a>
+                                                <a href="#" class="btn btn--white" data-modal="modal-addBasket">в
+                                                    корзину</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1547,7 +1551,8 @@
                                             </div>
                                             <div class="product-item__controls">
                                                 <a href="#" class="btn">Купить</a>
-                                                <a href="#" class="btn btn--white">в корзину</a>
+                                                <a href="#" class="btn btn--white" data-modal="modal-addBasket">в
+                                                    корзину</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1678,7 +1683,8 @@
                                             </div>
                                             <div class="product-item__controls">
                                                 <a href="#" class="btn">Купить</a>
-                                                <a href="#" class="btn btn--white">в корзину</a>
+                                                <a href="#" class="btn btn--white" data-modal="modal-addBasket">в
+                                                    корзину</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1809,7 +1815,8 @@
                                             </div>
                                             <div class="product-item__controls">
                                                 <a href="#" class="btn">Купить</a>
-                                                <a href="#" class="btn btn--white">в корзину</a>
+                                                <a href="#" class="btn btn--white" data-modal="modal-addBasket">в
+                                                    корзину</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1940,7 +1947,8 @@
                                             </div>
                                             <div class="product-item__controls">
                                                 <a href="#" class="btn">Купить</a>
-                                                <a href="#" class="btn btn--white">в корзину</a>
+                                                <a href="#" class="btn btn--white" data-modal="modal-addBasket">в
+                                                    корзину</a>
                                             </div>
                                         </div>
                                     </div>
@@ -2071,7 +2079,8 @@
                                             </div>
                                             <div class="product-item__controls">
                                                 <a href="#" class="btn">Купить</a>
-                                                <a href="#" class="btn btn--white">в корзину</a>
+                                                <a href="#" class="btn btn--white" data-modal="modal-addBasket">в
+                                                    корзину</a>
                                             </div>
                                         </div>
                                     </div>
@@ -2399,6 +2408,77 @@
                         <div class="your-city__controls">
                             <button class="btn" data-micromodal-close>да</button>
                             <button class="btn btn--white" data-modal="modal-city">изменить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="micromodal-slide modal" id="modal-addBasket" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true">
+                <div class="modal__inner">
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.22499 18.825L5.17499 17.775L10.95 12L5.17499 6.225L6.22499 5.175L12 10.95L17.775 5.175L18.825 6.225L13.05 12L18.825 17.775L17.775 18.825L12 13.05L6.22499 18.825Z"
+                                fill="#002246" />
+                        </svg>
+
+                    </button>
+                    <div class="modal__content" autocomplete="off">
+                        <div class="modal-addBasket modal-custom">
+                            <h2 class="caption modals-caption">Товар добавлен в корзину!</h2>
+
+                            <div class="product-small">
+                                <div class="basket-table">
+                                    <div class="table">
+                                        <div class="tbody">
+                                            <div class="tr">
+                                                <div class="td">
+                                                    <div class="basket-table__product">
+                                                        <picture class="picture">
+                                                            <a href="#"></a>
+                                                            <source type="image/webp"
+                                                                srcset="../../img/pic-basket1.webp">
+                                                            <img src="../../img/pic-basket1.png" alt="">
+                                                        </picture>
+                                                        <div class="basket-table__body">
+                                                            <span class="basket-table__article">Артикул: 123456</span>
+                                                            <a href="#" class="basket-table__name">Берит</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="td">
+                                                    <span class="mobile-title">Объем:</span>
+                                                    <span class="basket-table__volume">0,5 л</span>
+                                                </div>
+                                                <div class="td">
+                                                    <span class="basket-table__box">
+                                                        <span class="mobile-title">Фасовка:</span>
+                                                        <img src="../../img/ic-thing.svg" alt="">
+                                                        Штука
+                                                    </span>
+                                                </div>
+                                                <div class="td">
+                                                    <div class="price-basket">
+                                                        <span class="old">568 ₽</span>
+                                                        <span class="cur">299 ₽</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-checkout__controls">
+                                <a href="#" class="btn" data-micromodal-close>Продолжить покупки</a>
+                                <a href="#" class="btn btn--white">перейти в корзину</a>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -843,6 +843,7 @@
     }
   }
 
+  #modal-back-call,
   #modal-success-moderations,
   #modal-success-registation,
   #modal-success,
@@ -970,5 +971,19 @@
         line-height: 17px;
       }
     }
+  }
+
+  #modal-addBasket {
+    .modal__inner {
+      max-width: 400px;
+    }
+  }
+
+  .modal-addBasket .modal-checkout__controls {
+    max-width: 330px;
+  }
+
+  .product-small {
+    max-width: 330px;
   }
 }

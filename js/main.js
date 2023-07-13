@@ -161,6 +161,10 @@ const burger = {
 
 $(document).ready(function () {
   if ($(".burger-block__click").length > 0) {
+    $(".menu-link").map(function () {
+      !$(this).next(".sub-menu").length && $(this).addClass("not-arrow");
+    });
+
     if ($(window).width() <= 767) {
       burger.initClick();
       burger.initLink();
@@ -430,6 +434,10 @@ $(document).ready(function () {
 
   if ($("#modal-your-city").length > 0) {
     // MicroModal.show("modal-your-city");
+  }
+
+  if ($(".header-top__inner").length > 0) {
+    $(".menu-link");
   }
 });
 
