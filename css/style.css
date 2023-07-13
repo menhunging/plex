@@ -1043,7 +1043,7 @@ div::-webkit-scrollbar-thumb {
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
-  padding: 0 10px;
+  padding: 0 16px;
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
@@ -1052,12 +1052,12 @@ div::-webkit-scrollbar-thumb {
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
-  padding: 0 6px 0 25px;
+  padding: 0 6px 0 30px;
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
 .select-wrapper .ui-selectmenu-text-icon .icon-option {
-  left: 3px;
+  left: 8px;
 }
 .select-wrapper .ui-selectmenu-button.ui-button .ui-icon {
   background-image: url("../img/arrow-select.svg");
@@ -1078,7 +1078,7 @@ div::-webkit-scrollbar-thumb {
   background-color: #fff;
 }
 .ui-selectmenu-menu .ui-menu {
-  padding: 0 7px;
+  padding: 0 12px;
   border: solid 1px rgba(9, 93, 186, 0.2);
   border-top: 0;
 }
@@ -1244,6 +1244,13 @@ div::-webkit-scrollbar-thumb {
   -webkit-transform: skewX(-36deg);
   -o-transform: skewX(-36deg);
   transform: skewX(-36deg);
+}
+.link-rectangle:hover {
+  color: #013956;
+}
+.link-rectangle:hover::before {
+  background-color: #cbd4db;
+  border-color: #cbd4db;
 }
 
 .btn {
@@ -3731,8 +3738,11 @@ section {
   font-size: 14px;
   line-height: 20px;
 }
+.product-section .select-wrapper .ui-selectmenu-menu .ui-menu {
+  padding: 0 12px;
+}
 .product-section .select-wrapper .ui-selectmenu-button {
-  padding: 4px 0;
+  padding: 10px 0;
 }
 .product-section .select-wrapper .ui-selectmenu-button.ui-button .ui-icon {
   top: 50%;
@@ -7379,6 +7389,9 @@ section {
     padding-top: 16px;
     margin-top: 16px;
   }
+  .product-section .select-wrapper .ui-selectmenu-button {
+    padding: 8px 0;
+  }
 }
 @media (min-width: 768px) {
   .menu {
@@ -7454,6 +7467,10 @@ section {
     gap: 10px;
   }
   .subscribe-block .btn {
+    width: 100%;
+    max-width: 100%;
+  }
+  .price-block__wrap {
     width: 100%;
     max-width: 100%;
   }

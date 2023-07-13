@@ -1544,15 +1544,19 @@ section {
     margin-bottom: 16px;
   }
 
-  .select-wrapper {
+ .select-wrapper {
     .ui-selectmenu-text-icon,
     .ui-selectmenu-text {
       font-size: 14px;
       line-height: 20px;
     }
 
+    .ui-selectmenu-menu .ui-menu {
+      padding: 0 12px;
+    }
+
     .ui-selectmenu-button {
-      padding: 4px 0;
+      padding: 10px 0;
     }
 
     .ui-selectmenu-button.ui-button .ui-icon {

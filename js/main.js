@@ -343,7 +343,9 @@ $(document).ready(function () {
     });
 
     if ($(".selecVolume").length) {
-      $(".selecVolume").selectmenu();
+      $(".selecVolume").selectmenu({
+        transferClasses: true,
+      });
     }
 
     if ($(".selecPack").length > 0) {
