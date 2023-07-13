@@ -4767,7 +4767,9 @@ section {
 .modal-checkout .modal-checkout__controls {
   width: 100%;
   max-width: 326px;
-  margin: 40px auto 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
 }
 .modal-checkout .btn {
   width: 100%;
@@ -5817,6 +5819,9 @@ section {
     height: 140px;
     left: -140px;
   }
+  .modal-checkout .modal-checkout__controls {
+    margin-top: 30px;
+  }
 }
 @media (max-width: 1023px) {
   .callback-link__mobile {
@@ -6573,6 +6578,9 @@ section {
   }
   .product-small {
     max-width: 330px;
+  }
+  .modal-checkout .modal-checkout__controls {
+    margin-top: 20px;
   }
 }
 @media (max-width: 767px) {
@@ -7441,10 +7449,6 @@ section {
     margin-top: 16px;
     max-width: 258px;
   }
-  .modal-registartions {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
   .registartion-col {
     width: 100%;
   }
@@ -7453,6 +7457,10 @@ section {
   }
   .registartion-row .input-item + .input-item {
     margin-top: 16px;
+  }
+  .modal-registartions {
+    padding-left: 16px;
+    padding-right: 16px;
   }
   .modal-registartions .tabs {
     position: relative;
@@ -7466,18 +7474,11 @@ section {
     transition: all 0.3s;
     right: -15px;
     top: -10px;
-    width: 100px;
+    width: 40px;
     height: 50px;
     z-index: 4;
     pointer-events: none;
-    background: rgba(255, 255, 255, 0);
-    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgb(255, 255, 255)));
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
-    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
-    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1 );
+    background: linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0) 100%);
   }
   .modal-registartions .tabs::after {
     content: "";
@@ -7488,18 +7489,11 @@ section {
     transition: all 0.3s;
     left: -15px;
     top: -10px;
-    width: 100px;
+    width: 40px;
     height: 50px;
     z-index: 4;
     pointer-events: none;
-    background: rgba(255, 255, 255, 0);
-    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgb(255, 255, 255)));
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
-    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
-    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#ffffff", GradientType=1 );
+    background: linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0) 100%);
     -moz-transform: scale(-1, 1);
     -ms-transform: scale(-1, 1);
     -webkit-transform: scale(-1, 1);
@@ -7587,6 +7581,9 @@ section {
     width: 100px;
     height: 100px;
     left: -100px;
+  }
+  .modal-checkout .modal-checkout__controls {
+    margin-top: 16px;
   }
 }
 @media (min-width: 768px) {

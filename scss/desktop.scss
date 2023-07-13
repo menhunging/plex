@@ -2683,7 +2683,9 @@ section {
   .modal-checkout__controls {
     width: 100%;
     max-width: 326px;
-    margin: 40px auto 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
   }
 
   .btn {

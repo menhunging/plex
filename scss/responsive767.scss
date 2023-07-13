@@ -1085,11 +1085,6 @@
     max-width: 258px;
   }
 
-  .modal-registartions {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
   .registartion-col {
     width: 100%;
 
@@ -1103,27 +1098,31 @@
   }
 
   .modal-registartions {
+    padding-left: 16px;
+    padding-right: 16px;
+
     .tabs {
       position: relative;
 
       @include before {
         right: -15px;
         top: -10px;
-        width: 100px;
+        width: 40px;
         height: 50px;
         z-index: 4;
         pointer-events: none;
-        @include shadow-white;
+     background: linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
       }
 
       @include after {
         left: -15px;
         top: -10px;
-        width: 100px;
+        width: 40px;
         height: 50px;
         z-index: 4;
         pointer-events: none;
-        @include shadow-white;
+        background: linear-gradient(270deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+
         @include transform(scale(-1, 1));
       }
 
@@ -1235,6 +1234,10 @@
         left: -100px;
       }
     }
+  }
+
+  .modal-checkout .modal-checkout__controls{
+    margin-top: 16px;
   }
 }
 
