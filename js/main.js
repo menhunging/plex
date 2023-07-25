@@ -435,6 +435,49 @@ $(document).ready(function () {
   if ($("#modal-your-city").length > 0) {
     // MicroModal.show("modal-your-city");
   }
+
+  if ($(".select-value").length > 0) {
+    $(".select-value").on("click", function () {
+      let than = $(this);
+      let parents = than.siblings(".product-item-scu-block");
+      let speed = 100;
+
+      than.toggleClass("opened");
+
+      parents.stop().slideToggle(speed);
+      parents.find("li").on("click", function () {
+        let option = $(this).find(".product-item-scu-item-text");
+        let text = option.text();
+        let url = option.find("img").attr("src");
+
+        if (!url) {
+          than.addClass("not-img");
+        } else {
+          than.removeClass("not-img");
+        }
+
+        parents.stop().slideUp(speed);
+        parents.find("li").removeClass("active");
+
+        $(this).addClass("active");
+
+        than.find(".text").text(text);
+        than.removeClass("opened");
+        than.find("img").attr("src", url);
+      });
+
+      $(document).mouseup(function (e) {
+        if (
+          !parents.is(e.target) &&
+          parents.has(e.target).length === 0 &&
+          !$(".select-value").is(e.target)
+        ) {
+          parents.stop().slideUp(speed);
+          $(".select-value").removeClass("opened");
+        }
+      });
+    });
+  }
 });
 
 $(window).on("resize", function () {
