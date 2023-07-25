@@ -85,4 +85,38 @@
     width: 100%;
     max-width: 100%;
   }
+
+  .documents {
+    .list-links {
+      flex-direction: column;
+      gap: 16px;
+
+      li {
+      }
+
+      .tabs-link {
+        text-align: left;
+        display: block;
+        text-underline-offset: 5px;
+      }
+    }
+  }
+
+  .doc-item{
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .doc-item .num{
+    width: 15px;
+  }
+
+  .doc-item__controls{
+    width: 100%;
+  }
+
+  .documents .file-load .file-load__text {
+    margin-left: 0;
+    width: 100%;
+  }
 }

@@ -101,6 +101,7 @@ picture {
 
     &::placeholder {
       opacity: 1;
+      color: rgba(0, 34, 70, 0.50);
     }
   }
 
@@ -130,6 +131,32 @@ picture {
     svg {
       color: $colorBlack;
       fill: $colorBlack;
+    }
+  }
+
+  &.input-item--first {
+    margin-bottom: 22px;
+
+    label{
+      padding-top: 0;
+      font-size: 18px;
+    }
+  }
+
+  .input-item__link {
+  }
+
+  .btn-change {
+    color: #002246;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-decoration: underline;
+    @include transition(all .3s);
+
+    &:hover{
+      text-decoration-color: transparent;
     }
   }
 }

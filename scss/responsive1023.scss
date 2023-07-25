@@ -987,7 +987,146 @@
     max-width: 330px;
   }
 
-  .modal-checkout .modal-checkout__controls{
+  .modal-checkout .modal-checkout__controls {
     margin-top: 20px;
+  }
+
+  .cabinet-section {
+    .cabinet-section__tabs {
+      flex-wrap: wrap;
+      position: relative;
+
+      @include before {
+        right: -15px;
+        top: -10px;
+        width: 40px;
+        height: 50px;
+        z-index: 4;
+        pointer-events: none;
+        background: linear-gradient(
+          270deg,
+          #fff 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      }
+
+      @include after {
+        left: -25px;
+        top: -10px;
+        width: 40px;
+        height: 50px;
+        z-index: 4;
+        pointer-events: none;
+        background: linear-gradient(
+          270deg,
+          #fff 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+
+        @include transform(scale(-1, 1));
+      }
+    }
+
+    .tabs-links {
+      width: 100%;
+      display: flex;
+      overflow: auto;
+
+      &::-webkit-scrollbar {
+        width: 0;
+        background-color: transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        width: 0;
+        background-color: transparent;
+      }
+
+      scrollbar-color: transparent transparent;
+      scrollbar-width: thin;
+
+      li {
+        & + li {
+          margin-top: 0;
+        }
+      }
+
+      button {
+        margin-top: 0;
+      }
+    }
+
+    .tabs-link {
+      min-width: 184px;
+      height: 40px;
+    }
+
+    .tabs-body {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .input-item .btn-change {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  .cabinet-body__head {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .input-item.input-item--first label {
+    font-size: 14px;
+    line-height: 17px;
+    padding-top: 0;
+  }
+
+  .profile-table .caption {
+    font-size: 14px;
+    line-height: 17px;
+    padding-top: 0;
+  }
+
+  .documents {
+    .list-links {
+      gap: 20px;
+
+      .tabs-link {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+
+  .doc-item {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .doc-item__controls a {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .cabinet-section .text-simple ul {
+    margin: 16px 0;
+  }
+
+  .cabinet-section .text-simple ul li + li {
+    margin-top: 16px;
+  }
+
+  .cabinet-section .text-simple h2,
+  .cabinet-section .text-simple h3,
+  .cabinet-section .text-simple h4 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .cabinet-section .text-simple {
+    font-size: 12px;
+    line-height: 15px;
   }
 }

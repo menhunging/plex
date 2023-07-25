@@ -972,7 +972,97 @@
     }
   }
 
-  .modal-checkout .modal-checkout__controls{
+  .modal-checkout .modal-checkout__controls {
     margin-top: 30px;
+  }
+
+  .input-item.input-item--first label {
+    font-size: 16px;
+  }
+
+  .cabinet-body__head {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .cabinet-section {
+    padding: 23px 0 42px;
+
+    .tabs-links {
+      width: 250px;
+      margin-bottom: 0;
+    }
+
+    .tabs-body {
+      width: calc(100% - 288px);
+    }
+
+    .tabs-link {
+      padding: 5px 40px;
+      text-align: center;
+      height: 55px;
+    }
+
+    .input-list .input-item input {
+      height: 43px;
+    }
+
+    .input-list label {
+      padding-top: 14px;
+    }
+  }
+
+  .input-item.input-item--first {
+    margin-bottom: 20px;
+  }
+
+  .profile-table {
+    .th {
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    .td {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  .documents {
+    .list-links {
+      gap: 30px;
+
+      .tabs-link {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .doc-item {
+    font-size: 16px;
+    line-height: 20px;
+
+    .size {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  .doc-item__controls a {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .cabinet-section .text-simple h2,
+  .cabinet-section .text-simple h3,
+  .cabinet-section .text-simple h4 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .cabinet-section .text-simple {
+    font-size: 14px;
+    line-height: 17px;
   }
 }
