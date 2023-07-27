@@ -172,6 +172,23 @@
     fill: #a1d9f8;
   }
 
+  .count {
+    width: 20px;
+    height: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: $colorWhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ef5553;
+    @include border-radius(50%);
+    position: absolute;
+    top: -10px;
+    left: 17px;
+  }
+
   &:hover {
     text-decoration-color: $colorWhite;
   }
@@ -237,7 +254,7 @@
     background-color: #ef5553;
     @include border-radius(50%);
     position: absolute;
-    top: -10px;
+    top: -7px;
     right: -10px;
   }
 }

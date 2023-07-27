@@ -1582,6 +1582,25 @@ div::-webkit-scrollbar-thumb {
 .favorite-block .icon {
   fill: #a1d9f8;
 }
+.favorite-block .count {
+  width: 20px;
+  height: 20px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ef5553;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: 17px;
+}
 .favorite-block:hover {
   text-decoration-color: rgb(255, 255, 255);
 }
@@ -1656,7 +1675,7 @@ div::-webkit-scrollbar-thumb {
   -ms-border-radius: 50%;
   border-radius: 50%;
   position: absolute;
-  top: -10px;
+  top: -7px;
   right: -10px;
 }
 
@@ -5819,6 +5838,14 @@ section {
     top: -1px;
     right: -2px;
   }
+  .favorite-block .count {
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    line-height: 12px;
+    top: -5px;
+    right: -2px;
+  }
   .menu-catalog {
     left: 110px;
   }
@@ -7337,6 +7364,13 @@ section {
     line-height: 10px;
     top: -2px;
     right: -3px;
+  }
+  .favorite-block .count {
+    width: 12px;
+    height: 12px;
+    font-size: 8px;
+    line-height: 10px;
+    top: -2px;
   }
   .footer__caption {
     font-size: 10px;

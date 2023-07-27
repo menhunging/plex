@@ -562,11 +562,14 @@ function destroyBannerSlider() {
 
 function openModal(modal) {
   MicroModal.show(modal);
+  $('.modal__close').on('click',function(){
+    closeModal(modal)
+  })
   $("body").addClass("modal-open");
 }
 
 function closeModal(modal) {
-  MicroModal.hida(modal);
+  MicroModal.close(modal);
   setTimeout(() => {
     $("body").removeClass("modal-open");
   }, 300);
