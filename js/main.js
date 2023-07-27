@@ -199,11 +199,11 @@ $(document).ready(function () {
       than.toggleClass("opened");
       block.stop().slideToggle();
 
-      block.find('a').on('click',function(event){
-        event.preventDefault()
-        than.text($(this).text())
-        close()
-      })
+      block.find("a").on("click", function (event) {
+        event.preventDefault();
+        than.text($(this).text());
+        close();
+      });
 
       $(document).mouseup(function (e) {
         if (
@@ -211,11 +211,11 @@ $(document).ready(function () {
           block.has(e.target).length === 0 &&
           !than.is(e.target)
         ) {
-          close()
+          close();
         }
       });
 
-      function close(){
+      function close() {
         than.removeClass("opened");
         block.stop().slideUp();
       }

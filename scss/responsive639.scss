@@ -58,7 +58,7 @@
       }
     }
 
-    .js-link-open{
+    .js-link-open {
       font-size: 12px;
       width: 16px;
       text-overflow: inherit;
@@ -136,5 +136,42 @@
   .documents .file-load .file-load__text {
     margin-left: 0;
     width: 100%;
+  }
+
+  .category-section {
+    padding-top: 16px;
+  }
+
+  .category-catalog {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .category-catalog__item {
+    height: 297px;
+  }
+
+  .category-catalog__go {
+    bottom: 16px;
+    right: 6px;
+  }
+
+  .category-catalog__name {
+    margin-bottom: 15px;
+  }
+
+  .category-catalog__menu {
+    li {
+      padding-left: 18px;
+
+      &::before {
+        left: 7px;
+        top: 9px;
+      }
+    }
+  }
+
+  .category-catalog__menu.visible {
+    height: 220px;
   }
 }

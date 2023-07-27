@@ -1129,4 +1129,27 @@
     font-size: 12px;
     line-height: 15px;
   }
+
+  .category-catalog {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .category-catalog__item {
+    height: 282px;
+  }
+
+  .category-catalog__go {
+    bottom: 13px;
+    right: 5px;
+  }
+
+  .category-catalog__name{
+    min-height: inherit;
+    margin-bottom: 18px;
+  }
+
+  .category-catalog__menu.visible {
+    height: 190px;
+  }
 }
