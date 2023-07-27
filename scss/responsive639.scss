@@ -36,7 +36,13 @@
   }
 
   .select-count__text {
-    display: none;
+    &:not(.js-link-open) {
+      display: none;
+    }
+  }
+
+  .catalog-sort .select-count {
+    padding-right: 24px;
   }
 
   .select-count {
@@ -50,6 +56,18 @@
         padding-right: 0;
         white-space: normal;
       }
+    }
+
+    .js-link-open{
+      font-size: 12px;
+      width: 16px;
+      text-overflow: inherit;
+      overflow: hidden;
+      display: block;
+      padding-right: 0;
+      white-space: nowrap;
+      text-align: right;
+      letter-spacing: 0.05em;
     }
 
     .selectric-items {
@@ -102,16 +120,16 @@
     }
   }
 
-  .doc-item{
+  .doc-item {
     flex-wrap: wrap;
     gap: 16px;
   }
 
-  .doc-item .num{
+  .doc-item .num {
     width: 15px;
   }
 
-  .doc-item__controls{
+  .doc-item__controls {
     width: 100%;
   }
 

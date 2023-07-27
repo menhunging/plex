@@ -3357,6 +3357,14 @@ section {
 .select-sort__icon path {
   fill: #002246;
 }
+.select-sort .select-sort__name {
+  padding-left: 42px;
+  color: #002246;
+  font-size: 14px;
+  line-height: 34px;
+  font-weight: 500;
+  cursor: pointer;
+}
 .select-sort .selectric .label {
   padding-left: 42px;
 }
@@ -3369,6 +3377,7 @@ section {
   flex-wrap: wrap;
   align-items: center;
   gap: 10px;
+  position: relative;
 }
 .select-count__text {
   color: #002246;
@@ -3383,6 +3392,31 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   width: 32px;
+}
+.select-count .js-link-open {
+  cursor: pointer;
+  padding-right: 35px;
+}
+.select-count .js-link-open::before {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  top: 0;
+  right: 0;
+  width: 32px;
+  height: 100%;
+  background-image: url("../img/arrow-selectric.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.select-count .js-block-show {
+  left: auto;
+  right: 0;
+  width: auto;
+  min-width: 97px;
 }
 
 .catalog-tags {
@@ -5564,6 +5598,48 @@ section {
   border-bottom: 0;
 }
 
+.js-link-open.opened::before {
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -webkit-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+.js-block-show {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  -webkit-box-shadow: 0px 4px 24px 0px rgba(218, 224, 232, 0.6);
+  -moz-box-shadow: 0px 4px 24px 0px rgba(218, 224, 232, 0.6);
+  box-shadow: 0px 4px 24px 0px rgba(218, 224, 232, 0.6);
+  z-index: 5;
+}
+.js-block-show ul {
+  padding-top: 5px;
+}
+.js-block-show li {
+  padding: 10px 10px;
+}
+.js-block-show li a {
+  display: block;
+  color: #002246;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+.js-block-show li a:hover {
+  text-decoration-color: #002246;
+}
+
 @media (max-width: 1439px) {
   .text-section__rightSide {
     max-width: 555px;
@@ -5911,15 +5987,19 @@ section {
   .select-sort__icon {
     width: 24px;
   }
+  .select-sort .select-sort__name,
   .select-sort .selectric .label {
     padding-left: 34px;
+    line-height: 32px;
   }
   .select-count .selectric .label {
     padding-right: 35px;
   }
+  .select-count .js-link-open::before,
   .select-count .selectric .button {
     width: 24px;
     background-size: 24px;
+    top: 1px;
   }
   .catalog-tags {
     margin-top: 15px;
@@ -6412,6 +6492,9 @@ section {
   .cabinet-section .text-simple {
     font-size: 14px;
     line-height: 17px;
+  }
+  .select-sort .js-block-show {
+    max-width: 190px;
   }
 }
 @media (max-width: 1023px) {
@@ -7728,6 +7811,7 @@ section {
   .catalog-sort .select-sort .label {
     padding-left: 28px;
   }
+  .select-sort .select-sort__name,
   .catalog-sort .selectric .label {
     font-size: 12px;
   }
@@ -8419,6 +8503,12 @@ section {
     font-size: 12px;
     line-height: 15px;
   }
+  .js-block-show li {
+    padding: 5px 10px;
+  }
+  .js-block-show li a {
+    font-size: 12px;
+  }
 }
 @media (min-width: 768px) {
   .menu {
@@ -8467,8 +8557,11 @@ section {
   .product-item__info p {
     height: 24px;
   }
-  .select-count__text {
+  .select-count__text:not(.js-link-open) {
     display: none;
+  }
+  .catalog-sort .select-count {
+    padding-right: 24px;
   }
   .select-count .selectric .label {
     font-size: 12px;
@@ -8478,6 +8571,17 @@ section {
     display: block;
     padding-right: 0;
     white-space: normal;
+  }
+  .select-count .js-link-open {
+    font-size: 12px;
+    width: 16px;
+    text-overflow: inherit;
+    overflow: hidden;
+    display: block;
+    padding-right: 0;
+    white-space: nowrap;
+    text-align: right;
+    letter-spacing: 0.05em;
   }
   .select-count .selectric-items {
     min-width: 120px;

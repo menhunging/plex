@@ -97,8 +97,8 @@
     }
   }
 
-  .favorite-block{
-    .count{
+  .favorite-block {
+    .count {
       width: 12px;
       height: 12px;
       font-size: 8px;
@@ -533,6 +533,7 @@
     padding-left: 28px;
   }
 
+  .select-sort .select-sort__name,
   .catalog-sort .selectric .label {
     font-size: 12px;
   }
@@ -1389,7 +1390,7 @@
       }
     }
 
-    .selectric .label{
+    .selectric .label {
       font-size: 12px;
       line-height: 12px;
     }
@@ -1413,6 +1414,19 @@
   .cabinet-section .text-simple {
     font-size: 12px;
     line-height: 15px;
+  }
+
+  .js-block-show {
+    ul {
+    }
+
+    li {
+      padding: 5px 10px;
+
+      a {
+        font-size: 12px;
+      }
+    }
   }
 }
 

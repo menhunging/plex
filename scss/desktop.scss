@@ -1092,6 +1092,15 @@ section {
     }
   }
 
+  .select-sort__name {
+    padding-left: 42px;
+    color: #002246;
+    font-size: 14px;
+    line-height: 34px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
   .selectric {
     .label {
       padding-left: 42px;
@@ -1108,6 +1117,7 @@ section {
   flex-wrap: wrap;
   align-items: center;
   gap: 10px;
+  position: relative;
 
   &__text {
     color: #002246;
@@ -1126,6 +1136,28 @@ section {
       background-repeat: no-repeat;
       width: 32px;
     }
+  }
+
+  .js-link-open {
+    cursor: pointer;
+    padding-right: 35px;
+
+    @include before {
+      top: 0;
+      right: 0;
+      width: 32px;
+      height: 100%;
+      background-image: url("../img/arrow-selectric.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .js-block-show {
+    left: auto;
+    right: 0;
+    width: auto;
+    min-width: 97px;
   }
 }
 
@@ -3571,6 +3603,47 @@ section {
 
       &:last-child {
         border-bottom: 0;
+      }
+    }
+  }
+}
+
+.js-link-open {
+  &.opened {
+    &::before {
+      @include transform(scale(1, -1));
+    }
+  }
+}
+
+.js-block-show {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  background-color: $colorWhite;
+  @include box-shadow(0px 4px 24px 0px rgba(218, 224, 232, 0.6));
+  z-index: 5;
+
+  ul {
+    padding-top: 5px;
+  }
+
+  li {
+    padding: 10px 10px;
+
+    a {
+      display: block;
+      color: #002246;
+      font-size: 14px;
+      font-weight: 500;
+      @include transition(all 0.3s);
+      text-decoration: underline;
+      text-decoration-color: transparent;
+
+      &:hover {
+        text-decoration-color: #002246;
       }
     }
   }

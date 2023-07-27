@@ -425,17 +425,21 @@
     width: 24px;
   }
 
+  .select-sort .select-sort__name,
   .select-sort .selectric .label {
     padding-left: 34px;
+    line-height: 32px;
   }
 
   .select-count .selectric .label {
     padding-right: 35px;
   }
 
+  .select-count .js-link-open::before,
   .select-count .selectric .button {
     width: 24px;
     background-size: 24px;
+    top: 1px;
   }
 
   .catalog-tags {
@@ -1073,5 +1077,9 @@
   .cabinet-section .text-simple {
     font-size: 14px;
     line-height: 17px;
+  }
+
+  .select-sort .js-block-show {
+    max-width: 190px;
   }
 }
