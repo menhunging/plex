@@ -724,6 +724,12 @@
   .product-details {
     font-size: 14px;
     line-height: 17px;
+
+    h2,
+    h3 {
+      font-size: 14px;
+      line-height: 17px;
+    }
   }
 
   .product-small__slider {
@@ -1144,7 +1150,7 @@
     right: 5px;
   }
 
-  .category-catalog__name{
+  .category-catalog__name {
     min-height: inherit;
     margin-bottom: 18px;
   }

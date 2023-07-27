@@ -640,6 +640,11 @@
   .product-details {
     font-size: 16px;
     line-height: 20px;
+
+    h2,
+    h3 {
+      font-size: 16px;
+    }
   }
 
   .about-product {
@@ -1126,7 +1131,7 @@
     padding-bottom: 10px;
   }
 
-  .category-catalog__item a{
+  .category-catalog__item a {
     padding-right: 10px;
   }
 }
