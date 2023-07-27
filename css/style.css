@@ -5215,7 +5215,9 @@ section {
 }
 
 .cabinet-body__controls {
-  margin-top: 10px;
+  margin-top: 16px;
+  display: flex;
+  gap: 20px;
 }
 .cabinet-body__controls .btn {
   max-width: 326px;
