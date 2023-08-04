@@ -1449,6 +1449,92 @@
   .login-section__inner {
     max-width: 100%;
   }
+
+  .table-history .thead {
+    display: none;
+  }
+
+  .table-history {
+    display: block;
+    width: 100%;
+
+    .tbody {
+      display: block;
+      width: 100%;
+
+      .tr {
+        display: block;
+        width: 100%;
+        padding: 20px 0;
+
+        &:last-child{
+          padding-bottom: 0;
+        }
+
+        & + .tr {
+          border-top: solid 1px rgb(0, 34, 70);
+        }
+      }
+
+      .td {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 0;
+        color: #002246;
+        font-size: 12px;
+        font-weight: 400;
+
+        & + .td {
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  .table-history__mobileTitle {
+    display: block;
+  }
+
+  .table-history .price {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .table-history .more {
+    margin-left: auto;
+  }
+
+  .cabinet-section .caption {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .histroy-info__list{
+    padding: 16px 0;
+  }
+
+  .histroy-info__list ul li{
+    font-size: 12px;
+  }
+
+  .cabinet-body__body .basket-table{
+    margin-top: 16px;
+  }
+
+  .basket-table__all{
+    margin-top: 20px;
+    padding: 0;
+    border:0;
+  }
+
+  .histroy-info__controls {
+    gap: 16px;
+    flex-direction: column;
+    margin-top: 5px;
+  }
 }
 
 // min width

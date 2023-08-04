@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, user-scalable=no, viewport-fit=cover" />
-    <title>Личный кабинет</title>
+    <title>Личный кабинет (история подробнее)</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="../../img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon/favicon-32x32.png">
@@ -423,13 +423,7 @@
                 <div class="container">
                     <div class="cabinet-section__tabs tabs">
                         <ul class="tabs-links">
-                            <li><a href="#tab1" class="tabs-link link-rectangle">Профиль</a></li>
-                            <li><a href="#tab2" class="tabs-link link-rectangle">Новый пользователь</a></li>
-                            <li><a href="#tab3" class="tabs-link link-rectangle">Организация</a></li>
-                            <li><a href="#tab4" class="tabs-link link-rectangle">Добавить организацию</a></li>
-                            <li><a href="#tab5" class="tabs-link link-rectangle">Документация</a></li>
                             <li><a href="#tab6" class="tabs-link link-rectangle">История заказов</a></li>
-                            <li><a href="#tab7" class="tabs-link link-rectangle">Рекламация</a></li>
                             <button class="tabs-link link-rectangle">
 
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -441,619 +435,284 @@
 
                                 Выйти</button>
                         </ul>
-
-                        <div class="tabs-body" id="tab1">
-                            <div class="cabinet-body">
-                                <div class="cabinet-body__head">
-                                    Профиль
-                                </div>
-                                <form class="cabinet-body__body">
-                                    <div class="input-list">
-                                        <div class="input-item input-item--first">
-                                            <label for="">Контактная информация:</label>
-                                            <div class="input-item__link">
-                                                <button class="btn-change">Изменить</button>
-                                            </div>
-                                        </div>
-                                        <div class="input-item">
-                                            <label for="">Имя</label>
-                                            <div class="input-item__form">
-                                                <input type="text" value="Иван" placeholder="Введите информацию">
-                                            </div>
-                                        </div>
-
-                                        <div class="input-item">
-                                            <label for="">Фамилия</label>
-                                            <div class="input-item__form">
-                                                <input type="text" value="Иванов" placeholder="Введите информацию">
-                                            </div>
-                                        </div>
-
-                                        <div class="input-item">
-                                            <label for="">Отчество</label>
-                                            <div class="input-item__form">
-                                                <input type="text" placeholder="Введите информацию">
-                                            </div>
-                                        </div>
-
-                                        <div class="input-item">
-                                            <label for="">Адрес доставки</label>
-                                            <div class="input-item__form">
-                                                <input type="text" placeholder="Введите информацию">
-                                            </div>
-                                        </div>
-
-                                        <div class="input-item">
-                                            <label for="">Телефон</label>
-                                            <div class="input-item__form">
-                                                <input type="text" class="phone-input" placeholder="Введите информацию">
-                                            </div>
-                                        </div>
-
-                                        <div class="input-item">
-                                            <label for="">E-mail</label>
-                                            <div class="input-item__form">
-                                                <input type="text" value="info@gmail.com"
-                                                    placeholder="Введите информацию">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cabinet-body__controls">
-                                        <button type="submit" class="btn">сохранить</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="tabs-body" id="tab2">
-                            <div class="cabinet-body">
-                                <div class="cabinet-body__head">
-                                    Новый пользователь
-                                </div>
-                                <form class="cabinet-body__body">
-                                    <div class="input-list">
-                                        <div class="input-item input-item--first">
-                                            <label for="">Введите данные:</label>
-                                        </div>
-                                        <div class="input-item">
-                                            <label for="">Имя*</label>
-                                            <div class="input-item__form">
-                                                <input type="text" value="Иван" placeholder="Введите информацию">
-                                            </div>
-                                        </div>
-
-                                        <div class="input-item">
-                                            <label for="">Телефон</label>
-                                            <div class="input-item__form">
-                                                <input type="text" class="phone-input" placeholder="Введите информацию">
-                                            </div>
-                                        </div>
-
-                                        <div class="input-item">
-                                            <label for="">E-mail</label>
-                                            <div class="input-item__form">
-                                                <input type="text" value="info@gmail.com"
-                                                    placeholder="Введите информацию">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cabinet-body__controls">
-                                        <button type="submit" class="btn">добавить</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="tabs-body" id="tab3">
-                            <div class="cabinet-body">
-                                <div class="cabinet-body__head">
-                                    Организация
-                                </div>
-                                <form class="cabinet-body__body">
-                                    <div class="profile-table">
-                                        <h3 class="caption">Профили</h3>
-
-                                        <div class="table">
-                                            <div class="thead">
-                                                <div class="tr">
-                                                    <div class="th">Код</div>
-                                                    <div class="th">Дата обновления</div>
-                                                    <div class="th">Название</div>
-                                                    <div class="th">Тип плательщика</div>
-                                                    <div class="th">Действия</div>
-                                                </div>
-                                            </div>
-                                            <div class="tbody">
-                                                <div class="tr">
-                                                    <div class="td">
-                                                        <span class="mobile-title">Код</span>
-                                                        <span class="data">121</span>
-                                                    </div>
-                                                    <div class="td">
-                                                        <span class="mobile-title">Дата обновления</span>
-                                                        <span class="data">22.06.2023 15:25:41</span>
-                                                    </div>
-                                                    <div class="td">
-                                                        <span class="mobile-title">Название</span>
-                                                        <span class="data">Иванов Иван</span>
-                                                    </div>
-                                                    <div class="td">
-                                                        <span class="mobile-title">Название</span>
-                                                        <span class="data">Тип плательщика</span>
-                                                    </div>
-                                                    <div class="td">
-                                                        <a href="#">Изменить</a>
-                                                        <a href="#">
-
-                                                            Удалить
-
-                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M4.35008 14C4.07508 14 3.83966 13.9021 3.64383 13.7063C3.448 13.5104 3.35008 13.275 3.35008 13V3.5H2.66675V2.5H5.80008V2H10.2001V2.5H13.3334V3.5H12.6501V13C12.6501 13.2667 12.5501 13.5 12.3501 13.7C12.1501 13.9 11.9167 14 11.6501 14H4.35008ZM11.6501 3.5H4.35008V13H11.6501V3.5ZM6.11675 11.5667H7.11675V4.91667H6.11675V11.5667ZM8.88342 11.5667H9.88342V4.91667H8.88342V11.5667Z"
-                                                                    fill="#002246" />
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="tr">
-                                                    <div class="td">
-                                                        <span class="mobile-title">Код</span>
-                                                        <span class="data">121</span>
-                                                    </div>
-                                                    <div class="td">
-                                                        <span class="mobile-title">Дата обновления</span>
-                                                        <span class="data">22.06.2023 15:25:41</span>
-                                                    </div>
-                                                    <div class="td">
-                                                        <span class="mobile-title">Название</span>
-                                                        <span class="data">Иванов Иван</span>
-                                                    </div>
-                                                    <div class="td">
-                                                        <span class="mobile-title">Название</span>
-                                                        <span class="data">Тип плательщика</span>
-                                                    </div>
-                                                    <div class="td">
-                                                        <a href="#">Изменить</a>
-                                                        <a href="#">
-
-                                                            Удалить
-
-                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M4.35008 14C4.07508 14 3.83966 13.9021 3.64383 13.7063C3.448 13.5104 3.35008 13.275 3.35008 13V3.5H2.66675V2.5H5.80008V2H10.2001V2.5H13.3334V3.5H12.6501V13C12.6501 13.2667 12.5501 13.5 12.3501 13.7C12.1501 13.9 11.9167 14 11.6501 14H4.35008ZM11.6501 3.5H4.35008V13H11.6501V3.5ZM6.11675 11.5667H7.11675V4.91667H6.11675V11.5667ZM8.88342 11.5667H9.88342V4.91667H8.88342V11.5667Z"
-                                                                    fill="#002246" />
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="tr">
-                                                    <div class="td">
-                                                        <span class="mobile-title">Код</span>
-                                                        <span class="data">121</span>
-                                                    </div>
-                                                    <div class="td">
-                                                        <span class="mobile-title">Дата обновления</span>
-                                                        <span class="data">22.06.2023 15:25:41</span>
-                                                    </div>
-                                                    <div class="td">
-                                                        <span class="mobile-title">Название</span>
-                                                        <span class="data">Иванов Иван</span>
-                                                    </div>
-                                                    <div class="td">
-                                                        <span class="mobile-title">Название</span>
-                                                        <span class="data">Тип плательщика</span>
-                                                    </div>
-                                                    <div class="td">
-                                                        <a href="#">Изменить</a>
-                                                        <a href="#">
-
-                                                            Удалить
-
-                                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M4.35008 14C4.07508 14 3.83966 13.9021 3.64383 13.7063C3.448 13.5104 3.35008 13.275 3.35008 13V3.5H2.66675V2.5H5.80008V2H10.2001V2.5H13.3334V3.5H12.6501V13C12.6501 13.2667 12.5501 13.5 12.3501 13.7C12.1501 13.9 11.9167 14 11.6501 14H4.35008ZM11.6501 3.5H4.35008V13H11.6501V3.5ZM6.11675 11.5667H7.11675V4.91667H6.11675V11.5667ZM8.88342 11.5667H9.88342V4.91667H8.88342V11.5667Z"
-                                                                    fill="#002246" />
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="tabs-body" id="tab4">
-                            <div class="cabinet-body">
-                                <div class="cabinet-body__head">
-                                    Новая организация
-                                </div>
-                                <form class="cabinet-body__body">
-                                    <div class="input-list">
-                                        <div class="input-item input-item--first">
-                                            <label for="">Введите данные:</label>
-                                        </div>
-                                        <div class="input-item">
-                                            <label for="">ИНН*</label>
-                                            <div class="input-item__form">
-                                                <input type="text" placeholder="Введите информацию">
-                                            </div>
-                                        </div>
-
-                                        <div class="input-item">
-                                            <label for="">Название организации*</label>
-                                            <div class="input-item__form">
-                                                <input type="text" placeholder="Введите информацию">
-                                            </div>
-                                        </div>
-
-                                        <div class="input-item">
-                                            <label for="">Юр. адрес*</label>
-                                            <div class="input-item__form">
-                                                <input type="text" placeholder="Введите информацию">
-                                            </div>
-                                        </div>
-
-                                        <div class="input-item">
-                                            <label for="">Грузополучатель (адрес обособленного получателя)*</label>
-                                            <div class="input-item__form">
-                                                <input type="text" placeholder="Введите информацию">
-                                            </div>
-                                        </div>
-
-                                        <div class="input-item">
-                                            <label for="">БИК*</label>
-                                            <div class="input-item__form">
-                                                <input type="text" placeholder="Введите информацию">
-                                            </div>
-                                        </div>
-
-                                        <div class="input-item">
-                                            <label for="">Корреспондентский счет*</label>
-                                            <div class="input-item__form">
-                                                <input type="text" placeholder="Введите информацию">
-                                            </div>
-                                        </div>
-
-                                        <div class="input-item">
-                                            <label for="">Расчетный счет*</label>
-                                            <div class="input-item__form">
-                                                <input type="text" placeholder="Введите информацию">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="cabinet-body__controls">
-                                        <button type="submit" class="btn">добавить</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="tabs-body" id="tab5">
-                            <div class="cabinet-body">
-                                <div class="cabinet-body__head">
-                                    Документация
-                                </div>
-                                <form class="cabinet-body__body">
-                                    <div class="documents">
-                                        <div class="tabs">
-                                            <ul class="list-links">
-                                                <li><a href="#sertificate" class="tabs-link">Сертификаты на товары</a>
-                                                </li>
-                                                <li><a href="#check" class="tabs-link">Выставленные счета</a></li>
-                                                <li><a href="#contract" class="tabs-link">Договора</a></li>
-                                            </ul>
-                                            <div class="tabs-body" id="sertificate">
-                                                <div class="doc-list">
-                                                    <div class="doc-item">
-                                                        <div class="doc-item__text">
-                                                            <span class="num">1.</span>
-                                                            <span>Сертификат 1</span>
-                                                            <span class="size">1 КБ</span>
-                                                        </div>
-
-                                                        <div class="doc-item__controls">
-                                                            <a href="#">Скачать</a>
-                                                            <a href="#">Посмотреть</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="doc-item">
-                                                        <div class="doc-item__text">
-                                                            <span class="num">2.</span>
-                                                            <span>Сертификат 1</span>
-                                                            <span class="size">1.5 КБ</span>
-                                                        </div>
-
-                                                        <div class="doc-item__controls">
-                                                            <a href="#">Скачать</a>
-                                                            <a href="#">Посмотреть</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="file-load">
-                                                    <input type="file" id="file1">
-                                                    <label for="file1">
-                                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M15.3333 29.3333C13.3111 29.3333 11.5833 28.6388 10.15 27.25C8.71667 25.8611 8 24.1555 8 22.1333V7.79996C8 6.37774 8.50556 5.16663 9.51667 4.16663C10.5278 3.16663 11.7444 2.66663 13.1667 2.66663C14.6111 2.66663 15.8333 3.16663 16.8333 4.16663C17.8333 5.16663 18.3333 6.38885 18.3333 7.83329V20.9666C18.3333 21.8111 18.0444 22.5277 17.4667 23.1166C16.8889 23.7055 16.1778 24 15.3333 24C14.4889 24 13.7778 23.6833 13.2 23.05C12.6222 22.4166 12.3333 21.6666 12.3333 20.8V7.73329H13.6667V20.9C13.6667 21.3888 13.8278 21.8055 14.15 22.15C14.4722 22.4944 14.8667 22.6666 15.3333 22.6666C15.8 22.6666 16.1944 22.5 16.5167 22.1666C16.8389 21.8333 17 21.4333 17 20.9666V7.79996C17 6.73329 16.6278 5.83329 15.8833 5.09996C15.1389 4.36663 14.2333 3.99996 13.1667 3.99996C12.1 3.99996 11.1944 4.36663 10.45 5.09996C9.70556 5.83329 9.33333 6.73329 9.33333 7.79996V22.2C9.33333 23.8222 9.92222 25.1944 11.1 26.3166C12.2778 27.4388 13.6889 28 15.3333 28C17 28 18.4167 27.4333 19.5833 26.3C20.75 25.1666 21.3333 23.7777 21.3333 22.1333V7.73329H22.6667V22.1C22.6667 24.1222 21.95 25.8333 20.5167 27.2333C19.0833 28.6333 17.3556 29.3333 15.3333 29.3333Z"
-                                                                fill="#41C0EB" />
-                                                        </svg>
-                                                        <span class="file-load__doc">Загрузить документ</span>
-                                                        <span class="file-load__text">Выберите файл</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="tabs-body" id="check">
-                                                <div class="doc-list">
-                                                    <div class="doc-item">
-                                                        <div class="doc-item__text">
-                                                            <span class="num">1.</span>
-                                                            <span>Сертификат 1</span>
-                                                            <span class="size">1 КБ</span>
-                                                        </div>
-
-                                                        <div class="doc-item__controls">
-                                                            <a href="#">Скачать</a>
-                                                            <a href="#">Посмотреть</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="doc-item">
-                                                        <div class="doc-item__text">
-                                                            <span class="num">2.</span>
-                                                            <span>Сертификат 1</span>
-                                                            <span class="size">1.5 КБ</span>
-                                                        </div>
-
-                                                        <div class="doc-item__controls">
-                                                            <a href="#">Скачать</a>
-                                                            <a href="#">Посмотреть</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="doc-item">
-                                                        <div class="doc-item__text">
-                                                            <span class="num">3.</span>
-                                                            <span>Сертификат 1</span>
-                                                            <span class="size">1.5 КБ</span>
-                                                        </div>
-
-                                                        <div class="doc-item__controls">
-                                                            <a href="#">Скачать</a>
-                                                            <a href="#">Посмотреть</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="file-load">
-                                                    <input type="file" id="file2">
-                                                    <label for="file2">
-                                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M15.3333 29.3333C13.3111 29.3333 11.5833 28.6388 10.15 27.25C8.71667 25.8611 8 24.1555 8 22.1333V7.79996C8 6.37774 8.50556 5.16663 9.51667 4.16663C10.5278 3.16663 11.7444 2.66663 13.1667 2.66663C14.6111 2.66663 15.8333 3.16663 16.8333 4.16663C17.8333 5.16663 18.3333 6.38885 18.3333 7.83329V20.9666C18.3333 21.8111 18.0444 22.5277 17.4667 23.1166C16.8889 23.7055 16.1778 24 15.3333 24C14.4889 24 13.7778 23.6833 13.2 23.05C12.6222 22.4166 12.3333 21.6666 12.3333 20.8V7.73329H13.6667V20.9C13.6667 21.3888 13.8278 21.8055 14.15 22.15C14.4722 22.4944 14.8667 22.6666 15.3333 22.6666C15.8 22.6666 16.1944 22.5 16.5167 22.1666C16.8389 21.8333 17 21.4333 17 20.9666V7.79996C17 6.73329 16.6278 5.83329 15.8833 5.09996C15.1389 4.36663 14.2333 3.99996 13.1667 3.99996C12.1 3.99996 11.1944 4.36663 10.45 5.09996C9.70556 5.83329 9.33333 6.73329 9.33333 7.79996V22.2C9.33333 23.8222 9.92222 25.1944 11.1 26.3166C12.2778 27.4388 13.6889 28 15.3333 28C17 28 18.4167 27.4333 19.5833 26.3C20.75 25.1666 21.3333 23.7777 21.3333 22.1333V7.73329H22.6667V22.1C22.6667 24.1222 21.95 25.8333 20.5167 27.2333C19.0833 28.6333 17.3556 29.3333 15.3333 29.3333Z"
-                                                                fill="#41C0EB" />
-                                                        </svg>
-                                                        <span class="file-load__doc">Загрузить документ</span>
-                                                        <span class="file-load__text">Выберите файл</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <div class="tabs-body" id="contract">
-                                                <div class="doc-list">
-                                                    <div class="doc-item">
-                                                        <div class="doc-item__text">
-                                                            <span class="num">1.</span>
-                                                            <span>Сертификат 1</span>
-                                                            <span class="size">1 КБ</span>
-                                                        </div>
-
-                                                        <div class="doc-item__controls">
-                                                            <a href="#">Скачать</a>
-                                                            <a href="#">Посмотреть</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="file-load">
-                                                    <input type="file" id="file3">
-                                                    <label for="file3">
-                                                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M15.3333 29.3333C13.3111 29.3333 11.5833 28.6388 10.15 27.25C8.71667 25.8611 8 24.1555 8 22.1333V7.79996C8 6.37774 8.50556 5.16663 9.51667 4.16663C10.5278 3.16663 11.7444 2.66663 13.1667 2.66663C14.6111 2.66663 15.8333 3.16663 16.8333 4.16663C17.8333 5.16663 18.3333 6.38885 18.3333 7.83329V20.9666C18.3333 21.8111 18.0444 22.5277 17.4667 23.1166C16.8889 23.7055 16.1778 24 15.3333 24C14.4889 24 13.7778 23.6833 13.2 23.05C12.6222 22.4166 12.3333 21.6666 12.3333 20.8V7.73329H13.6667V20.9C13.6667 21.3888 13.8278 21.8055 14.15 22.15C14.4722 22.4944 14.8667 22.6666 15.3333 22.6666C15.8 22.6666 16.1944 22.5 16.5167 22.1666C16.8389 21.8333 17 21.4333 17 20.9666V7.79996C17 6.73329 16.6278 5.83329 15.8833 5.09996C15.1389 4.36663 14.2333 3.99996 13.1667 3.99996C12.1 3.99996 11.1944 4.36663 10.45 5.09996C9.70556 5.83329 9.33333 6.73329 9.33333 7.79996V22.2C9.33333 23.8222 9.92222 25.1944 11.1 26.3166C12.2778 27.4388 13.6889 28 15.3333 28C17 28 18.4167 27.4333 19.5833 26.3C20.75 25.1666 21.3333 23.7777 21.3333 22.1333V7.73329H22.6667V22.1C22.6667 24.1222 21.95 25.8333 20.5167 27.2333C19.0833 28.6333 17.3556 29.3333 15.3333 29.3333Z"
-                                                                fill="#41C0EB" />
-                                                        </svg>
-                                                        <span class="file-load__doc">Загрузить документ</span>
-                                                        <span class="file-load__text">Выберите файл</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
                         <div class="tabs-body" id="tab6">
                             <div class="cabinet-body">
-                                <div class="cabinet-body__head">
-                                    История заказов
-                                </div>
                                 <form class="cabinet-body__body">
-                                    <div class="table-history">
-                                        <div class="thead">
-                                            <div class="tr">
-                                                <div class="td">
-                                                    Заказ
-                                                </div>
-                                                <div class="td">
-                                                    Товаров
-                                                </div>
-                                                <div class="td">
-                                                    Общая сумма
-                                                </div>
-                                                <div class="td">
-                                                    Статус
-                                                </div>
-                                                <div class="td"></div>
-                                            </div>
-                                        </div>
-                                        <div class="tbody">
-                                            <div class="tr">
-                                                <div class="td">
-                                                    <span class="table-history__mobileTitle">Заказ</span>
-                                                    <a href="#">№152 от 27.02.2023</a>
-                                                </div>
-                                                <div class="td">
-                                                    <span class="table-history__mobileTitle">Товаров</span>
-                                                    100 шт.
-                                                </div>
-                                                <div class="td">
-                                                    <span class="table-history__mobileTitle">Общая сумма</span>
-                                                    <span class="price">100 299 ₽</span>
-                                                </div>
-                                                <div class="td">
-                                                    <span class="table-history__mobileTitle">Статус</span>
-                                                    <span class="status">Не оплачено</span>
-                                                </div>
-                                                <div class="td">
-                                                    <a href="#" class="more">Подробнее</a>
-                                                </div>
-                                            </div>
-                                            <div class="tr">
-                                                <div class="td">
-                                                    <span class="table-history__mobileTitle">Заказ</span>
-                                                    <a href="#">№105 от 12.03.2023</a>
-                                                </div>
-                                                <div class="td">
-                                                    <span class="table-history__mobileTitle">Товаров</span>
-                                                    50 шт.
-                                                </div>
-                                                <div class="td">
-                                                    <span class="table-history__mobileTitle">Общая сумма</span>
-                                                    <span class="price">99 299 ₽</span>
-                                                </div>
-                                                <div class="td">
-                                                    <span class="table-history__mobileTitle">Статус</span>
-                                                    <span class="status">Не оплачено</span>
-                                                </div>
-                                                <div class="td">
-                                                    <a href="#" class="more">Подробнее</a>
-                                                </div>
-                                            </div>
-                                            <div class="tr">
-                                                <div class="td">
-                                                    <span class="table-history__mobileTitle">Заказ</span>
-                                                    <a href="#">№102 от 15.06.2023</a>
-                                                </div>
-                                                <div class="td">
-                                                    <span class="table-history__mobileTitle">Товаров</span>
-                                                    5 шт.
-                                                </div>
-                                                <div class="td">
-                                                    <span class="table-history__mobileTitle">Общая сумма</span>
-                                                    <span class="price">1 299 ₽</span>
-                                                </div>
-                                                <div class="td">
-                                                    <span class="table-history__mobileTitle">Статус</span>
-                                                    <span class="status">Оплачено</span>
-                                                </div>
-                                                <div class="td">
-                                                    <a href="#" class="more">Подробнее</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="tabs-body" id="tab7">
-                            <div class="cabinet-body">
-                                <div class="cabinet-body__head">
-                                    Рекламация
-                                </div>
-                                <form class="cabinet-body__body">
+                                    <a href="#" class="back-link">
 
-                                    <div class="text-simple">
-                                        <h3>В случаях, если:</h3>
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12 20L13.05 18.925L6.875 12.75H20V11.25H6.875L13.05 5.075L12 4L4 12L12 20Z">
+                                            </path>
+                                        </svg>
+
+                                        к списку заказов</a>
+
+                                    <h2 class="caption">Заказ №152 от 27.02.2023</h2>
+
+                                    <div class="histroy-info__list">
+                                        <h2 class="caption">Информация о заказе</h2>
 
                                         <ul>
-                                            <li>Качество продукции Plex не соответствует качеству, определенному
-                                                Производителем (контрактом), включая несоблюдение комплектности товара и
-                                                ассортимента;</li>
-                                            <li>Количество продукции Plex не соответствует заявленному Поставщиком (в
-                                                контракте) или в товаросопроводительных документах;</li>
-                                            <li>Несоответствие упаковки или неправильная маркировка стали причиной порчи
-                                                продукции;</li>
-                                            <li>В течение десяти дней Ваша рекламация (претензия) будет рассмотрена.
+                                            <li>
+                                                <span class="title">Количество товаров заказе:</span>
+                                                <span class="data">100 шт.</span>
+                                            </li>
+                                            <li>
+                                                <span class="title">Общая сумма заказа:</span>
+                                                <span class="price">100 299 ₽</span>
+                                            </li>
+                                            <li>
+                                                <span class="title">Статус заказа:</span>
+                                                <span class="data">Принят. Не оплачен.</span>
                                             </li>
                                         </ul>
-
-                                        <p>Производитель оставляет за собой право отказать в урегулировании рекламации
-                                            на основании решения комиссии по качеству.</p>
                                     </div>
 
-                                    <div class="input-list">
-                                        <div class="input-item input-item--first">
-                                            <label for="">Заполните форму</label>
-                                        </div>
+                                    <div class="histroy-info__list">
+                                        <h2 class="caption">Информация о получателе</h2>
 
-                                        <div class="input-item">
-                                            <label for="">Фамилия</label>
-                                            <div class="input-item__form">
-                                                <input type="text" value="Иванов" placeholder="Введите информацию">
+                                        <ul>
+                                            <li>
+                                                <span class="title">ФИО:</span>
+                                                <span class="data">Иванов Иван Иванович</span>
+                                            </li>
+                                            <li>
+                                                <span class="title">E-mail:</span>
+                                                <a href="mailto:Info@gmail.com" class="data">Info@gmail.com</a>
+                                            </li>
+                                            <li>
+                                                <span class="title">Телефон:</span>
+                                                <a href="tel:88001234567" class="data">8 800 123 45 67</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="histroy-info__list">
+                                        <h2 class="caption">Оплата</h2>
+
+                                        <div class="histroy-info__delivery">
+
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <g clip-path="url(#clip0_3824_14179)">
+                                                    <path
+                                                        d="M31.3601 0.639648H0.640137V31.3596H31.3601V0.639648ZM30.0801 30.0797H1.92014V1.91965H30.0801V30.0797Z" />
+                                                    <path
+                                                        d="M13.8924 5.57293L12.9875 4.66797L7.67996 9.97549L5.57244 7.86797L4.66748 8.77293L7.67996 11.7854L13.8924 5.57293ZM16 7.68045H27.52V8.96045H16V7.68045ZM13.8924 13.2529L12.9875 12.348L7.67996 17.6555L5.57244 15.548L4.66748 16.4529L7.67996 19.4654L13.8924 13.2529ZM16 15.3604H27.52V16.6405H16V15.3604ZM13.8924 20.9329L12.9875 20.028L7.67996 25.3355L5.57244 23.228L4.66748 24.1329L7.67996 27.1454L13.8924 20.9329ZM16 23.0405H27.52V24.3204H16V23.0405Z" />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_3824_14179">
+                                                        <rect width="32" height="32" fill="white" />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+
+                                            <div class="histroy-info__text">Оплата по счету</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="histroy-info__list">
+                                        <h2 class="caption">Доставка</h2>
+
+                                        <div class="histroy-info__delivery">
+
+                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M11.5199 14.0804H3.83994V13.7678L7.46818 10.2404H11.5199V14.0804ZM11.5199 15.3604V19.8401C10.9361 19.063 10.0067 18.5604 8.95994 18.5604C7.64774 18.5604 6.52001 19.3502 6.02621 20.4804H3.83994V15.3604H11.5199ZM12.7999 20.4804V8.96039V7.68039H28.1599V20.4804H27.2537C26.7599 19.3502 25.6321 18.5604 24.3199 18.5604C23.0077 18.5604 21.88 19.3502 21.3862 20.4804H12.7999ZM11.5199 8.96039H6.94851L2.55994 13.2271V20.4804C2.55994 21.1873 3.13302 21.7604 3.83994 21.7604H5.75994C5.75994 23.5277 7.19263 24.9604 8.95994 24.9604C10.7273 24.9604 12.1599 23.5277 12.1599 21.7604H21.1199C21.1199 23.5277 22.5526 24.9604 24.3199 24.9604C26.0873 24.9604 27.5199 23.5277 27.5199 21.7604H28.1599C28.8669 21.7604 29.4399 21.1873 29.4399 20.4804V7.68039C29.4399 6.97347 28.8669 6.40039 28.1599 6.40039H12.7999C12.093 6.40039 11.5199 6.97347 11.5199 7.68039V8.96039ZM24.3199 23.6804C23.2596 23.6804 22.3999 22.8208 22.3999 21.7604C22.3999 20.7 23.2596 19.8404 24.3199 19.8404C25.3803 19.8404 26.2399 20.7 26.2399 21.7604C26.2399 22.8208 25.3803 23.6804 24.3199 23.6804ZM8.95994 23.6804C7.89956 23.6804 7.03994 22.8208 7.03994 21.7604C7.03994 20.7 7.89956 19.8404 8.95994 19.8404C10.0203 19.8404 10.8799 20.7 10.8799 21.7604C10.8799 22.8208 10.0203 23.6804 8.95994 23.6804Z" />
+                                            </svg>
+
+                                            <div class="histroy-info__text">Доставка до терминала транспортной компании</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="histroy-info__list">
+                                        <h2 class="caption">Содержимое заказа</h2>
+
+                                        <div class="basket-table">
+                                            <div class="table">
+                                                <div class="thead">
+                                                    <div class="tr">
+                                                        <div class="th">Товар</div>
+                                                        <div class="th">Объем</div>
+                                                        <div class="th">Фасовка</div>
+                                                        <div class="th">Количество</div>
+                                                        <div class="th">Цена</div>
+                                                    </div>
+                                                </div>
+                                                <div class="tbody">
+                                                    <div class="tr">
+                                                        <div class="td">
+                                                            <div class="basket-table__product">
+                                                                <picture class="picture">
+                                                                    <a href="#"></a>
+                                                                    <source type="image/webp"
+                                                                        srcset="../../img/pic-basket1.webp">
+                                                                    <img src="../../img/pic-basket1.png" alt="">
+                                                                </picture>
+                                                                <div class="basket-table__body">
+                                                                    <span class="basket-table__article">Артикул:
+                                                                        123456</span>
+                                                                    <a href="#" class="basket-table__name">Берит</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="td">
+                                                            <span class="mobile-title">Объем:</span>
+                                                            <span class="basket-table__volume">0,5 л</span>
+                                                        </div>
+                                                        <div class="td">
+                                                            <span class="basket-table__box">
+                                                                <span class="mobile-title">Фасовка:</span>
+                                                                <img src="../../img/ic-thing.svg" alt="">
+                                                                Штука
+                                                            </span>
+                                                        </div>
+                                                        <div class="td">
+                                                            <span class="mobile-title">Количество:</span>
+                                                            <span class="basket-table__countTxt">1 шт.</span>
+                                                        </div>
+                                                        <div class="td">
+                                                            <div class="price-basket">
+                                                                <span class="old">568 ₽</span>
+                                                                <span class="cur">299 ₽</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tr">
+                                                        <div class="td">
+                                                            <div class="basket-table__product">
+                                                                <picture class="picture">
+                                                                    <a href="#"></a>
+                                                                    <source type="image/webp"
+                                                                        srcset="../../img/pic-basket2.webp">
+                                                                    <img src="../../img/pic-basket2.png" alt="">
+                                                                </picture>
+                                                                <div class="basket-table__body">
+                                                                    <span class="basket-table__article">Артикул:
+                                                                        123456</span>
+                                                                    <a href="#" class="basket-table__name">ANTIFAT</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="td">
+                                                            <span class="mobile-title">Объем:</span>
+                                                            <span class="basket-table__volume">0,5 л</span>
+                                                        </div>
+                                                        <div class="td">
+                                                            <span class="basket-table__box">
+                                                                <span class="mobile-title">Фасовка:</span>
+                                                                <img src="../../img/ic-thing.svg" alt="">
+                                                                Штука
+                                                            </span>
+                                                        </div>
+                                                        <div class="td">
+                                                            <span class="mobile-title">Количество:</span>
+                                                            <span class="basket-table__countTxt">1 шт.</span>
+                                                        </div>
+                                                        <div class="td">
+                                                            <div class="price-basket">
+                                                                <span>299 ₽</span>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="tr">
+                                                        <div class="td">
+                                                            <div class="basket-table__product">
+                                                                <picture class="picture">
+                                                                    <a href="#"></a>
+                                                                    <source type="image/webp"
+                                                                        srcset="../../img/pic-basket1.webp">
+                                                                    <img src="../../img/pic-basket1.png" alt="">
+                                                                </picture>
+                                                                <div class="basket-table__body">
+                                                                    <span class="basket-table__article">Артикул:
+                                                                        123456</span>
+                                                                    <a href="#" class="basket-table__name">Берит</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="td">
+                                                            <span class="mobile-title">Объем:</span>
+                                                            <span class="basket-table__volume">0,5 л</span>
+                                                        </div>
+                                                        <div class="td">
+                                                            <span class="basket-table__box">
+                                                                <span class="mobile-title">Фасовка:</span>
+                                                                <img src="../../img/ic-thing.svg" alt="">
+                                                                Штука
+                                                            </span>
+                                                        </div>
+                                                        <div class="td">
+                                                            <span class="mobile-title">Количество:</span>
+                                                            <span class="basket-table__countTxt">1 шт.</span>
+                                                        </div>
+                                                        <div class="td">
+                                                            <div class="price-basket">
+                                                                <span class="old">568 ₽</span>
+                                                                <span class="cur">299 ₽</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tr">
+                                                        <div class="td">
+                                                            <div class="basket-table__product">
+                                                                <picture class="picture">
+                                                                    <a href="#"></a>
+                                                                    <source type="image/webp"
+                                                                        srcset="../../img/pic-basket2.webp">
+                                                                    <img src="../../img/pic-basket2.png" alt="">
+                                                                </picture>
+                                                                <div class="basket-table__body">
+                                                                    <span class="basket-table__article">Артикул:
+                                                                        123456</span>
+                                                                    <a href="#" class="basket-table__name">ANTIFAT</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="td">
+                                                            <span class="mobile-title">Объем:</span>
+                                                            <span class="basket-table__volume">0,5 л</span>
+                                                        </div>
+                                                        <div class="td">
+                                                            <span class="basket-table__box">
+                                                                <span class="mobile-title">Фасовка:</span>
+                                                                <img src="../../img/ic-thing.svg" alt="">
+                                                                Штука
+                                                            </span>
+                                                        </div>
+                                                        <div class="td">
+                                                            <span class="mobile-title">Количество:</span>
+                                                            <span class="basket-table__countTxt">1 шт.</span>
+                                                        </div>
+                                                        <div class="td">
+                                                            <div class="price-basket">
+                                                                <span>299 ₽</span>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-
-                                        <div class="input-item">
-                                            <label for="">Имя</label>
-                                            <div class="input-item__form">
-                                                <input type="text" value="Иван" placeholder="Введите информацию">
-                                            </div>
-                                        </div>
-
-                                        <div class="input-item">
-                                            <label for="">Отчество</label>
-                                            <div class="input-item__form">
-                                                <input type="text" placeholder="Введите информацию">
-                                            </div>
-                                        </div>
-
-                                        <div class="input-item">
-                                            <label for="">Введите номер заказа*</label>
-                                            <div class="input-item__form">
-                                                <input type="text" placeholder="Введите информацию">
-                                            </div>
-                                        </div>
-
-                                        <div class="input-item">
-                                            <label for="">Укажите причину возврата*</label>
-                                            <div class="input-item__form">
-                                                <textarea placeholder="Введите информацию"></textarea>
-                                            </div>
-                                        </div>
-
-                                        <div class="input-item">
-                                            <label for="">Телефон</label>
-                                            <div class="input-item__form">
-                                                <input type="text" class="phone-input" placeholder="Введите информацию">
-                                            </div>
-                                        </div>
-
-                                        <div class="input-item">
-                                            <label for="">E-mail</label>
-                                            <div class="input-item__form">
-                                                <input type="text" value="info@gmail.com"
-                                                    placeholder="Введите информацию">
+                                            <div class="basket-table__all">
+                                                <button class="seeAll">Смотреть все</button>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="cabinet-body__controls">
-                                        <button type="submit" class="btn">отправить заявку</button>
-                                        <span class="text">Нажимая кнопку «Отправить заявку», я даю согласие на
-                                            обработку своих персональных данных в соответствии с <a href="#">Политикой
-                                                конфиденциальности</a></span>
+
+                                    <div class="histroy-info__controls">
+                                        <button class="btn">Оплатить</button>
+                                        <button class="btn btn--white">Повторить</button>
                                     </div>
+
+
                                 </form>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </section>

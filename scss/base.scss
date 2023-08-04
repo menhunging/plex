@@ -101,7 +101,7 @@ picture {
 
     &::placeholder {
       opacity: 1;
-      color: rgba(0, 34, 70, 0.50);
+      color: rgba(0, 34, 70, 0.5);
     }
   }
 
@@ -137,7 +137,7 @@ picture {
   &.input-item--first {
     margin-bottom: 22px;
 
-    label{
+    label {
       padding-top: 0;
       font-size: 18px;
     }
@@ -153,9 +153,9 @@ picture {
     font-weight: 500;
     line-height: 20px;
     text-decoration: underline;
-    @include transition(all .3s);
+    @include transition(all 0.3s);
 
-    &:hover{
+    &:hover {
       text-decoration-color: transparent;
     }
   }
@@ -1086,4 +1086,12 @@ div {
       border-color: #cbd4db;
     }
   }
+}
+
+.table-history__mobileTitle {
+  display: none;
+  color: #002246;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
 }

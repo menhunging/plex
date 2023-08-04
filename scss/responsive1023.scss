@@ -1065,6 +1065,8 @@
     .tabs-link {
       min-width: 184px;
       height: 40px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
 
     .tabs-body {
@@ -1166,15 +1168,52 @@
     }
   }
 
-  .login-section__inner{
+  .login-section__inner {
     gap: 16px;
   }
 
-  .login-section .input-form{
+  .login-section .input-form {
     gap: 16px;
   }
 
-  .login-section__inner{
+  .login-section__inner {
     max-width: 282px;
+  }
+  
+  .cabinet-section .back-link{
+    font-size: 12px;
+  }
+
+  .cabinet-section .caption {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .histroy-info__list .caption {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .histroy-info__list .price {
+    font-size: 12px;
+    line-height: 22px;
+  }
+
+  .histroy-info__list .data{
+    font-size: 12px;
+  }
+
+  .histroy-info__delivery{
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .basket-table__all .seeAll{
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .histroy-info__controls .btn {
+    max-width: 274px;
   }
 }

@@ -3228,6 +3228,7 @@ section {
     gap: 10px;
     text-decoration: underline;
     @include transition(all 0.3s);
+    margin-top: -20px;
 
     &:hover {
       text-decoration-color: transparent;
@@ -3264,6 +3265,11 @@ section {
 
 .cabinet-body__body {
   margin-top: 20px;
+
+  .basket-table {
+    margin-top: 20px;
+    border-top: solid 1px #002246;
+  }
 }
 
 .cabinet-body__controls {
@@ -3929,7 +3935,188 @@ section {
     text-decoration: underline;
     @include transition(text-decoration 0.3s);
 
-    &:hover{
+    &:hover {
+      text-decoration-color: transparent;
+    }
+  }
+}
+
+.table-history {
+  display: table;
+  width: 100%;
+  margin-top: -20px;
+
+  .thead {
+    display: table-row-group;
+
+    .td {
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: 500;
+    }
+  }
+
+  .tbody {
+    display: table-row-group;
+
+    .td {
+      border-top: solid 1px rgba(0, 34, 70, 1);
+    }
+  }
+
+  .tr {
+    display: table-row;
+  }
+
+  .td {
+    display: table-cell;
+    vertical-align: middle;
+    color: #002246;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 16px 5px;
+
+    &:first-child {
+      text-align: left;
+      padding-left: 0;
+    }
+
+    &:last-child {
+      text-align: right;
+      padding-right: 0;
+    }
+  }
+
+  .tbody {
+  }
+
+  .price {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+  }
+
+  .status {
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    @include transition(text-decoration 0.3s);
+
+    &:hover {
+      text-decoration-color: #002246;
+    }
+  }
+
+  .more {
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration-color: transparent;
+    }
+  }
+}
+
+.histroy-info__list {
+  border-top: solid 1px #002246;
+  padding: 20px 0;
+
+  .caption {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  .title {
+  }
+
+  .data {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  a.data {
+    @include text-decoration-hover(#002246);
+  }
+
+  .price {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+  }
+
+  ul {
+    li {
+      color: #002246;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & + li {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.histroy-info__delivery {
+  color: #002246;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  svg {
+    width: 32px;
+    height: 32px;
+
+    path {
+      fill: #41c0eb;
+    }
+  }
+
+  .histroy-info__text{
+    flex: 1;
+  }
+}
+
+.histroy-info__controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  .btn {
+    max-width: 286px;
+    width: 100%;
+  }
+}
+
+.basket-table__all {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+  border-top: solid 1px #002246;
+
+  .seeAll {
+    color: #002246;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-decoration: underline;
+    @include transition(text-decoration 0.3s);
+
+    &:hover {
       text-decoration-color: transparent;
     }
   }
