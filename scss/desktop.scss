@@ -1393,16 +1393,17 @@ section {
 
     @include before {
       left: 0;
-      top: 2px;
+      top: 0;
       width: 16px;
       height: 16px;
       @include border-radius(3px);
       border: solid 2px rgba(0, 34, 70, 1);
       overflow: hidden;
     }
+
     @include after {
       left: 0;
-      top: 2px;
+      top: 0;
       width: 16px;
       height: 16px;
       background-image: url("../img/check.svg");
@@ -3877,4 +3878,59 @@ section {
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
+}
+
+.breadcrumbs + .login-section {
+  padding-top: 0;
+}
+
+.login-section {
+}
+
+.login-section__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+}
+
+.login-section .input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-section__caption {
+}
+
+.login-section__text {
+  color: #002246;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  display: block;
+}
+
+.login-section__controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .login-section__text {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  a {
+    color: #002246;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-decoration: underline;
+    @include transition(text-decoration 0.3s);
+
+    &:hover{
+      text-decoration-color: transparent;
+    }
+  }
 }

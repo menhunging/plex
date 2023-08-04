@@ -3638,7 +3638,7 @@ section {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   left: 0;
-  top: 2px;
+  top: 0;
   width: 16px;
   height: 16px;
   -webkit-border-radius: 3px;
@@ -3656,7 +3656,7 @@ section {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   left: 0;
-  top: 2px;
+  top: 0;
   width: 16px;
   height: 16px;
   background-image: url("../img/check.svg");
@@ -5871,6 +5871,55 @@ section {
   line-height: 24px;
 }
 
+.breadcrumbs + .login-section {
+  padding-top: 0;
+}
+
+.login-section__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+}
+
+.login-section .input-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.login-section__text {
+  color: #002246;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  display: block;
+}
+
+.login-section__controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.login-section__controls .login-section__text {
+  width: 100%;
+  margin-top: 10px;
+}
+.login-section__controls a {
+  color: #002246;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-decoration: underline;
+  -webkit-transition: text-decoration 0.3s;
+  -moz-transition: text-decoration 0.3s;
+  -o-transition: text-decoration 0.3s;
+  transition: text-decoration 0.3s;
+}
+.login-section__controls a:hover {
+  text-decoration-color: transparent;
+}
+
 @media (max-width: 1439px) {
   .text-section__rightSide {
     max-width: 555px;
@@ -6768,6 +6817,11 @@ section {
   }
   .category-catalog__item a {
     padding-right: 10px;
+  }
+  .login-section__text,
+  .login-section__controls a {
+    font-size: 12px;
+    line-height: 15px;
   }
 }
 @media (max-width: 1023px) {
@@ -7668,6 +7722,18 @@ section {
   }
   .category-catalog__menu.visible {
     height: 190px;
+  }
+  .login-section .input-item input {
+    height: 45px;
+  }
+  .login-section__inner {
+    gap: 16px;
+  }
+  .login-section .input-form {
+    gap: 16px;
+  }
+  .login-section__inner {
+    max-width: 282px;
   }
 }
 @media (max-width: 767px) {
@@ -8818,6 +8884,9 @@ section {
   }
   .js-block-show li a {
     font-size: 12px;
+  }
+  .login-section__inner {
+    max-width: 100%;
   }
 }
 @media (min-width: 768px) {

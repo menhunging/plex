@@ -1158,4 +1158,23 @@
   .category-catalog__menu.visible {
     height: 190px;
   }
+  .login-section {
+    .input-item {
+      input {
+        height: 45px;
+      }
+    }
+  }
+
+  .login-section__inner{
+    gap: 16px;
+  }
+
+  .login-section .input-form{
+    gap: 16px;
+  }
+
+  .login-section__inner{
+    max-width: 282px;
+  }
 }
