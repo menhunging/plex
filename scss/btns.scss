@@ -16,8 +16,9 @@
   text-transform: uppercase;
 
   &:hover {
-    background-color: $colorWhite;
-    color: #002246;
+    border-color: #193c57;
+    background-color: #193c57;
+    color: #41c0eb;
   }
 
   &--white {
@@ -26,8 +27,9 @@
     color: #002246;
 
     &:hover {
-      background-color: #002246;
-      color: $colorWhite;
+      border-color: #cbd4db;
+      background-color: #cbd4db;
+      color: #013956;
     }
   }
 }
