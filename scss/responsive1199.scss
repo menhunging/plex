@@ -1151,37 +1151,93 @@
     line-height: 22px;
   }
 
-  .cabinet-section .back-link{
+  .cabinet-section .back-link {
     font-size: 14px;
   }
-  
-  .cabinet-section .caption{
+
+  .cabinet-section .caption {
     font-size: 18px;
     line-height: 24px;
   }
 
-  .histroy-info__list .caption{
+  .histroy-info__list .caption {
     font-size: 16px;
     line-height: 22px;
   }
 
-  .histroy-info__list .price{
+  .histroy-info__list .price {
     font-size: 14px;
     line-height: 22px;
   }
 
-  .histroy-info__list .data{
+  .histroy-info__list .data {
     font-size: 14px;
   }
 
-  .histroy-info__delivery{
+  .histroy-info__delivery {
     font-size: 14px;
     line-height: 17px;
     gap: 16px;
 
-    svg{
+    svg {
       width: 24px;
       height: 24px;
     }
+  }
+
+  .simplepage-section {
+    padding-top: 24px;
+  }
+
+  .simplepage-section .tabs-link {
+    min-width: 245px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .simplepage-section__content {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 30px;
+  }
+
+  .simplepage-section__content h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 30px;
+    padding-left: 5px;
+  }
+
+  .simplepage-section__content ol li,
+  .simplepage-section__content ul li {
+    position: relative;
+    padding-left: 23px;
+
+    &::before {
+      left: 9px;
+    }
+  }
+
+  .simplepage-section__content h3::before {
+    left: 9px;
+  }
+
+  .simplepage-section__content h3 {
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 23px;
+  }
+
+  .simplepage-section__content .simplepage-section__desc {
+    margin-top: 30px;
+  }
+
+  .return-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .return-section {
+    padding-top: 20px;
   }
 }

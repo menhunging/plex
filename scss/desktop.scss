@@ -4086,7 +4086,7 @@ section {
     }
   }
 
-  .histroy-info__text{
+  .histroy-info__text {
     flex: 1;
   }
 }
@@ -4118,6 +4118,158 @@ section {
 
     &:hover {
       text-decoration-color: transparent;
+    }
+  }
+}
+
+.simplepage-section {
+  padding-top: 40px;
+
+  .tabs-link {
+    min-width: 300px;
+    text-align: center;
+  }
+}
+
+.simplepage-section_inner {
+  .simplepage-section__content {
+    &:first-child {
+      margin-top: 0px;
+    }
+  }
+}
+
+.simplepage-section__content {
+  color: #002246;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 40px;
+
+  strong {
+    font-weight: 600;
+  }
+
+  p {
+    & + * {
+      margin-top: 16px;
+    }
+  }
+
+  h2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    display: block;
+    margin-top: 40px;
+    padding-left: 10px;
+
+    & + * {
+      margin-top: 16px;
+    }
+  }
+
+  h3 {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    display: block;
+    padding-left: 27px;
+    margin-bottom: 10px;
+
+    @include before {
+      left: 13px;
+      top: 12px;
+      width: 4px;
+      height: 4px;
+      @include border-radius(50%);
+      background-color: #002246;
+    }
+  }
+
+  ol,
+  ul {
+    li {
+      position: relative;
+      padding-left: 27px;
+
+      @include before {
+        left: 13px;
+        top: 12px;
+        width: 4px;
+        height: 4px;
+        @include border-radius(50%);
+        background-color: #002246;
+      }
+
+      & + li {
+        margin-top: 16px;
+      }
+    }
+  }
+
+  a {
+    text-decoration: underline;
+    @include transition(text-decoration-color 0.3s);
+
+    &:hover {
+      text-decoration-color: transparent;
+    }
+  }
+
+  .pictures {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    & + * {
+      margin-top: 16px;
+    }
+  }
+}
+
+.simplepage-section__content .simplepage-section__desc {
+  margin-top: 60px;
+
+  h2 {
+    padding-left: 0;
+  }
+}
+
+.return-section {
+  padding-top: 40px;
+}
+
+.return-text {
+  color: #002246;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+
+  ul {
+    counter-reset: section;
+  }
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 6px;
+
+    &::before {
+      position: relative;
+      left: 0;
+      top: 0;
+      min-width: 19px;
+      display: block;
+      counter-increment: section;
+      content: "" counter(section) ". ";
+    }
+
+    & + li {
+      margin-top: 16px;
     }
   }
 }

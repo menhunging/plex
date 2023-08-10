@@ -1467,7 +1467,7 @@
         width: 100%;
         padding: 20px 0;
 
-        &:last-child{
+        &:last-child {
           padding-bottom: 0;
         }
 
@@ -1512,28 +1512,87 @@
     line-height: 17px;
   }
 
-  .histroy-info__list{
+  .histroy-info__list {
     padding: 16px 0;
   }
 
-  .histroy-info__list ul li{
+  .histroy-info__list ul li {
     font-size: 12px;
   }
 
-  .cabinet-body__body .basket-table{
+  .cabinet-body__body .basket-table {
     margin-top: 16px;
   }
 
-  .basket-table__all{
+  .basket-table__all {
     margin-top: 20px;
     padding: 0;
-    border:0;
+    border: 0;
   }
 
   .histroy-info__controls {
     gap: 16px;
     flex-direction: column;
     margin-top: 5px;
+  }
+
+  .simplepage-section {
+    padding-top: 19px;
+  }
+
+  .simplepage-section__content {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 10px;
+  }
+
+  .simplepage-section__content h2 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .simplepage-section__content ol li,
+  .simplepage-section__content ul li {
+    padding-left: 19px;
+  }
+
+  .simplepage-section .tabs-links {
+    display: block;
+    margin-bottom: 6px;
+    margin-left: 0;
+    margin-right: 0;
+    overflow: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+    position: relative;
+
+    &::-webkit-scrollbar {
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: transparent;
+    }
+
+    scrollbar-color: transparent transparent;
+    scrollbar-width: thin;
+
+    li {
+      display: inline-block;
+    }
+  }
+
+  .return-text {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .return-section {
+    padding-top: 16px;
+  }
+
+  .return-text li::before {
+    min-width: 12px;
   }
 }
 

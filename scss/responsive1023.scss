@@ -1179,8 +1179,8 @@
   .login-section__inner {
     max-width: 282px;
   }
-  
-  .cabinet-section .back-link{
+
+  .cabinet-section .back-link {
     font-size: 12px;
   }
 
@@ -1199,21 +1199,77 @@
     line-height: 22px;
   }
 
-  .histroy-info__list .data{
+  .histroy-info__list .data {
     font-size: 12px;
   }
 
-  .histroy-info__delivery{
+  .histroy-info__delivery {
     font-size: 12px;
     line-height: 15px;
   }
 
-  .basket-table__all .seeAll{
+  .basket-table__all .seeAll {
     font-size: 12px;
     line-height: 15px;
   }
 
   .histroy-info__controls .btn {
     max-width: 274px;
+  }
+
+  .simplepage-section .tabs-link {
+    min-width: 182px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .simplepage-section__content {
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 20px;
+  }
+
+  .simplepage-section__content h2 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 20px;
+  }
+
+  .simplepage-section__content h3 {
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 21px;
+  }
+
+  .simplepage-section__content h3::before {
+    left: 9px;
+    width: 3px;
+    height: 3px;
+    top: 9px;
+  }
+
+  .simplepage-section__content ol li,
+  .simplepage-section__content ul li {
+    padding-left: 21px;
+
+    &::before {
+      left: 9px;
+      width: 3px;
+      height: 3px;
+      top: 9px;
+    }
+  }
+
+  .simplepage-section__content .simplepage-section__desc {
+    margin-top: 20px;
+  }
+
+  .return-text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .return-text li::before {
+    min-width: 17px;
   }
 }
