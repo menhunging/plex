@@ -1272,4 +1272,147 @@
   .return-text li::before {
     min-width: 17px;
   }
+
+  .documents-section .caption {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .documents-name {
+    max-width: 408px;
+    width: 100%;
+  }
+
+  .documents-size {
+    margin-left: auto;
+  }
+
+  .documents-item {
+    padding: 16px;
+  }
+
+  .jobs-info h2,
+  .jobs-info h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .jobs-info {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .jobs-info__date {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 16px;
+  }
+
+  .jobs-info {
+    padding-top: 16px;
+  }
+
+  .jobs-info ol li::before,
+  .jobs-info ul li::before {
+    top: 8px;
+  }
+
+  .about-block__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .about-block__left {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .about-controls {
+    margin-top: 7px;
+    max-width: 482px;
+  }
+
+  .about-block__right {
+    max-width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .about-company .text-simple h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .about-company {
+    padding-bottom: 20px;
+  }
+
+  .about-info__title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .about-info {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .about-info__inner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about-info__row {
+    padding: 30px 0;
+  }
+
+  .about-info__row .picture {
+    max-width: 100%;
+  }
+
+  .about-info__col {
+    gap: 20px;
+    padding-right: 0;
+  }
+
+  .about-info__row:nth-child(2n) .about-info__col:first-child {
+    order: inherit;
+  }
+
+  .about-text {
+    .caption {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  .contacts-social .title,
+  .contacts-line a {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .contacts-line .text{
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .contacts-adress .caption{
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .contacts-adress {
+    margin-top: 25px;
+  }
+
+  .contacts-adress__tabs .tabs-link {
+    min-width: 185px;
+    padding: 13px 20px;
+  }
+
+  .map {
+    height: 220px;
+  }
 }

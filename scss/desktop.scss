@@ -4273,3 +4273,687 @@ section {
     }
   }
 }
+
+.documents-section {
+  padding-top: 40px;
+
+  .caption {
+    color: #002246;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+  }
+}
+
+.documents-list {
+  margin-top: 40px;
+}
+
+.documents-item {
+  background-color: #fff;
+  @include box-shadow(0px 4px 24px 0px rgba(218, 224, 232, 0.6));
+  gap: 20px;
+  color: rgba(0, 34, 70, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+
+  & + .documents-item {
+    margin-top: 20px;
+  }
+}
+
+.documents-date {
+}
+
+.documents-name {
+  color: #002246;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  @include text-decoration-hover(#002246);
+  max-width: 756px;
+}
+
+.documents-size {
+}
+
+.documents-controls {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  gap: 20px;
+
+  .btn-print,
+  .btn-load {
+    cursor: pointer;
+    position: relative;
+
+    svg {
+      path {
+        @include transition(all 0.3s);
+      }
+    }
+
+    &:hover {
+      svg {
+        pointer-events: none;
+
+        path {
+          fill: #ef5553;
+        }
+      }
+    }
+  }
+}
+
+.jobs-section {
+  padding-top: 40px;
+}
+
+.jobs-list {
+}
+
+.jobs-item {
+  background-color: #fff;
+  @include box-shadow(0px 4px 24px 0px rgba(218, 224, 232, 0.6));
+  gap: 20px;
+  color: rgba(0, 34, 70, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+
+  & + .jobs-item {
+    margin-top: 20px;
+  }
+}
+
+.jobs-date {
+}
+
+.jobs-name {
+  color: #002246;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-decoration: underline;
+  @include transition(text-decoration 0.3s);
+  text-decoration-skip-ink: none;
+
+  svg {
+    pointer-events: none;
+  }
+
+  &:hover {
+    text-decoration-color: transparent;
+  }
+}
+
+.jobs-more {
+  color: #002246;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: uppercase;
+  @include text-decoration-hover(#002246);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+  text-decoration-skip-ink: none;
+}
+
+.jobs-info {
+  color: #002246;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-top: 20px;
+
+  h2,
+  h3 {
+    color: #002246;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+  }
+
+  * + *:not(li) {
+    margin-top: 16px;
+  }
+
+  *:not(.date) + h2,
+  *:not(.date) + h3 {
+    margin-top: 40px;
+  }
+
+  ol,
+  ul {
+    li {
+      position: relative;
+      text-indent: 10px;
+
+      @include before {
+        left: 0;
+        top: 13px;
+        width: 3px;
+        height: 3px;
+        background-color: #002246;
+        @include border-radius(50%);
+      }
+    }
+  }
+}
+
+.jobs-info__date {
+  color: rgba(0, 34, 70, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.about-page {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  .simplepage-section__content {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 24px;
+  }
+
+  .about-product {
+    .caption {
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    .about-list {
+      margin-top: 40px;
+    }
+  }
+
+  .about-main {
+    background-color: #cad5dc;
+  }
+}
+
+.about-block__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.about-block {
+  padding-top: 0;
+}
+
+.about-block__left {
+  color: #002246;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.about-controls {
+  margin-top: 9px;
+  display: flex;
+  width: 100%;
+  gap: 24px;
+  max-width: 508px;
+
+  .btn {
+    width: 50%;
+  }
+}
+
+.about-block__right {
+  width: 100%;
+  max-width: 588px;
+}
+
+.about-block__picture {
+}
+
+.about-company {
+  position: relative;
+  padding-bottom: 50px;
+
+  .text-simple {
+    color: $colorWhite;
+
+    h2 {
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 37px;
+      margin-bottom: 16px;
+    }
+
+    li {
+      &::before {
+        background-color: $colorWhite;
+      }
+    }
+
+    ol li + li,
+    ul li + li {
+      margin-top: 16px;
+    }
+  }
+  .picture {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    pointer-events: none;
+    z-index: -1;
+
+    @include before {
+      width: 100%;
+      height: 100%;
+      background-image: url("../img/bg-about.webp");
+      background-repeat: no-repeat;
+      opacity: 0.9;
+      top: 0;
+      left: 0;
+      background-position: center;
+      background-size: cover;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.about-company__inner {
+}
+
+.about-info {
+  color: #002246;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 0;
+}
+
+.about-info__row {
+  background-color: #cad5dc;
+  padding: 60px 0;
+
+  &:nth-child(2n) {
+    background-color: $colorWhite;
+
+    .about-info__col {
+      &:first-child {
+        order: 2;
+      }
+    }
+  }
+
+  .picture {
+    max-width: 588px;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.about-info__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.about-info__col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-info__title {
+  color: #002246;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 37px;
+}
+
+.about-info__controls {
+  .btn {
+    width: 100%;
+    max-width: 312px;
+  }
+}
+
+.about-text {
+  .caption {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.about-slider {
+  margin-top: 24px;
+
+  .picture {
+    width: 100%;
+    @include invisLink;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.contacts-page {
+  padding-top: 40px;
+}
+
+.contacts-page__inner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.contacts-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  background-color: $colorWhite;
+  @include box-shadow(0px 4px 24px 0px rgba(218, 224, 232, 0.6));
+  padding: 40px;
+
+  &:first-child {
+    grid-column: 1/3;
+  }
+
+  .icon {
+    background-image: url("../img/bg-contacts-rectangle.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 88px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .text {
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: calc(100% - 140px);
+    gap: 16px;
+
+    li {
+    }
+  }
+
+  a {
+    color: #002246;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    text-decoration-skip-ink: none;
+    @include text-decoration-hover(#002246);
+
+    &:hover {
+    }
+  }
+
+  .email {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration-color: transparent;
+    }
+  }
+
+  .text {
+    color: #002246;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.contacts-social {
+  width: calc(100% - 140px);
+
+  .title {
+    color: #002246;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+  }
+
+  .social {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    svg {
+      pointer-events: none;
+
+      path {
+        @include transition(all 0.3s);
+      }
+    }
+
+    a {
+      &:hover {
+        svg {
+          path {
+            fill: #ef5553;
+          }
+        }
+      }
+    }
+  }
+}
+
+.contacts-adress {
+  margin-top: 60px;
+
+  .caption {
+    color: #002246;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 37px;
+  }
+}
+
+.contacts-adress__tabs {
+  margin-top: 37px;
+
+  .tabs-links {
+    margin-bottom: 40px;
+
+    li {
+    }
+  }
+
+  .tabs-link {
+    width: 100%;
+    min-width: 300px;
+    text-align: center;
+  }
+
+  .tabs-body {
+  }
+}
+
+.map {
+  width: 100%;
+  height: 357px;
+}
+
+.contacts-table {
+  display: table;
+  width: 100%;
+  background-color: $colorWhite;
+  @include box-shadow(0px 4px 24px 0px rgba(218, 224, 232, 0.6));
+  padding: 16px;
+
+  .thead {
+    display: table-row-group;
+
+    .td {
+      color: #002246;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+      padding-top: 0;
+    }
+  }
+
+  .tbody {
+    display: table-row-group;
+
+    .td {
+      border-top: solid 1px #002246;
+    }
+
+    .tr {
+      &:last-child {
+        .td {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .tr {
+    display: table-row;
+  }
+
+  .td {
+    display: table-cell;
+    vertical-align: middle;
+    width: auto;
+    color: #002246;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: center;
+    padding: 16px 5px;
+
+    &:first-child {
+      width: 43%;
+      text-align: left;
+      padding-left: 0;
+    }
+  }
+
+  .titleMobile {
+    display: none;
+    color: #002246;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    text-align: left;
+  }
+
+  ul {
+    text-align: center;
+
+    li {
+      & + li {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  a {
+    @include text-decoration-hover(#002246);
+  }
+}
+
+.news-page {
+  padding-top: 40px;
+
+  
+}
+
+.news-page__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+
+  .tabs-links {
+    overflow: auto;
+    white-space: nowrap;
+    
+    
+    li {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
+  .tabs-link {
+    min-width: 300px;
+    text-align: center;
+  }
+}
+
+.select-news {
+  position: relative;
+  color: #002246;
+  font-size: 16px;
+  font-weight: 500;
+
+  .js-link-open {
+    cursor: pointer;
+    padding-right: 35px;
+
+    @include before {
+      top: 0;
+      right: 0;
+      width: 32px;
+      height: 100%;
+      background-image: url("../img/arrow-selectric.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .js-block-show {
+    left: auto;
+    right: 0;
+    width: auto;
+    top: calc(100% + 10px);
+    min-width: 187px;
+  }
+}

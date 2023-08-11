@@ -322,6 +322,60 @@ $(document).ready(function () {
     otherSliders.length && sliderinit();
   }
 
+  if ($(".about-slider").length > 0) {
+    const aboutSliders = document.querySelectorAll(".about-slider");
+
+    let mySwipers = [];
+
+    function sliderinit() {
+      aboutSliders.forEach((slider, index) => {
+        if (!slider.swiper) {
+          mySwipers[index] = new Swiper(slider, {
+            slidesPerView: 3,
+            spaceBetween: 24,
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            breakpoints: {
+              0: {
+                slidesPerView: 1.5,
+                spaceBetween: 24,
+              },
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 24,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 24,
+              },
+              1024: {
+                slidesPerView: 1.75,
+                spaceBetween: 24,
+              },
+              1200: {
+                slidesPerView: 3,
+                spaceBetween: 24,
+              },
+            },
+            on: {
+              init: function (swiper) {},
+            },
+          });
+        } else {
+          return;
+        }
+      });
+    }
+
+    aboutSliders.length && sliderinit();
+  }
+
   if ($(".product-settings").length > 0) {
     $.widget("custom.iconselectmenu", $.ui.selectmenu, {
       _renderItem: function (ul, item) {

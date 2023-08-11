@@ -1047,14 +1047,14 @@ div {
     margin-bottom: 30px;
     display: flex;
   }
+}
 
-  .active {
-    .link-rectangle {
-      color: rgba(65, 192, 235, 1);
+.active {
+  .link-rectangle {
+    color: rgba(65, 192, 235, 1);
 
-      @include before {
-        background-color: #193c57;
-      }
+    @include before {
+      background-color: #193c57;
     }
   }
 }

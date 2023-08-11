@@ -1240,4 +1240,228 @@
   .return-section {
     padding-top: 20px;
   }
+
+  .documents-section .caption {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .documents-item {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .documents-name {
+    font-size: 14px;
+    line-height: 17px;
+    max-width: 670px;
+  }
+
+  .documents-section {
+    padding-top: 20px;
+  }
+
+  .documents-list {
+    margin-top: 20px;
+  }
+
+  .documents-item + .documents-item {
+    margin-top: 16px;
+  }
+
+  .jobs-section {
+    padding-top: 20px;
+  }
+
+  .jobs-item {
+    font-size: 12px;
+    line-height: 17px;
+
+    & + .jobs-item {
+      margin-top: 16px;
+    }
+  }
+
+  .jobs-more {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  .jobs-name {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .jobs-info h2,
+  .jobs-info h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .jobs-info {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .jobs-info :not(.date) + h2,
+  .jobs-info :not(.date) + h3 {
+    margin-top: 20px;
+  }
+
+  .about-block__left {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .about-block__right {
+    max-width: 482px;
+  }
+
+  .about-block__inner {
+    gap: 30px;
+  }
+
+  .about-company .text-simple h2 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .about-company {
+    padding-bottom: 30px;
+  }
+
+  .about-info__title {
+    font-size: 24px;
+    line-height: 33px;
+  }
+
+  .about-info {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .about-info__row .picture {
+    max-width: 482px;
+  }
+
+  .about-page .about-product {
+    padding: 40px 0 45px;
+  }
+
+  .about-page .about-product .caption {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .about-page .about-product .about-list {
+    margin-top: 23px;
+  }
+
+  .about-page .about-product .about-item__content {
+    padding: 0 30px;
+  }
+
+  .about-info__inner {
+    align-items: center;
+    gap: 10px;
+  }
+
+  .about-info__row {
+    padding: 33px 0;
+  }
+
+  .about-info__col {
+    gap: 20px;
+    padding-right: 15px;
+  }
+
+  .about-text {
+    .caption {
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+
+  .about-slider {
+    margin-top: 20px;
+  }
+
+  .contacts-social .title,
+  .contacts-line a{
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .contacts-line .text{
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .contacts-line .icon{
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+
+    img{
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .contacts-line{
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .contacts-page__inner{
+    gap: 20px;
+  }
+
+  .contacts-social{
+    width: calc(100% - 100px);
+  }
+
+  .contacts-line ul{
+    width: calc(100% - 100px);
+  }
+
+  .contacts-adress .caption{
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .map{
+    height: 300px;
+  }
+
+  .contacts-adress__tabs {
+    margin-top: 20px;
+  }
+
+  .contacts-page {
+    padding-top: 20px;
+  }
+
+  .contacts-adress {
+    margin-top: 35px;
+  }
+
+  .contacts-adress__tabs .tabs-link {
+    min-width: 248px;
+    padding: 18px 20px;
+  }
+
+  .contacts-table .td{
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .contacts-table .thead .td{
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .contacts-table .td:first-child {
+    width: 42%;
+  }
 }
