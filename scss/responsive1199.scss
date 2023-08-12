@@ -177,11 +177,11 @@
   .video-section {
     height: 300px;
     padding: 25px;
+  }
 
-    .video__link {
-      font-size: 14px;
-      line-height: 17px;
-    }
+  .video__link {
+    font-size: 14px;
+    line-height: 17px;
   }
 
   .about-list {
@@ -1387,50 +1387,50 @@
   }
 
   .contacts-social .title,
-  .contacts-line a{
+  .contacts-line a {
     font-size: 18px;
     line-height: 24px;
   }
 
-  .contacts-line .text{
+  .contacts-line .text {
     font-size: 16px;
     line-height: 20px;
   }
 
-  .contacts-line .icon{
+  .contacts-line .icon {
     width: 80px;
     height: 80px;
     background-size: contain;
 
-    img{
+    img {
       width: 30px;
       height: 30px;
     }
   }
 
-  .contacts-line{
+  .contacts-line {
     gap: 20px;
     padding: 20px;
   }
 
-  .contacts-page__inner{
+  .contacts-page__inner {
     gap: 20px;
   }
 
-  .contacts-social{
+  .contacts-social {
     width: calc(100% - 100px);
   }
 
-  .contacts-line ul{
+  .contacts-line ul {
     width: calc(100% - 100px);
   }
 
-  .contacts-adress .caption{
+  .contacts-adress .caption {
     font-size: 24px;
     line-height: 29px;
   }
 
-  .map{
+  .map {
     height: 300px;
   }
 
@@ -1451,17 +1451,89 @@
     padding: 18px 20px;
   }
 
-  .contacts-table .td{
+  .contacts-table .td {
     font-size: 12px;
     line-height: 15px;
   }
 
-  .contacts-table .thead .td{
+  .contacts-table .thead .td {
     font-size: 14px;
     line-height: 17px;
   }
 
   .contacts-table .td:first-child {
     width: 42%;
+  }
+
+  .news-page__head .tabs-link {
+    min-width: 248px;
+  }
+
+  .select-news {
+    font-size: 14px;
+  }
+
+  .news-page__head {
+    margin-bottom: 30px;
+  }
+
+  .news-page {
+    padding-top: 20px;
+  }
+
+  .article .text-simple h1 {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .article-other {
+    margin-top: 40px;
+
+    .caption {
+      & + .article-list {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .article .text-simple h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .video-page {
+    padding-top: 20px;
+  }
+
+  .video-catalog {
+    padding-top: 20px;
+  }
+
+  .video-list {
+    gap: 17px;
+  }
+
+  .video-item {
+    height: 200px;
+  }
+
+  .not-section {
+    padding: 75px 0;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .not-section__controls {
+    .btn {
+      max-width: 316px;
+    }
+    .btn--white {
+      max-width: 281px;
+    }
+  }
+
+  .not-section__inner {
+    gap: 20px;
+    max-width: 613px;
   }
 }

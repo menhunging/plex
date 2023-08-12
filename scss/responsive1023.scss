@@ -219,11 +219,11 @@
 
   .video-section {
     height: 300px;
+  }
 
-    .video__link {
-      font-size: 12px;
-      line-height: 15px;
-    }
+  .video__link {
+    font-size: 12px;
+    line-height: 15px;
   }
 
   .about-list {
@@ -1393,12 +1393,12 @@
     line-height: 20px;
   }
 
-  .contacts-line .text{
+  .contacts-line .text {
     font-size: 14px;
     line-height: 17px;
   }
 
-  .contacts-adress .caption{
+  .contacts-adress .caption {
     font-size: 18px;
     line-height: 24px;
   }
@@ -1414,5 +1414,84 @@
 
   .map {
     height: 220px;
+  }
+
+  .news-page__head .tabs-link {
+    min-width: 184px;
+    padding: 13px 21px;
+  }
+
+  .select-news {
+    font-size: 12px;
+
+    .js-block-show {
+      li {
+        padding: 0;
+
+        a {
+          font-size: 12px;
+          padding: 8px 10px;
+        }
+      }
+    }
+  }
+
+  .news-page__head {
+    margin-bottom: 20px;
+  }
+
+  .article-other {
+    margin-top: 20px;
+  }
+
+  .article .text-simple h2 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .article .text-simple h1 {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .article .text-simple span {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 16px;
+  }
+
+  .article .text-simple .picture {
+    margin-top: 16px;
+  }
+
+  .article .text-simple > * + * {
+    margin-top: 16px;
+  }
+
+  .video-list {
+    gap: 16.5px;
+  }
+
+  .video-item {
+    height: 150px;
+  }
+
+  .not-section {
+    padding: 55px 0;
+  }
+
+  .not-section__controls {
+    .btn {
+      max-width: 288px;
+    }
+    .btn--white {
+      max-width: 258px;
+    }
+  }
+
+  .not-section__inner {
+    max-width: 562px;
   }
 }

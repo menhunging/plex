@@ -129,9 +129,12 @@
     margin-left: 0;
   }
 
-  .about-info__controls .btn{
+  .about-info__controls .btn {
     max-width: 100%;
     width: 100%;
   }
-}
 
+  .video-list {
+    grid-template-columns: 1fr;
+  }
+}
