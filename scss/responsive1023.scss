@@ -162,6 +162,7 @@
     line-height: 15px;
   }
 
+  .modal__field,
   .input-item {
     input {
       font-size: 12px;
@@ -1494,4 +1495,11 @@
   .not-section__inner {
     max-width: 562px;
   }
+
+  .bx-soa-item-table .bx-soa-item-tr .bx-soa-item-td {
+    border-top: none;
+    width: auto !important;
+  }
+
+
 }

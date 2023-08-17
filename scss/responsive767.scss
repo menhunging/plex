@@ -951,6 +951,7 @@
     flex-direction: row;
     gap: 10px;
     padding-top: 15px;
+    width: auto;
   }
 
   .basket-table .basket-delete {
@@ -975,6 +976,21 @@
 
   .basket-order__list li.result .basket-order__price {
     font-size: 16px;
+  }
+
+  .final-cost__item {
+    font-size: 14px;
+    line-height: 17px;
+
+    &.result {
+      .basket-order__title {
+        font-size: 14px;
+      }
+
+      .basket-order__price {
+        font-size: 16px;
+      }
+    }
   }
 
   .basket-order__controls {
@@ -1014,11 +1030,11 @@
         height: 78px;
         left: -90px;
       }
-
-      .price-basket {
-        padding-top: 0;
-      }
     }
+  }
+
+  .price-basket {
+    padding-top: 0;
   }
 
   .input-list label {
@@ -1982,6 +1998,108 @@
   .not-section__inner {
     gap: 20px;
     max-width: 100%;
+  }
+
+  .bx-soa-reference.desc {
+    width: 100%;
+  }
+
+  .bx-soa-item-table .bx-soa-item-tr .bx-soa-item-td {
+    width: 100% !important;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .bx-soa-item-img-block,
+  .bx-step-completed .bx-soa-item-img-block {
+    float: none;
+    margin: 0;
+  }
+
+  .bx-scu-container .bx-soa-item-td-title,
+  .bx-scu-container .bx-soa-item-td-text {
+    padding-left: 0;
+  }
+
+  .bx-soa-item-properties {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0;
+  }
+
+  .bx-soa-item-tr {
+    padding: 0;
+  }
+
+  .bx-soa-pp-company-smalltitle,
+  .bx-scu-container .bx-soa-item-td-title,
+  .bx-scu-container .bx-soa-item-td-text,
+  .bx-soa-item-td-title,
+  .bx-soa-item-td-text,
+  .bx-soa-item-td-text .bx-price {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .bx-soa-section.bx-step-completed .bx-soa-section-content,
+  .bx-soa-section.bx-selected .bx-soa-section-content {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .bx-soa-pp-company-selected {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .bx-scu-container .bx-soa-item-td-title,
+  .bx-scu-container .bx-soa-item-td-text,
+  .bx-soa-item-td-title,
+  .bx-soa-item-td-text,
+  .bx-soa-item-td-text .bx-price {
+    padding: 4px 0;
+  }
+
+  .bx-soa-item-table {
+    margin-bottom: 0;
+  }
+
+  .bx-soa-tooltip.bx-soa-tooltip-static {
+    width: 100%;
+  }
+
+  .alert {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .bx-soa-pp .bx-soa-pp-company {
+    gap: 8px;
+    padding-left: 30px;
+  }
+
+  .modal__field,
+  .errorsBlock {
+    & + .btn {
+      margin-top: 16px;
+    }
+  }
+
+  .tagsSearch-list {
+    gap: 5px;
+    margin-bottom: 16px;
+
+    li {
+      font-size: 12px;
+    }
+
+    p {
+      font-size: 14px;
+    }
   }
 }
 
