@@ -407,7 +407,7 @@
     display: block;
     margin-bottom: 18px;
 
-    .menu__list{
+    .menu__list {
       display: block;
     }
   }
@@ -1088,6 +1088,7 @@
     line-height: 16px;
   }
 
+  #modal-resume,
   #modal-back-call,
   #modal-success-moderations,
   #modal-success-registation,
@@ -2117,6 +2118,15 @@
 
   .sub-link:hover {
     text-decoration-color: transparent;
+  }
+
+  .resume-block {
+    margin: 16px auto;
+    padding: 0;
+  }
+
+  .resume-block .file-load__text {
+    margin-left: 0;
   }
 }
 

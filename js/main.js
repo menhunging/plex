@@ -104,7 +104,7 @@ const burger = {
       });
     }
 
-    $(".menu").addClass("init-click")
+    $(".menu").addClass("init-click");
   },
   destroyClick() {
     // $(".menu-catalog").addClass("destroy-links");
@@ -184,9 +184,9 @@ $(document).ready(function () {
   }
 
   if ($(".btn-sub-more").length > 0) {
-    $('.btn-sub-more').on('click',function(){
-      $(this).closest('.sub-menu').addClass('opened')
-    })
+    $(".btn-sub-more").on("click", function () {
+      $(this).closest(".sub-menu").addClass("opened");
+    });
   }
 
   if ($(".search-link-mobile").length > 0) {
@@ -569,7 +569,43 @@ $(document).ready(function () {
       });
     });
   }
- 
+
+  if ($(".file-load").length > 0) {
+    let than = $(".file-load");
+
+    than.map(function () {
+      $(this)
+        .find("input")
+        .change(function () {
+          if ($(this).prop("files").length > 0) {
+            $(this).closest("form").find(".btn").attr("disabled", false);
+
+            $(".file-load__info").addClass("loading");
+
+            let name = $(this).prop("files")[0].name;
+            let size = $(this).prop("files")[0].size;
+
+            $(".file-load__text .name").text(name);
+            $(".file-load__text .size").text(`${size} 'КБ'`);
+          }
+        });
+
+      $(this)
+        .find(".file-load__delete")
+        .on("click", function () {
+          let inputFile = $(this).closest("form").find("input")
+
+          console.log(inputFile.prop("files"));
+
+          inputFile.value = "";
+
+          console.log(than.find("input").prop("files"));
+
+          $(this).closest("form").find(".btn").attr("disabled", true);
+          $(".file-load__info").removeClass("loading");
+        });
+    });
+  }
 });
 
 $(window).on("resize", function () {

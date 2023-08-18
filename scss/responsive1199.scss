@@ -911,6 +911,7 @@
     gap: 9px;
   }
 
+  #modal-resume,
   #modal-back-call,
   #modal-success-moderations,
   #modal-success-registation,
@@ -1613,5 +1614,15 @@
   .bx-soa-pp-delivery-cost {
     white-space: nowrap;
     padding: 2px;
+  }
+
+  .file-load__delete {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .resume-block {
+    margin: 30px auto;
+    max-width: 440px;
   }
 }

@@ -5333,3 +5333,79 @@ div.title-search-result {
     text-decoration-color: transparent;
   }
 }
+
+.resume-block {
+  max-width: 648px;
+  width: 100%;
+  margin: 40px auto;
+
+  .file-load {
+  }
+
+  .file-load__text {
+    margin-left: auto;
+  }
+}
+
+.file-load__info {
+  color: #002246;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+
+  .file-load__text {
+    text-decoration: none;
+    display: block;
+    margin-left: 0;
+
+    strong {
+      font-weight: 500;
+    }
+
+    & + .file-load__text{
+      margin-top: 5px;
+    }
+  }
+
+  &.loading {
+    .file-load__info__head {
+      display: flex;
+    }
+  }
+
+
+}
+
+.file-load__delete {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: underline;
+  @include transition(text-decoration 0.3s);
+  text-decoration-skip-ink: none;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  &:hover {
+    text-decoration-color: transparent;
+  }
+}
+
+.file-load__info__head {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 16px;
+
+  .file-load__text {
+    margin-left: 0;
+  }
+}

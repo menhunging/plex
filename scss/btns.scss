@@ -32,6 +32,12 @@
       color: #013956;
     }
   }
+
+  &:disabled{
+    pointer-events: none;
+    border-color: rgba(0, 34, 70, 0);
+    background: rgba(0, 34, 70, 0.50);
+  }
 }
 
 .btn-favorire {

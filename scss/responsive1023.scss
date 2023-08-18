@@ -850,6 +850,7 @@
     }
   }
 
+  #modal-resume,
   #modal-back-call,
   #modal-success-moderations,
   #modal-success-registation,
@@ -1501,5 +1502,9 @@
     width: auto !important;
   }
 
-
+  .resume-block {
+    margin: 18px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
