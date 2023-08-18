@@ -586,20 +586,18 @@ $(document).ready(function () {
             let size = $(this).prop("files")[0].size;
 
             $(".file-load__text .name").text(name);
-            $(".file-load__text .size").text(`${size} 'КБ'`);
+            $(".file-load__text .size").text(`${size} КБ`);
           }
         });
 
       $(this)
         .find(".file-load__delete")
-        .on("click", function () {
-          let inputFile = $(this).closest("form").find("input")
+        .on("click", function (event) {
+          event.preventDefault();
 
-          console.log(inputFile.prop("files"));
+          let inputFile = $(this).closest("form").find("input");
 
           inputFile.value = "";
-
-          console.log(than.find("input").prop("files"));
 
           $(this).closest("form").find(".btn").attr("disabled", true);
           $(".file-load__info").removeClass("loading");

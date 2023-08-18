@@ -6984,6 +6984,11 @@ section {
 .jobs-info a:hover {
   text-decoration-color: #002246;
 }
+.jobs-info .btn {
+  margin-top: 40px;
+  max-width: 312px;
+  width: 100%;
+}
 
 .jobs-info__date {
   color: rgba(0, 34, 70, 0.6);
@@ -8841,6 +8846,9 @@ div.title-search-result {
   .jobs-info :not(.date) + h3 {
     margin-top: 20px;
   }
+  .jobs-info .btn {
+    margin-top: 20px;
+  }
   .about-block__left {
     font-size: 16px;
     line-height: 20px;
@@ -10068,6 +10076,9 @@ div.title-search-result {
   .jobs-info ol li::before,
   .jobs-info ul li::before {
     top: 8px;
+  }
+  .jobs-info .btn {
+    margin-top: 16px;
   }
   .about-block__inner {
     grid-template-columns: 1fr;

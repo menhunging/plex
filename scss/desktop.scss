@@ -4569,6 +4569,12 @@ section {
   a {
     @include text-decoration-hover(#002246);
   }
+
+  .btn{
+    margin-top: 40px;
+    max-width: 312px;
+    width: 100%;
+  }
 }
 
 .jobs-info__date {
