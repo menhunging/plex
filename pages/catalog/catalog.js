@@ -114,6 +114,24 @@ $(document).ready(function () {
         $(this).next(".categoryes-sub").stop().slideDown();
       }
     });
+
+    $(".categoryes-sub__link").on("click", function (e) {
+      $(this).next(".categoryes-sub__inner").length > 0 && e.preventDefault();
+
+      if ($(this).hasClass("opened")) {
+        $(this).removeClass("opened");
+        $(this).next(".categoryes-sub__inner").stop().slideUp();
+      } else {
+        $(".categoryes-sub__link").removeClass("opened");
+        $(".categoryes-sub__inner").stop().slideUp();
+        $(this).addClass("opened");
+        $(this).next(".categoryes-sub__inner").stop().slideDown();
+      }
+    });
+
+    $(".categoryes-sub__link").map(function () {
+      !$(this).next(".categoryes-sub__inner").length && $(this).addClass("not-arrow");
+    });
   }
 
   if ($(".btn-open-filter").length > 0) {

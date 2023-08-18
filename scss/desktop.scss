@@ -1499,6 +1499,39 @@ section {
     font-weight: 400;
     @include text-decoration-hover(#002246);
   }
+
+  .categoryes-sub__link {
+    position: relative;
+    padding-right: 25px;
+
+    @include before {
+      background-image: url("../img/arrow-caterogy.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      top: 50%;
+      right: 0;
+      margin-top: -10px;
+    }
+
+    &.not-arrow {
+      &::before {
+        display: none;
+      }
+    }
+
+    &.opened {
+      &::before {
+        @include transform(scale(1, -1));
+      }
+    }
+  }
+
+  .categoryes-sub__inner {
+    padding: 15px 10px 0;
+    display: none;
+  }
 }
 
 .btn-sort-mobile {
@@ -2733,7 +2766,7 @@ section {
   .col-sm-12 + .col-sm-12 {
     margin-top: 10px;
   }
- 
+
   .input-item {
     display: flex;
     flex-wrap: wrap;
@@ -2900,13 +2933,13 @@ section {
   .btn {
     width: 100%;
 
-    &+.btn{
+    & + .btn {
       margin-top: 20px;
     }
   }
 }
 
-.btn.changeForm{
+.btn.changeForm {
   white-space: nowrap;
   font-size: 14px;
   line-height: 17px;
@@ -5285,4 +5318,18 @@ div.title-search-result {
   color: #ef5553;
   text-align: center;
   padding: 10px 5px;
+}
+
+.btn-sub-more {
+  margin-top: 16px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: underline;
+  @include transition(all 0.3s);
+  cursor: pointer;
+
+  &:hover {
+    text-decoration-color: transparent;
+  }
 }

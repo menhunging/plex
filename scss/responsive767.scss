@@ -353,7 +353,16 @@
       padding-right: 0;
 
       & + li {
-        margin-top: 18px;
+        margin-top: 16px;
+      }
+
+      .sub-menu {
+        li {
+          & + li {
+            margin-top: 12px;
+            padding-top: 12px;
+          }
+        }
       }
     }
   }
@@ -397,6 +406,10 @@
   .menu-mobile-catalog {
     display: block;
     margin-bottom: 18px;
+
+    .menu__list{
+      display: block;
+    }
   }
 
   .burger-block {
@@ -2100,6 +2113,10 @@
     p {
       font-size: 14px;
     }
+  }
+
+  .sub-link:hover {
+    text-decoration-color: transparent;
   }
 }
 

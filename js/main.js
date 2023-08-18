@@ -54,30 +54,35 @@ const burger = {
     });
   },
 
-  _openFirst() {
-    $(".burger-mobile__title").removeClass("active");
-    $(".burger-mobile__content").stop().slideUp();
-
-    $(".burger-mobile__title:first")
-      .addClass("active")
-      .siblings(".burger-mobile__content")
-      .stop()
-      .slideDown();
-  },
-
   initLink() {
     let menuLink = $(".menu-link");
     let subMenu = $(".sub-menu");
 
-    menuLink.on("click", function () {
-      $(this).parents("li").toggleClass("active");
-      $(this).siblings(".sub-menu").stop().slideToggle();
+    menuLink.on("click", function (event) {
+      let than = $(this);
+
+      if (than.siblings(".sub-menu").length > 0) {
+        event.preventDefault();
+        than.parents("li").toggleClass("active");
+        than.siblings(".sub-menu").stop().slideToggle();
+      }
+    });
+
+    subMenu.find(".sub-link").on("click", function (event) {
+      let than = $(this);
+
+      if (than.siblings(".sub-menu").length > 0) {
+        event.preventDefault();
+        than.toggleClass("active");
+        than.siblings(".sub-menu").stop().slideToggle();
+      }
     });
   },
   destroyLink() {
     $(".menu-link li").removeClass("active");
     $(".menu").removeClass("init-click");
     $(".menu-link").off("click");
+    $(".sub-link").off("click");
   },
 
   initClick() {
@@ -99,7 +104,7 @@ const burger = {
       });
     }
 
-    this._openFirst();
+    $(".menu").addClass("init-click")
   },
   destroyClick() {
     // $(".menu-catalog").addClass("destroy-links");
@@ -109,6 +114,7 @@ const burger = {
     $(".burger-block__click").off("click");
     $(".burger-mobile__title").off("click");
     $(".menu").slideUp();
+    $(".menu-catalog a").off("click");
   },
 
   initCatalogBurger() {
@@ -165,12 +171,22 @@ $(document).ready(function () {
       !$(this).next(".sub-menu").length && $(this).addClass("not-arrow");
     });
 
+    $(".sub-link").map(function () {
+      !$(this).next(".sub-menu").length && $(this).addClass("not-arrow");
+    });
+
     if ($(window).width() <= 767) {
       burger.initClick();
       burger.initLink();
     } else {
       burger.initCatalogBurger();
     }
+  }
+
+  if ($(".btn-sub-more").length > 0) {
+    $('.btn-sub-more').on('click',function(){
+      $(this).closest('.sub-menu').addClass('opened')
+    })
   }
 
   if ($(".search-link-mobile").length > 0) {
@@ -553,6 +569,7 @@ $(document).ready(function () {
       });
     });
   }
+ 
 });
 
 $(window).on("resize", function () {
