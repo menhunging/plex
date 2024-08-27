@@ -1,5 +1,24 @@
 .footer {
-  background-color: #c3c6cd;
+  background-color: #f5f6f8;
+
+  .callback-link {
+    color: #174663;
+    text-decoration-color: #174663;
+    margin-top: 30px;
+    display: inline-block;
+
+    &:hover {
+      text-decoration-color: transparent;
+    }
+  }
+
+  .callback-link__mobile {
+    display: none;
+  }
+
+  .callback-link__text {
+    display: block;
+  }
 }
 
 .footer__inner {
@@ -14,7 +33,10 @@
 }
 
 .footer__leftSide {
-  width: calc(100% - 595px);
+  width: calc(100% - 755px);
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
 
   .logo-wrapper {
     margin-bottom: 29px;
@@ -22,6 +44,10 @@
 
   p {
     max-width: 560px;
+  }
+
+  .picture-sk {
+    margin-top: auto;
   }
 }
 
@@ -38,12 +64,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
-  margin-top: 30px;
+  justify-content: space-between;
 }
 
 .footer__col {
-  max-width: 170px;
-  width: 100%;
+  max-width: 220px;
+  width: auto;
 }
 
 .footer__title {
@@ -62,13 +88,19 @@
   }
 
   a {
-    @include text-decoration-hover(#174663);
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    transition: text-decoration 0.3s;
+
+    &:hover {
+      text-decoration-color: transparent;
+    }
   }
 }
 
 .footer__rightSide {
   width: 100%;
-  max-width: 594px;
+  max-width: 655px;
 }
 
 .footer-gallery {
@@ -102,8 +134,8 @@
 
 .footer__bottom {
   border-top: solid 1px #174663;
-  padding-top: 20px;
   display: flex;
+  align-items: flex-start;
   flex-wrap: wrap;
   font-weight: 400;
   font-size: 16px;
@@ -111,19 +143,39 @@
   justify-content: space-between;
   color: #174663;
   width: 100%;
+  padding-top: 20px;
   margin-top: 20px;
-
-  .copy__right {
-  }
 }
 
 .footer-social {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   gap: 18px;
+  background-color: #174663;
+  padding: 8px 26px;
+  border-radius: 5px;
+
+  a {
+    svg {
+      transition: all 0.3s;
+
+      &.telegram {
+        path {
+          fill: transparent;
+        }
+      }
+    }
+
+    &:hover {
+      svg {
+        transform: scale(1.1);
+      }
+    }
+  }
 
   path {
-    fill: #174663;
+    fill: #fff;
   }
 }
 
@@ -134,6 +186,12 @@
 
   a {
     font-weight: 400;
-    @include text-decoration-hover(#174663);
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    transition: text-decoration 0.3s;
+
+    &:hover {
+      text-decoration-color: transparent;
+    }
   }
 }

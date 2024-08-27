@@ -84,8 +84,8 @@ picture {
   }
 }
 
-.modal__field{
-    margin-top: 20px;
+.modal__field {
+  margin-top: 20px;
 }
 
 .modal__field,
@@ -99,8 +99,10 @@ picture {
     line-height: 22px;
     color: #757575;
     background-color: $colorWhite;
+    border: solid 1px #ccd8de;
+    border-radius: 5px;
     width: 100%;
-    height: 47px;
+    height: 60px;
     @include border-radius(5px);
     padding: 0 16px;
 
@@ -163,6 +165,14 @@ picture {
     &:hover {
       text-decoration-color: transparent;
     }
+  }
+
+  .selectric {
+    background-color: #fff;
+    width: 100%;
+    height: 60px;
+    border: solid 1px #ccd8de;
+    border-radius: 5px;
   }
 }
 
@@ -237,14 +247,14 @@ picture {
   @include border-radius(0);
 
   .label {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
     height: 100%;
-    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 16px 16px;
     padding-right: 40px;
     margin: 0;
-    color: $colorBlack;
+    color: #757575;
   }
 
   .button {
@@ -252,7 +262,7 @@ picture {
     height: 100%;
     background: transparent;
     display: flex;
-    background-image: url("../img/arrow_bottom.svg");
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1 0.438965L6 5.43896L11 0.438965' stroke='%23585E66'/%3e%3c/svg%3e ");
     background-position: center;
     background-repeat: no-repeat;
     @include transition(all 0.3s);
@@ -270,13 +280,13 @@ picture {
 
   &.selectric-hover {
     .selectric {
-      border-color: $colorBlack;
+      border-color: #ccd8de;
     }
   }
 
   &.selectric-open {
     .selectric {
-      border-color: $colorBlack;
+      border-color: #ccd8de;
 
       .button {
         @include transform(scale(1, -1));
@@ -311,10 +321,11 @@ picture {
 
     li {
       color: #002246;
-      font-size: 14px;
+      font-size: 16px;
+      line-height: 22px;
       font-weight: 500;
-      padding: 10px 10px;
-      @include transition(all 0.3s);
+      padding: 16px;
+      transition: all 0.3s;
       text-decoration: underline;
       text-decoration-color: transparent;
 
@@ -346,6 +357,7 @@ picture {
   top: 0;
   left: 0;
   color: #292929;
+  position: relative;
 }
 
 .modal.is-open {
@@ -603,6 +615,7 @@ picture {
   }
 }
 
+.modal,
 #modal-resume,
 #modal-back-call,
 #modal-success-moderations,
@@ -727,6 +740,7 @@ div {
   align-items: center;
 
   .swiper-pagination-bullet {
+    cursor: pointer;
     width: 16px;
     height: 1px;
     background-color: rgba(204, 216, 222, 0.8);
@@ -992,7 +1006,7 @@ div {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 5px;
 
   li {
     color: #002246;
@@ -1003,20 +1017,31 @@ div {
     text-transform: uppercase;
   }
 
+  .nav_pager__current,
   a {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 32px;
     height: 32px;
-    border: 1px solid #002246;
-    @include transition(all 0.3s);
+    border: 1px solid $colorBlack;
+    color: $colorBlack;
+    transition: all 0.3s;
 
     &.active,
     &:hover {
-      background-color: #002246;
+      border-color: #008bd2;
+      background-color: #008bd2;
       color: $colorWhite;
     }
+  }
+
+  .toh {
+  }
+
+  .nav_pager__current {
+    background-color: #002246;
+    color: $colorWhite;
   }
 }
 
@@ -1050,7 +1075,6 @@ div {
 
 .tabs {
   .tabs-links {
-    margin-bottom: 30px;
     display: flex;
   }
 }
@@ -1463,12 +1487,13 @@ div {
     }
   }
 
-  input{
+  input {
     font-family: $fontMain;
   }
 }
 
-.bx-slst .bx-ui-combobox-fake, .bx-slst .bx-ui-combobox-route{
+.bx-slst .bx-ui-combobox-fake,
+.bx-slst .bx-ui-combobox-route {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -1476,8 +1501,27 @@ div {
 }
 
 .modal__field,
-.errorsBlock{
-  & + .btn{
+.errorsBlock {
+  & + .btn {
     margin-top: 20px;
   }
+}
+
+.ui-datepicker {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.ui-state-active,
+.ui-widget-content .ui-state-active {
+  color: $colorBlack;
+  font-weight: 400;
+}
+
+.ui-widget-header {
+  background-color: #f8f8f8;
+}
+
+.ui-state-active {
+  background: transparent !important;
 }

@@ -67,7 +67,7 @@
   }
 
   .footer__rightSide {
-    max-width: 489px;
+    max-width: 620px;
   }
 
   .footer-gallery .picture {
@@ -95,7 +95,7 @@
   }
 
   .footer__leftSide {
-    width: calc(100% - 490px);
+    width: calc(50% - 200px);
   }
 
   .footer__row {
@@ -142,6 +142,10 @@
   }
 
   section {
+    padding: 40px 0;
+  }
+
+  .catalog-favorite {
     padding: 40px 0;
   }
 
@@ -297,11 +301,6 @@
     padding: 40px 0;
   }
 
-  .banner-box {
-    font-size: 12px;
-    line-height: 16px;
-  }
-
   .cabinet-block__text {
     font-size: 10px;
     line-height: 12px;
@@ -372,15 +371,14 @@
 
   .category-item {
     font-size: 14px;
-    height: 100px;
   }
 
-  .breadcrumbs {
-    padding: 36px 0 13px;
+  .title-page {
+    padding: 16px 0;
   }
 
   .catergory-section {
-    padding: 22px 0;
+    padding: 40px 0;
   }
 
   .text-simple {
@@ -531,15 +529,18 @@
   }
 
   .product-section__vendorcode {
-    font-size: 18px;
-    line-height: 22px;
-    margin-top: 16px;
+    font-size: 12px;
+    line-height: 16px;
   }
 
   .product-section__text {
-    font-size: 16px;
-    line-height: 20px;
-    margin-top: 16px;
+    font-size: 12px;
+    line-height: 22px;
+
+    &--first {
+      font-size: 16px;
+      line-height: 22px;
+    }
   }
 
   .product-section__title .btn-favorire {
@@ -567,17 +568,12 @@
     padding: 16px 0;
   }
 
-  .product-section .select-head {
-    margin-bottom: 5px;
-  }
-
   .product-section__left {
-    width: 400px;
+    width: 350px;
   }
 
   .product-section__right {
-    width: calc(100% - 400px);
-    padding-left: 20px;
+    width: calc(100% - 375px);
   }
 
   .product-small__slider {
@@ -621,21 +617,12 @@
 
   .product-section__controls {
     padding: 16px 0;
+    padding-top: 40px;
   }
 
   .link-rectangle {
     font-size: 16px;
     line-height: 20px;
-  }
-
-  .product-section__tabs .tabs-link {
-    height: 54px;
-  }
-
-  .tabs {
-    .tabs-links {
-      margin-bottom: 20px;
-    }
   }
 
   .product-details {
@@ -1242,13 +1229,8 @@
   }
 
   .simplepage-section {
-    padding-top: 24px;
-  }
-
-  .simplepage-section .tabs-link {
-    min-width: 245px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 0;
+    padding-bottom: 40px;
   }
 
   .simplepage-section__content {
@@ -1364,7 +1346,7 @@
     margin-top: 20px;
   }
 
-  .jobs-info .btn{
+  .jobs-info .btn {
     margin-top: 20px;
   }
 
@@ -1499,16 +1481,7 @@
   }
 
   .contacts-page {
-    padding-top: 20px;
-  }
-
-  .contacts-adress {
-    margin-top: 35px;
-  }
-
-  .contacts-adress__tabs .tabs-link {
-    min-width: 248px;
-    padding: 18px 20px;
+    padding-bottom: 20px;
   }
 
   .contacts-table .td {
@@ -1628,5 +1601,86 @@
   .resume-block {
     margin: 30px auto;
     max-width: 440px;
+  }
+
+  .catergory-section .breadcrumbs + * {
+    margin-top: 40px;
+  }
+
+  .catergory-section .title-page + .category-list {
+    margin-top: 20px;
+  }
+
+  .category-list {
+    max-height: 344px;
+  }
+
+  .catergory-section + .catalog-page,
+  .title-page + .catalog-page {
+    margin-top: 40px;
+    padding-top: 0;
+  }
+
+  .catergory-section {
+    .swiper-controls {
+      display: flex;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .sale-order-detail-payment-options-methods-button-element.active-button,
+  .sale-order-detail-payment-options-methods-button-element,
+  .histroy-info__controls [data-start-raiffeisen-payment] {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .product-section .marketplace {
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+
+  .header-top__info {
+    font-size: 12px;
+  }
+
+  .footer {
+    .callback-link {
+      font-size: 11px;
+    }
+  }
+
+  .select-list label {
+    height: 35px;
+    min-width: 87px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  .product-characteristics {
+    max-width: 275px;
+  }
+
+  .product-options__input label {
+    padding: 2px 11px;
+  }
+
+  .product-characteristics li {
+  }
+
+  .product-characteristics .tit {
+    white-space: normal;
+    min-width: 45%;
+  }
+
+  .product-characteristics .data {
+    white-space: normal;
+    text-align: right;
+    min-width: 30%;
+  }
+
+  .product-section__links .link {
+    padding: 20px;
   }
 }
