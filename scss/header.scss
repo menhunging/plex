@@ -84,9 +84,11 @@
     }
 
     &__inner {
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
 
     &__controls {
@@ -122,6 +124,7 @@
         height: 16px;
         overflow: hidden;
         white-space: nowrap;
+        text-decoration: none;
       }
 
       @include before {
@@ -353,6 +356,10 @@
 
   &:hover {
     background-color: #0f9ce2;
+
+    @include responsive767 {
+      background-color: transparent;
+    }
   }
 }
 
@@ -454,5 +461,282 @@
     &:hover {
       text-decoration-color: $colorBlack;
     }
+  }
+}
+
+.menu-catalog {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 25px);
+  width: 282px;
+  z-index: 9;
+  display: none;
+  @include box-shadow(0px 4px 24px 0px rgba(218, 224, 232, 0.6));
+
+  .menu-catalog__list {
+    & > li {
+      & > a {
+        @include before {
+          right: 20px;
+        }
+
+        &:hover {
+          &::before {
+            @include transform(rotate(-180deg));
+          }
+        }
+      }
+    }
+  }
+
+  ul {
+    background-color: $colorWhite;
+    color: rgba(0, 34, 70, 0.7);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+    li {
+      a {
+        padding: 10px 20px;
+        display: block;
+        position: relative;
+        @include transition(color 0.3s);
+
+        @include before {
+          top: 50%;
+          margin-top: -10px;
+
+          background-image: url("../img/arrow-menu.svg");
+          background-repeat: no-repeat;
+          background-position: center;
+          width: 20px;
+          height: 20px;
+        }
+        &:hover {
+          &::before {
+            @include transform(rotate(-90deg));
+          }
+
+          & + .submenu-catalog {
+            display: flex;
+          }
+        }
+
+        &.not-before {
+          &::before {
+            display: none;
+          }
+        }
+      }
+
+      & + li {
+        margin-top: 3px;
+      }
+
+      &:hover {
+        & > a {
+          color: #008bd2;
+
+          &::before {
+            @include transform(rotate(-180deg));
+          }
+        }
+      }
+    }
+  }
+
+  .submenu-catalog {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    width: auto;
+    display: flex;
+    align-content: space-between;
+    color: rgba(0, 34, 70, 0.7);
+    padding: 10px 20px;
+    display: none;
+    @include box-shadow(0px 4px 24px 0px rgba(218, 224, 232, 0.6));
+    overflow: hidden;
+    background-color: $colorWhite;
+
+    &:hover {
+      display: flex;
+    }
+
+    .submenu-column {
+      width: 50%;
+      margin: 0;
+      padding: 0;
+      min-width: 252px;
+    }
+
+    li {
+      width: 100%;
+      max-width: 242px;
+      padding-right: 30px;
+
+      &:hover {
+        & > a {
+          color: #008bd2;
+          &::before {
+            @include transform(rotate(90deg));
+          }
+        }
+      }
+
+      a {
+        padding: 10px 0;
+
+        &::before {
+          right: -30px;
+          @include transform(rotate(90deg));
+        }
+
+        &:hover {
+          color: #008bd2;
+        }
+
+        &.opened {
+          &::before {
+            @include transform(rotate(-90deg));
+          }
+        }
+      }
+    }
+
+    &--inner {
+      display: none;
+      padding: 16px 10px;
+      background-color: rgba(161, 217, 248, 0.3);
+      width: calc(100% + 30px);
+
+      &:hover {
+        display: block;
+      }
+
+      li {
+        max-width: 100%;
+        width: 100%;
+        padding: 0;
+
+        a {
+          padding: 0;
+
+          &::before {
+            display: none;
+          }
+        }
+
+        & + li {
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+}
+
+.header-menu-mobile {
+  display: none;
+
+  .link {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #008bd2;
+  }
+
+  &__close {
+    cursor: pointer;
+    width: 100%;
+    display: block;
+    text-align: right;
+
+    svg {
+      pointer-events: none;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+  }
+
+  .phones-header {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+
+    .phone {
+      grid-column: 1/3;
+      grid-row: 1/2;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .social {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .link-telegram {
+      width: 35px;
+      height: 35px;
+      background-size: contain;
+    }
+
+    .link-phone {
+      width: 35px;
+      height: 35px;
+      background-size: contain;
+    }
+  }
+}
+
+.search-block {
+  display: none;
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-repeat: no-repeat;
+  box-shadow: 0px 4px 4px 0px #0000000d;
+  padding: 9px 32px;
+  background-color: $colorWhite;
+  margin-top: 20px;
+  max-width: 100%;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  &__btn {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='17' viewBox='0 0 16 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg clip-path='url(%23clip0_1_4730)'%3e%3cpath d='M7.70327 14.1297C10.9761 14.1297 13.6292 11.4766 13.6292 8.20376C13.6292 4.93096 10.9761 2.27783 7.70327 2.27783C4.43047 2.27783 1.77734 4.93096 1.77734 8.20376C1.77734 11.4766 4.43047 14.1297 7.70327 14.1297Z' stroke='%230D3E75' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M15.1128 15.6109L11.8906 12.3887' stroke='%230D3E75' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='clip0_1_4730'%3e%3crect width='16' height='16' fill='white' transform='translate(0 0.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e ");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+  }
+
+  input {
+    border: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    background: transparent;
+    width: 100%;
+  }
+
+  @include responsive767 {
+    padding: 9px 16px;
+    margin-top: 12px;
   }
 }

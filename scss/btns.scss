@@ -56,6 +56,14 @@
     box-shadow: none;
   }
 
+  &--blueDark {
+    border-color: #002246;
+    color: #002246;
+    background-color: transparent;
+    text-transform: none;
+    box-shadow: none;
+  }
+
   &:disabled {
     pointer-events: none;
     border-color: rgba(0, 34, 70, 0);

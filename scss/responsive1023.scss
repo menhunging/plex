@@ -33,11 +33,6 @@
     display: block;
   }
 
-  .search-block {
-    max-width: 232px;
-    display: none;
-  }
-
   .favorite-block {
     font-size: 8px;
     line-height: 10px;
@@ -275,8 +270,8 @@
   }
 
   .menu-catalog {
-    left: -15px;
     width: 260px;
+    top: calc(100% + 10px);
 
     ul {
       font-size: 12px;
@@ -1452,5 +1447,11 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+
+  .modal-documents__links {
+    a{
+      font-size: 12px;
+    }
   }
 }

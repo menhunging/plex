@@ -58,8 +58,6 @@
   }
 
   .search-block {
-    max-width: 280px;
-
     input {
       font-size: 10px;
       line-height: 12px;
@@ -334,10 +332,6 @@
     line-height: 12px;
     top: -5px;
     right: -2px;
-  }
-
-  .menu-catalog {
-    left: 110px;
   }
 
   #modal-city {
@@ -1682,5 +1676,11 @@
 
   .product-section__links .link {
     padding: 20px;
+  }
+
+  .modal-documents__links {
+    a{
+      font-size: 14px;
+    }
   }
 }

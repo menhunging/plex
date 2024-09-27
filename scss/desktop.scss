@@ -1718,6 +1718,7 @@ section {
 
 .product-page {
   padding: 0;
+  padding-top: 20px;
 }
 
 .select-head {
@@ -3280,7 +3281,7 @@ section {
   }
 }
 
-.tabs-body{
+.tabs-body {
   width: 100%;
 }
 
@@ -5165,11 +5166,11 @@ section {
   }
 }
 
-.contacts-page__contacts{
+.contacts-page__contacts {
   padding-bottom: 45px;
 }
 
-.contacts-page__map{
+.contacts-page__map {
   background-color: #fff;
   padding: 45px 0;
 }
@@ -5177,7 +5178,7 @@ section {
 .contacts-page {
   padding-top: 0;
   margin-top: 35px;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 .contacts-page__inner {
@@ -6443,12 +6444,25 @@ p:has(.errortext) {
   }
 
   ul {
+    &.opened {
+      li {
+        display: flex !important;
+      }
+    }
+
     li {
       display: flex;
       justify-content: space-between;
       align-items: flex-end;
       position: relative;
       gap: 5px;
+      display: none;
+
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        display: flex;
+      }
 
       @include before {
         position: relative;
@@ -6544,11 +6558,33 @@ p:has(.errortext) {
   }
 }
 
-.questions-section + .question-answer{
+.questions-section + .question-answer {
   margin-top: -30px;
 }
 
 .questions-section .caption-desc.caption-desc--req {
   font-size: 15px;
   line-height: 25px;
+}
+
+#modal-documents{
+  .modal__content{
+    padding: 30px;
+  }
+
+  .modal__close{
+    top:32px;
+  }
+}
+
+.modal-documents__links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 30px;
+
+  a{
+    @include text-decoration-hover(#013956);
+  }
 }
