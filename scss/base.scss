@@ -35,6 +35,7 @@ input {
   flex-wrap: wrap;
   min-height: 100vh;
   width: 100%;
+  padding-top: 167px;
 
   .footer {
     margin-top: auto;
@@ -680,23 +681,6 @@ picture {
   z-index: 4;
 }
 
-div {
-  &::-webkit-scrollbar {
-    width: 5px;
-    background-color: transparent;
-    left: 5px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    width: 5px;
-    background-color: #b1b3b2;
-    @include border-radius(5px);
-  }
-
-  scrollbar-color: #b1b3b2 transparent;
-  scrollbar-width: thin;
-}
-
 @media (min-width: 1200px) {
   _:-webkit-any-link,
   :root .modal-open {
@@ -1009,7 +993,7 @@ div {
   gap: 5px;
 
   li {
-    color: #002246;
+    color: #008bd2;
     text-align: center;
     font-size: 16px;
     font-weight: 600;
@@ -1024,23 +1008,24 @@ div {
     justify-content: center;
     width: 32px;
     height: 32px;
-    border: 1px solid $colorBlack;
-    color: $colorBlack;
+    border: 1px solid transparent;
+    color: #002246;
     transition: all 0.3s;
+    border-radius: 5px;
 
     &.active,
     &:hover {
-      border-color: #008bd2;
       background-color: #008bd2;
       color: $colorWhite;
     }
   }
 
   .toh {
+    color: #002246;
   }
 
   .nav_pager__current {
-    background-color: #002246;
+    background-color: #008bd2;
     color: $colorWhite;
   }
 }
@@ -1524,4 +1509,43 @@ div {
 
 .ui-state-active {
   background: transparent !important;
+}
+
+.bx-filter-popup-result {
+  position: absolute;
+  right: 5px;
+  top: 20px;
+  width: 125px;
+  padding: 8px;
+  background-color: #008bd2;
+  border-radius: 20px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $colorWhite;
+
+  a {
+    display: none !important;
+  }
+}
+
+section {
+  .caption {
+    text-align: center;
+  }
+}
+
+div::-webkit-scrollbar {
+  width: 3px;
+  border-radius: 4px;
+}
+
+div::-webkit-scrollbar-track {
+  background: #2d2d2d1a;
+  border-radius: 4px;
+}
+
+div::-webkit-scrollbar-thumb {
+  background: #002246;
+  border-radius: 4px;
 }

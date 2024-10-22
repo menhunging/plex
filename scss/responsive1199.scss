@@ -1653,7 +1653,9 @@
   }
 
   .product-characteristics {
-    max-width: 275px;
+    max-width: 45%;
+    width: 100%;
+    min-width: 280px;
   }
 
   .product-options__input label {
@@ -1679,8 +1681,26 @@
   }
 
   .modal-documents__links {
-    a{
+    a {
       font-size: 14px;
     }
+  }
+
+  .product-section__text .products-docs + p {
+    max-width: 45%;
+    width: 100%;
+    min-width: 280px;
+  }
+
+  .siteWrapper {
+    padding-top: 163px;
+  }
+
+  .footer__leftSide .picture-sk {
+    margin-top: 20px;
+  }
+
+  .catalog-tags {
+    min-height: initial;
   }
 }

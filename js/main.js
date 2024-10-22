@@ -305,6 +305,39 @@ $(document).ready(function () {
     });
   }
 
+  if ($(".slider-optovik-productions").length > 0) {
+    const swiper = new Swiper(".slider-optovik-productions", {
+      slidesPerView: 4,
+      spaceBetween: 18,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        prevEl: ".slider-optovik-productions__prev",
+        nextEl: ".slider-optovik-productions__next",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 12,
+        },
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 12,
+        },
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 12,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+      },
+    });
+  }
+
   // /redesign scripts
 
   if ($(".btn-catalog").length > 0) {

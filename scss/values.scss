@@ -45,6 +45,7 @@ $fontMain: "Montserrat", sans-serif;
 $responsive1599: "1599px";
 $responsive1439: "1439px";
 $responsive1279: "1279px";
+$responsive1199: "1199px";
 $responsive1023: "1023px";
 $responsive767: "767px";
 $responsive639: "639px";
@@ -71,6 +72,12 @@ $responsive389: "389px";
 
 @mixin responsive1279 {
   @media (max-width: $responsive1279) {
+    @content;
+  }
+}
+
+@mixin responsive1199 {
+  @media (max-width: $responsive1199) {
     @content;
   }
 }

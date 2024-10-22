@@ -15,6 +15,7 @@
   display: inline-block;
   border-radius: 5px;
   box-shadow: -1px 6px 12px 0px #0085ff36;
+  text-transform: uppercase;
 
   &:hover {
     border-color: #193c57;
@@ -24,8 +25,8 @@
 
   &--white {
     background-color: $colorWhite;
-    border-color: #002246;
-    color: #002246;
+    border-color: #008bd2;
+    color: #008bd2;
     box-shadow: none;
 
     &:hover {
