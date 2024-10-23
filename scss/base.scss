@@ -16,9 +16,13 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1230px;
+  max-width: 1530px;
   padding: 0 15px;
   margin: 0 auto;
+
+  @include responsive1599 {
+    max-width: 1230px;
+  }
 }
 
 label,
@@ -36,6 +40,17 @@ input {
   min-height: 100vh;
   width: 100%;
   padding-top: 167px;
+
+  @include responsive1199{
+    padding-top: 127px;
+  }
+
+  @include responsive767 {
+    padding-top: 69px;
+  }
+
+  &.header--fixed {
+  }
 
   .footer {
     margin-top: auto;

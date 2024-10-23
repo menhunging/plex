@@ -903,6 +903,14 @@
   @include responsive767 {
   }
 
+  &__name {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+  }
+
   li {
   }
 
@@ -1068,6 +1076,11 @@
       font-size: 18px;
       line-height: 22px;
     }
+
+    span {
+      max-width: 80%;
+      display: block;
+    }
   }
 
   .site-media {
@@ -1150,11 +1163,11 @@
     background-color: #a1d9f8;
 
     @include before {
-      width: calc(100% + 90px);
-      height: calc(100% + 90px);
+      width: calc(100% + 100px);
+      height: calc(100% + 120px);
       background-color: #193c57;
-      left: -195px;
-      top: -160px;
+      left: -235px;
+      top: -180px;
       transform: rotate(45deg);
 
       @include responsive1279 {
@@ -1173,6 +1186,12 @@
       }
     }
 
+    &:first-child {
+      &::before {
+        display: none;
+      }
+    }
+
     @include responsive1279 {
       height: 186px;
     }
@@ -1188,9 +1207,9 @@
   }
 
   &__name {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 26px;
     text-transform: uppercase;
     color: $colorWhite;
     position: relative;
@@ -1198,6 +1217,7 @@
     padding: 10px 16px;
     width: 100%;
     display: block;
+    max-width: 90%;
 
     @include before {
       left: -40px;
@@ -1209,11 +1229,18 @@
       transform: skewX(-40deg);
     }
 
+    @include responsive1599 {
+      font-size: 16px;
+      line-height: 24px;
+      max-width: 100%;
+    }
+
     @include responsive1279 {
       font-size: 14px;
       line-height: 20px;
     }
   }
+
   .site-media {
     position: absolute;
     top: 0;
@@ -1486,10 +1513,14 @@
     flex-direction: column;
     gap: 32px;
     width: 100%;
-    max-width: 730px;
+    max-width: 900px;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+
+    @include responsive1599 {
+      max-width: 730px;
+    }
 
     @include responsive1279 {
       max-width: 586px;
@@ -1715,5 +1746,73 @@
   &::-webkit-scrollbar-thumb {
     background: #002246;
     border-radius: 4px;
+  }
+}
+
+.text-section__leftSide {
+  width: calc(100% - 820px);
+
+  @include responsive1599 {
+    width: calc(100% - 588px);
+  }
+}
+
+.text-section__rightSide {
+  width: 70%;
+  max-width: 808px;
+  padding-bottom: 30px;
+
+  @include responsive1599 {
+    max-width: 588px;
+    padding-bottom: 0px;
+  }
+}
+
+.basket__inner {
+  .basket-table {
+    width: 100%;
+    max-width: 1024px;
+
+    @include responsive1599 {
+      max-width: 802px;
+    }
+  }
+}
+
+.checkout-list {
+  width: 100%;
+  max-width: 1024px;
+
+  @include responsive1599 {
+    max-width: 802px;
+  }
+}
+
+.product-info {
+  max-width: 500px;
+  width: 100%;
+
+  @include responsive1599 {
+    max-width: 315px;
+  }
+}
+
+.product-characteristics {
+  max-width: 500px;
+
+  @include responsive1599 {
+    max-width: 425px;
+  }
+}
+
+.product-section__text {
+  .products-docs {
+    & + p {
+      max-width: 860px;
+
+      @include responsive1599 {
+        max-width: 425px;
+      }
+    }
   }
 }
