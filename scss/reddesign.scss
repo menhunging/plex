@@ -242,6 +242,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  margin-top: 60px;
 
   @include responsive1023 {
     min-height: 259px;
@@ -948,6 +949,7 @@
 .optovik-text {
   position: relative;
   width: 100%;
+  padding: 30px 0;
 
   @include responsive1279 {
     padding: 30px 0;
@@ -957,7 +959,7 @@
     width: 100%;
     height: calc(135px + 55px);
     background-color: #e6e6e6;
-    top: -55px;
+    top: -60px;
     left: 0;
     z-index: -1;
 
@@ -972,29 +974,14 @@
     justify-content: space-between;
     position: relative;
     z-index: 2;
+    background-color: #fff;
+    padding: 30px 32px;
+    box-shadow: 0px 0px 8px 0px #00224633;
+    overflow: hidden;
+    padding-right: 160px;
 
-    @include before {
-      background-color: #a1d9f8;
-      width: calc(100% + 60px);
-      height: calc(100% + 60px);
-      top: -30px;
-      left: -30px;
-      z-index: -1;
-      pointer-events: none;
-
-      @include responsive1279 {
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-      }
-
-      @include responsive767 {
-        width: calc(100% + 30px);
-        height: 100%;
-        top: 0;
-        left: -15px;
-      }
+    @include responsive1599 {
+      padding-right: 32px;
     }
 
     @include responsive1279 {
@@ -1002,7 +989,7 @@
     }
 
     @include responsive767 {
-      padding: 16px 0;
+      padding: 16px;
       flex-direction: column;
     }
   }
@@ -1016,7 +1003,7 @@
   }
 
   &__text {
-    max-width: 582px;
+    max-width: 685px;
     width: 100%;
     font-size: 16px;
     font-weight: 400;
@@ -1024,7 +1011,30 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 25px;
+    gap: 50px;
+    position: relative;
+
+    @include after {
+      background-color: #174663;
+      width: calc(100% + 350px);
+      height: calc(100% + 60px);
+      top: -30px;
+      left: -110px;
+      z-index: 2;
+      background-color: #f5f5f5;
+      z-index: -1;
+      border-left: solid 10px #174663;
+      transform: skewX(-25deg);
+
+      @include responsive767 {
+        display: none;
+      }
+    }
+
+    @include responsive1279 {
+      max-width: 570px;
+      gap: 30px;
+    }
 
     @include responsive1023 {
       max-width: 373px;
@@ -1041,6 +1051,8 @@
 }
 
 .optovik-adv {
+  overflow: hidden;
+
   &__inner {
   }
 
@@ -1049,10 +1061,8 @@
   }
 
   &__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 80px 21px;
-    margin-top: 100px;
+    overflow: visible;
+    margin-top: 80px;
 
     @include responsive1023 {
       grid-template-columns: repeat(2, 1fr);
@@ -1070,7 +1080,26 @@
     line-height: 24px;
     color: $colorWhite;
     background-color: #3d5674;
-    padding: 20px 80px 20px 20px;
+    padding: 20px 10px 20px 20px;
+    height: auto;
+    position: relative;
+
+    @include before {
+      width: 100%;
+      height: 100%;
+      border-right: solid 6px #008bd2;
+      border-bottom: solid 6px #008bd2;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+    }
 
     @include responsive639 {
       font-size: 18px;
@@ -1078,8 +1107,17 @@
     }
 
     span {
-      max-width: 80%;
+      max-width: 100%;
       display: block;
+      margin-top: 45px;
+      min-height: 72px;
+      display: flex;
+      align-items: flex-end;
+
+      @include responsive767 {
+        margin-top: 25px;
+        min-height: 71px;
+      }
     }
   }
 
@@ -1089,27 +1127,29 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 173px;
-    height: 90px;
+    width: 82px;
+    height: 67px;
+    background-color: $colorWhite;
     transform: translateY(-50%);
     margin-bottom: -10px;
     margin-top: -20px;
 
     @include after {
-      background: linear-gradient(180deg, #dcedf9 0%, #7897b0 100%);
+      background-color: $colorWhite;
       left: 0;
       top: 0;
       width: 100%;
       height: 100%;
       z-index: -1;
+      box-shadow: 0px 0px 8px 0px #00224633;
     }
 
     @include before {
-      background-color: #617c95;
+      background-color: #e6e6e6;
       box-shadow: 0px 4px 4px 0px #00000040;
-      width: calc(100% + 15px);
-      height: calc(50% + 15px);
-      top: 50%;
+      width: calc(100% + 10px);
+      height: calc(100% - 10px);
+      top: 20px;
       left: 0;
       z-index: -1;
     }
@@ -1119,6 +1159,7 @@
     }
 
     img {
+      width: 50px;
     }
   }
 }
@@ -1156,18 +1197,26 @@
 
   &__item {
     position: relative;
-    height: 264px;
+    height: 336px;
     z-index: 3;
     overflow: hidden;
     @include invisLink;
     background-color: #a1d9f8;
 
+    @include responsive1599 {
+      height: 250px;
+    }
+
+    @include responsive1279 {
+      height: 186px;
+    }
+
     @include before {
       width: calc(100% + 100px);
       height: calc(100% + 120px);
       background-color: #193c57;
-      left: -235px;
-      top: -180px;
+      left: -250px;
+      top: -181px;
       transform: rotate(45deg);
 
       @include responsive1279 {
@@ -1187,13 +1236,11 @@
     }
 
     &:first-child {
+      background-color: transparent;
+
       &::before {
         display: none;
       }
-    }
-
-    @include responsive1279 {
-      height: 186px;
     }
 
     &:hover {
@@ -1279,6 +1326,7 @@
 
 .optovik-productions {
   background-color: #f5f6f8;
+  overflow: hidden;
 
   .caption {
     text-align: left;
@@ -1295,26 +1343,45 @@
   }
 
   &__controls {
+    position: absolute;
+    top: -75px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    @include responsive1279 {
+      top: -72px;
+    }
+
+    @include responsive1023 {
+      top: -66px;
+    }
+
+    @include responsive767 {
+      top: -44px;
+    }
+
     @include responsive479 {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 20px;
-      gap: 32px;
     }
   }
 
   .slider-optovik-productions {
     margin-top: 40px;
+    overflow: visible;
 
     @include responsive767 {
       margin-top: 20px;
     }
 
     .swiper-slide {
-      height: 274px;
+      height: 355px;
       position: relative;
+
+      @include responsive1599{
+        height: 280px;
+      }
 
       @include responsive1279 {
         height: 222px;
@@ -1369,11 +1436,9 @@
     }
 
     &__prev {
-      position: absolute;
-      top: 50%;
+      position: relative;
       width: 20px;
       height: 23px;
-      transform: translateY(-50%);
       transition: all 0.3s;
       background-position: center;
       background-repeat: no-repeat;
@@ -1387,20 +1452,17 @@
       }
 
       &:hover {
-        transform: translateY(-50%) scale(0.9);
+        transform: scale(0.9);
 
         @include responsive479 {
-          transform: translateY(0) scale(1);
+          transform: scale(1);
         }
       }
     }
 
     &__next {
-      position: absolute;
-      top: 50%;
       width: 20px;
       height: 23px;
-      transform: translateY(-50%);
       transition: all 0.3s;
       background-position: center;
       background-repeat: no-repeat;
@@ -1414,10 +1476,10 @@
       }
 
       &:hover {
-        transform: translateY(-50%) scale(0.9);
+        transform: scale(0.9);
 
         @include responsive479 {
-          transform: translateY(0) scale(1);
+          transform: scale(1);
         }
       }
     }
@@ -1426,18 +1488,19 @@
 
 .optovik-partners {
   .caption {
-    text-align: left;
   }
 
   &__list {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 19px;
-    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 80px;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
 
     @include responsive1023 {
-      grid-template-columns: repeat(2, 1fr);
-      max-width: 605px;
+      max-width: 100%;
       margin-left: auto;
       margin-right: auto;
     }
@@ -1447,26 +1510,70 @@
     }
 
     @include responsive639 {
-      grid-template-columns: 1fr;
       margin-top: 20px;
     }
   }
 
   &__item {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     display: flex;
     align-items: center;
-    gap: 15px;
-    background-color: $colorWhite;
+    gap: 24px;
+    color: $colorWhite;
+    background-color: #174663;
     box-shadow: 0px 0px 8px 0px #00224633;
-    padding: 20px 10px;
+    padding: 30px 20px;
+    width: 430px;
+    position: relative;
+
+    @include before {
+      left: 100%;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='513' height='66' viewBox='0 0 513 66' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0.000569476 1.50215L512 1.50218L512 66' stroke='%23002246' stroke-width='2' stroke-dasharray='6 6'/%3e%3c/svg%3e ");
+      background-position: center right;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 100%;
+      top: 29px;
+      z-index: -1;
+
+      @include responsive1023 {
+        left: 50%;
+      }
+
+      @include responsive767 {
+        display: none;
+      }
+    }
+
+    &:nth-child(2n) {
+      margin-left: auto;
+
+      &::before {
+        transform: scale(-1, 1);
+        left: auto;
+        right: 100%;
+
+        @include responsive1023 {
+          left: auto;
+          right: 50%;
+        }
+      }
+    }
+
+    &:last-child {
+      &::before {
+        display: none;
+      }
+    }
 
     @include responsive767 {
       padding: 15px;
       min-height: 102px;
       padding: 0 10px;
+      width: 100%;
+      max-width: 100%;
     }
   }
 
@@ -1474,7 +1581,7 @@
     font-size: 64px;
     font-weight: 600;
     line-height: 24px;
-    color: #193c57;
+    color: $colorWhite;
 
     @include responsive767 {
       font-size: 40px;
@@ -1626,17 +1733,25 @@
 
 .optovik-map {
   background-color: #f4f5f9;
+  overflow: hidden;
 
   .caption {
     text-align: left;
+    position: relative;
+    z-index: 3;
   }
 
   .optovik-map__map {
     position: relative;
     width: 100%;
+    margin: -160px 0 -80px;
+
+    @include responsive1279 {
+      margin: -120px 0 -60px;
+    }
 
     @include responsive767 {
-      margin-top: 24px;
+      margin: 24px 0 0;
     }
   }
 
@@ -1728,7 +1843,7 @@
 
 .filter-block.filter {
   position: sticky;
-  top: 180px;
+  top: 90px;
   left: 0;
   max-height: calc(100vh - 190px);
   overflow: auto;

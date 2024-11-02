@@ -225,7 +225,7 @@
   }
 
   .article-item {
-    width: calc(100% / 3 - 12px);
+    width: calc(25% - 13px);
 
     .picture {
       padding-top: calc(209 / 384 * 100%);
@@ -1698,5 +1698,13 @@
 
   .catalog-tags {
     min-height: initial;
+  }
+
+  .wholesalers{
+    margin-top: 0;
+  }
+
+  .breadcrumbs{
+    padding-top: 55px;
   }
 }

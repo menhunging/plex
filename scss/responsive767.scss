@@ -266,7 +266,7 @@
   }
 
   .article-item {
-    width: 100%;
+    width: calc(50% - 9px);
 
     .picture {
       padding-top: calc(135 / 320 * 100%);
@@ -279,7 +279,7 @@
   }
 
   .article-item__name {
-    height: inherit;
+    height: 30px;
   }
 
   .catalog-item {
@@ -2417,6 +2417,24 @@
 
   .header-top__controls {
     margin-left: auto;
+  }
+
+  .product-details {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 100px;
+      margin: 0 auto;
+
+      & + img {
+        margin-left: auto;
+      }
+    }
+  }
+  
+  .breadcrumbs {
+    padding-top: 40px;
   }
 }
 

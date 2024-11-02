@@ -46,7 +46,8 @@ input {
   }
 
   @include responsive767 {
-    padding-top: 69px;
+    // padding-top: 69px;
+    padding-top: 36px;
   }
 
   &.header--fixed {
@@ -1564,3 +1565,4 @@ div::-webkit-scrollbar-thumb {
   background: #002246;
   border-radius: 4px;
 }
+

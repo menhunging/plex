@@ -241,6 +241,12 @@
   .article-item__name {
     font-size: 12px;
     line-height: 15px;
+    height: auto;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
   }
 
   .article-more {
@@ -1454,5 +1460,9 @@
     a {
       font-size: 12px;
     }
+  }
+
+  .breadcrumbs {
+    padding-top: 20px;
   }
 }

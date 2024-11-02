@@ -309,7 +309,7 @@ $(document).ready(function () {
     const swiper = new Swiper(".slider-optovik-productions", {
       slidesPerView: 4,
       spaceBetween: 18,
-      loop: true,
+      // loop: true,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -333,6 +333,43 @@ $(document).ready(function () {
         },
         768: {
           slidesPerView: 4,
+        },
+      },
+    });
+  }
+
+  if ($(".optovik-adv__list").length > 0) {
+    const swiper = new Swiper(".optovik-adv__list", {
+      slidesPerView: 5,
+      spaceBetween: 30,
+      // pagination: {
+      //   el: ".swiper-pagination",
+      //   clickable: true,
+      // },
+      // navigation: {
+      //   prevEl: ".slider-optovik-productions__prev",
+      //   nextEl: ".slider-optovik-productions__next",
+      // },
+      breakpoints: {
+        0: {
+          slidesPerView: 1.25,
+          spaceBetween: 15,
+        },
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1280: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+        1600: {
+          slidesPerView: 5,
+          spaceBetween: 30,
         },
       },
     });
